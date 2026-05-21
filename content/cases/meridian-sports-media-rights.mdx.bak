@@ -1,0 +1,93 @@
+---
+id: c-meridian-sports
+slug: meridian-sports-media-rights
+title: 'Meridian Sports: how much to bid for the league rights?'
+source:
+  publisher: Case in Point
+  title: 'Case in Point — Complete Case Interview Preparation'
+  authors: ['Cosentino, Marc']
+  year: 2023
+  needsVerification: true
+industry: media
+category: m-and-a
+difficulty: advanced
+frameworks: [3c, profitability]
+timeEstimate: 45
+tags: [media, sports, rights, bidding, content]
+problemStatement: 'Meridian Sports Network is bidding for a major US sports league''s media rights package (10-year deal, ~17 weeks per season). Current rights-holder pays $2.5B/year; market expectations are $3.5-4.5B/year for the new deal. Meridian must decide its maximum bid. Streaming platforms (Amazon, Apple) are also bidding, raising prices. Recommend bidding strategy.'
+clarifyingQuestions:
+  - 'What is the audience trend for the sport — growing, flat, declining?'
+  - 'What share of Meridian''s revenue + brand depends on this rights package?'
+  - 'Can the rights drive subscriber growth on Meridian''s streaming service?'
+  - 'What is the realistic distribution of competing bids?'
+commonMistakes:
+  - 'Bidding on advertising revenue projections alone — modern sports rights returns include streaming subscriber acquisition.'
+  - 'Underestimating tech-company bidders'' willingness to lose money for strategic reasons.'
+  - 'Losing the rights leads to subscriber loss + business model deterioration; can''t treat as standalone economic decision.'
+variants:
+  - 'Same situation, but Meridian could partner with a streaming platform on a joint bid. Recommend.'
+  - 'Same data, but the league offers a streaming-only package separately. Should Meridian go for it?'
+relatedCases:
+  - cascade-streaming-subscriber-strategy
+  - aria-credit-card-cobrand
+solved: false
+updatedAt: '2026-05-20'
+---
+
+<Callout tone="note" title="Illustrative case">
+  Meridian Sports is a stylized example for sports media rights bidding. Framework from Cosentino + standard sports rights methodology; specifics are illustrative.
+</Callout>
+
+## The situation
+
+Sports media rights bidding has been a defining theme in media M&A for two decades. Premium live sports rights remain among the few content categories with stable + growing audiences. Rights fees have escalated steadily — NFL, NBA, NHL, MLB rights have all set records in recent renewal cycles, often with 50-100% increases over prior deals.
+
+Tech platforms (Amazon, Apple, Google) entering the bidding has further accelerated price escalation. They can justify economically uneconomic bids based on strategic value (subscriber acquisition for Prime, customer engagement for Apple).
+
+## Structuring
+
+Sports rights valuation framework:<Citation publisher="Case in Point" title="Case in Point — Complete Case Interview Preparation" authors={['Cosentino, Marc']} year={2023} />
+
+<IssueTreeEmbed slug="meridian-sports-tree" height={420} />
+
+Three branches:
+
+1. **Direct economic value** — advertising revenue + carriage fees (cable) + streaming subscription contribution attributable to the rights.
+2. **Strategic value** — subscriber acquisition for streaming service, brand value to overall network, defensive value (losing rights damages business).
+3. **Competitive dynamics** — likely bid distribution from competing networks + streaming platforms.
+
+## Key analysis
+
+For a 10-year, $4B/year deal ($40B total):
+
+| Revenue stream | Annual contribution |
+|----------------|---------------------|
+| National advertising | $1.5-2.0B |
+| Carriage fees (cable) | $0.5-0.8B (declining) |
+| Streaming subscription attributable | $0.5-1.0B (growing) |
+| Total direct revenue | $2.5-3.8B |
+
+At $4B/year cost, the deal is roughly break-even to losing $500M/year on direct revenue alone. The strategic case must justify the gap.
+
+The non-obvious finding: **the defensive case usually dominates the bidding decision.** If Meridian loses the rights, its subscriber base + advertising revenue across the rest of the network drops substantially (subscribers leave, advertisers shift spending). The "loss avoided" can easily be $1B+ annually.
+
+For Meridian specifically: maximum bid should include both direct revenue + strategic premium (subscriber acquisition + defensive value), but not exceed the total economic value. A bid of $3.8-4.2B per year is defensible; above $4.5B is value-destroying.
+
+## Recommendation skeleton
+
+**Recommendation:** **Bid up to $4.0B per year ($40B total) but walk if higher.** Structure: $3.5B annual cash + revenue-sharing escalators tied to streaming subscriber growth (aligns incentives with league + caps downside risk). Backup plan: if outbid, secure secondary rights packages for the same league (selected games, highlights, news access) to maintain some sports content presence at much lower cost.
+
+**Three supports:**
+
+1. $4B/year covers direct economics + strategic premium without over-bidding into value destruction.
+2. Revenue-sharing structure aligns Meridian with league and reduces fixed-cost commitment.
+3. Backup plan preserves some sports presence if bidding fails, mitigating downside.
+
+**One risk:** tech bidders may go to $5B+/year, forcing Meridian to lose. Mitigate by clear walk-away discipline — don't anchor to "must win"; the worst outcome is winning at uneconomic price.
+
+## What judges look for
+
+- Did you size **direct + strategic + defensive value** as components of the bid?
+- Did you propose **revenue-sharing structure** rather than fixed bid?
+- Did you set **explicit walk-away threshold**?
+- Did you propose **backup plan** if outbid?

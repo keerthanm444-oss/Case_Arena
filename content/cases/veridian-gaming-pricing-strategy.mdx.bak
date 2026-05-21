@@ -1,0 +1,91 @@
+---
+id: c-veridian-gaming
+slug: veridian-gaming-pricing-strategy
+title: 'Veridian Games: free-to-play or premium pricing for our next title?'
+source:
+  publisher: Case in Point
+  title: 'Case in Point — Complete Case Interview Preparation'
+  authors: ['Cosentino, Marc']
+  year: 2023
+  needsVerification: true
+industry: media
+category: pricing
+difficulty: standard
+frameworks: [3c, profitability]
+timeEstimate: 35
+tags: [media, gaming, pricing, f2p, monetization]
+problemStatement: 'Veridian Games is a mid-sized publisher with $1.2B revenue. Their next major title (an action RPG) is in development. Industry has bifurcated: free-to-play (F2P) titles with microtransactions ($0 upfront, IAP-driven) dominate mobile + grow on console/PC; premium ($60-70 upfront) remains the model for prestige experiences. The CEO must commit to a model 18 months before launch.'
+clarifyingQuestions:
+  - 'What does our existing player base prefer (premium or F2P historically)?'
+  - 'Is the title designed around monetization beats (cosmetics, expansions) that fit F2P?'
+  - 'What is the competitive landscape — F2P or premium-dominant genre?'
+  - 'What is our balance sheet capacity to absorb a slower revenue ramp?'
+commonMistakes:
+  - 'Choosing F2P without redesigning game systems to support monetization — leads to pay-to-win backlash.'
+  - 'Treating premium as safer; premium titles must succeed in first 4 weeks or get permanently discounted.'
+  - 'Ignoring genre conventions; certain genres (story-driven RPGs) work poorly as F2P.'
+variants:
+  - 'Same situation, but a major IP owner offers licensing partnership only with premium-priced launch. Recommend.'
+  - 'Same data, but a hybrid model (premium + cosmetic IAP) is gaining acceptance. Compare to pure F2P or premium.'
+relatedCases:
+  - cascade-streaming-subscriber-strategy
+  - formare-saas-pricing
+solved: false
+updatedAt: '2026-05-20'
+---
+
+<Callout tone="note" title="Illustrative case">
+  Veridian Games is a stylized example for game pricing strategy. Framework from Cosentino + standard gaming methodology; specifics are illustrative.
+</Callout>
+
+## The situation
+
+Gaming industry pricing is genuinely bifurcated. Mobile + competitive multiplayer titles overwhelmingly run on F2P with in-app purchases. Story-driven AAA experiences run on premium $60-70 upfront pricing. Live-service games (Fortnite, Destiny, GTA Online) blur the lines with mixed models.
+
+The choice has profound implications for game design, marketing, and revenue trajectory. F2P games take longer to ramp revenue (need user base scale to monetize) but can be much larger long-term. Premium games front-load revenue but plateau quickly.
+
+## Structuring
+
+Gaming monetization framework:<Citation publisher="Case in Point" title="Case in Point — Complete Case Interview Preparation" authors={['Cosentino, Marc']} year={2023} />
+
+<IssueTreeEmbed slug="veridian-tree" height={400} />
+
+Three branches:
+
+1. **Genre fit** — does the genre support F2P (loot, social, competitive) or premium (story, completion-focused)?
+2. **Revenue trajectory** — F2P (slow ramp, long tail, scale-dependent) vs premium (fast peak, faster decay).
+3. **Risk profile** — F2P has higher upside + downside; premium is more predictable.
+
+## Key analysis
+
+Comparing models for an action RPG:
+
+| Model | Year 1 revenue | Long-tail revenue (3 yrs) | Risk |
+|-------|----------------|----------------------------|------|
+| Premium $60 | $200-400M | $50-100M | Low-medium |
+| Premium + DLC/expansions | $250-450M | $150-250M | Medium |
+| F2P with battle pass + cosmetics | $50-150M (year 1) | $200-500M+ | High |
+| Hybrid (premium + IAP cosmetics) | $200-350M | $100-200M | Medium |
+
+The non-obvious finding: **hybrid (premium + cosmetic IAP) is often the best risk-adjusted choice for AAA RPGs.** Captures the predictable premium revenue while preserving upside from cosmetic monetization. Story-driven RPG players prefer this over pure F2P; cosmetic IAP doesn't trigger pay-to-win backlash.
+
+For Veridian specifically: action RPG with single-player focus + multiplayer mode = ideal hybrid candidate. Story content unlocks at $60 premium, cosmetics + minor convenience items sold separately.
+
+## Recommendation skeleton
+
+**Recommendation:** **Hybrid pricing — premium with cosmetic IAP.** Launch at $60 standard / $80 deluxe edition. Post-launch monetization via cosmetic items (skins, mounts, emotes) + paid expansion content within 12 months. Avoid pay-to-win mechanics. Expected revenue: $250-400M year 1; $400-700M over 3 years.
+
+**Three supports:**
+
+1. Hybrid model matches the genre's player expectations (premium baseline + cosmetic optionality).
+2. Premium upfront pricing provides predictable revenue against title launch costs.
+3. Cosmetic IAP creates long-tail revenue without compromising the premium experience.
+
+**One risk:** cosmetic IAP backlash if community perceives them as required for engagement. Mitigate by clear separation — cosmetics must be purely aesthetic, never gameplay-affecting.
+
+## What judges look for
+
+- Did you reject **pure F2P or pure premium** in favor of hybrid?
+- Did you analyze **genre fit** as the primary input?
+- Did you size **long-tail revenue economics** beyond launch year?
+- Did you address **pay-to-win risk** explicitly?

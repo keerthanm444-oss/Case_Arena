@@ -1,0 +1,98 @@
+---
+id: c-cascadian-oil
+slug: cascadian-oil-capital-allocation
+title: 'Cascadian Energy: drill more, transition, or return capital?'
+source:
+  publisher: Boston Consulting Group
+  title: 'BCG Insights'
+  needsVerification: true
+industry: energy
+category: portfolio
+difficulty: advanced
+frameworks: [3c, profitability]
+timeEstimate: 50
+tags: [energy, oil-gas, capital-allocation, transition, shareholder-return]
+problemStatement: 'Cascadian Energy is a $40B revenue integrated oil + gas company. Free cash flow is strong ($12B/year at current prices). The board is debating capital allocation: (a) reinvest in upstream production (extend resource life, exploit reserves), (b) invest in energy transition (renewables, hydrogen, biofuels), (c) return capital to shareholders (dividends + buybacks). What''s the right mix?'
+clarifyingQuestions:
+  - 'What is the cost-of-supply ranking of our oil + gas reserves vs global supply curve?'
+  - 'What is our cost-of-capital implied by current valuation?'
+  - 'What energy-transition adjacencies map to our existing capabilities (offshore wind, hydrogen, CCS)?'
+  - 'What are peer capital-allocation strategies — diverging or converging?'
+commonMistakes:
+  - 'Treating energy transition as a single bet when adjacencies (CCS, hydrogen, biofuels) have very different economics.'
+  - 'Underestimating shareholder pressure; many oil + gas valuations reflect skepticism about reinvestment ROI.'
+  - 'Ignoring resource-quality differentiation; companies with low-cost reserves should drill more; companies with high-cost reserves should harvest + return.'
+variants:
+  - 'Same situation, but oil prices have collapsed to $50/bbl. How does that shift the capital allocation?'
+  - 'Same data, but a major activist investor has demanded 80% of FCF returned to shareholders. Respond.'
+relatedCases:
+  - meridian-utility-renewables
+  - axiom-automotive-ev-transition
+solved: false
+updatedAt: '2026-05-20'
+---
+
+<Callout tone="note" title="Illustrative case">
+  Cascadian is a stylized example for oil + gas capital allocation. Framework from BCG + standard energy-industry methodology; specifics are illustrative.
+</Callout>
+
+## The situation
+
+Oil + gas capital allocation has shifted dramatically over the past 5 years. The pre-2020 pattern (aggressive reinvestment in production growth) has been replaced by capital-discipline focus: shareholder returns over production growth, selective reinvestment, cautious transition investment.
+
+The strategic question for any integrated oil + gas company: what mix of (a) reinvestment, (b) transition, (c) shareholder returns produces highest value? The answer depends critically on resource quality, existing capabilities, and shareholder mandate.
+
+## Structuring
+
+Capital-allocation framework adapted for oil + gas:<Citation publisher="Boston Consulting Group" title="BCG Insights" />
+
+<IssueTreeEmbed slug="cascadian-tree" height={420} />
+
+Three branches:
+
+1. **Reinvestment ROI** — what's the expected return on incremental upstream capital? Depends on resource quality, oil price view, and competitive positioning.
+2. **Transition adjacencies** — which transition investments map to existing capabilities? Offshore wind (existing offshore + project management), CCS (subsurface + reservoir engineering), hydrogen (refining + gas infrastructure), biofuels (existing refining).
+3. **Shareholder return capacity** — how much FCF can be returned without compromising balance sheet?
+
+## Key analysis
+
+Comparing capital allocation options at $12B annual FCF:
+
+**Track A — Upstream reinvestment ($4-6B/year):**
+- Maintains/grows production
+- ROI depends on resource quality + price trajectory
+- For top-quartile cost reserves: 15-20% IRR at $70 oil
+- For bottom-half cost reserves: 5-10% IRR at $70 oil (below cost of capital)
+
+**Track B — Energy transition ($2-4B/year):**
+- Offshore wind: 6-10% IRR (regulated returns)
+- CCS: 8-15% IRR if 45Q tax credits apply
+- Hydrogen: 5-15% IRR depending on production method + customer demand
+- Biofuels: 10-15% IRR with current incentives
+
+**Track C — Shareholder returns ($4-8B/year):**
+- Dividends: signal stability, lower flexibility
+- Buybacks: flexible, accretive at current valuations
+
+The non-obvious finding: **for most integrated oil + gas companies, shareholder returns should be the largest component** because the market discounts reinvestment ROI more heavily than companies' internal hurdle rates. Returning capital is genuinely accretive when valuation is depressed.
+
+For Cascadian specifically, the answer depends on resource-quality positioning. Companies with top-quartile reserves can justify higher reinvestment; companies with average-or-below reserves should bias toward returns + selective transition.
+
+## Recommendation skeleton
+
+**Recommendation:** **Tilted toward shareholder returns: 45% returns / 30% upstream / 25% transition.** $5-6B annually to shareholders (mix of dividends + buybacks). $3.5-4B upstream reinvestment focused exclusively on top-quartile cost reserves. $2.5-3B annual transition investment focused on CCS + biofuels (highest capability fit + best risk-adjusted return). Avoid spec investments in hydrogen at current technology + demand stage.
+
+**Three supports:**
+
+1. Shareholder returns are accretive at current valuations; reinvestment ROI is below market-implied required return.
+2. Selective upstream reinvestment (top-quartile reserves only) maintains optionality without funding low-ROI projects.
+3. Transition focus on CCS + biofuels matches capabilities; avoids speculative bets on hydrogen.
+
+**One risk:** if oil prices rise sharply (e.g., $100+), upstream ROI improves but production capacity may be constrained by underinvestment. Mitigate by maintaining short-cycle (shale) flexibility — capex can be deployed quickly if commodity prices justify.
+
+## What judges look for
+
+- Did you size **reinvestment ROI vs market-implied required return** to test whether reinvestment is value-creating?
+- Did you propose **tilt toward shareholder returns** as the realistic answer?
+- Did you classify **transition adjacencies by capability fit** rather than treating uniformly?
+- Did you address **commodity price flexibility** with short-cycle optionality?

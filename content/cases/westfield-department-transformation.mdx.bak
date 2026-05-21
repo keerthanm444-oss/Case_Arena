@@ -1,0 +1,90 @@
+---
+id: c-westfield-department
+slug: westfield-department-transformation
+title: 'Westfield Stores: can a 100-year-old department store survive?'
+source:
+  publisher: Case in Point
+  title: 'Case in Point — Complete Case Interview Preparation'
+  authors: ['Cosentino, Marc']
+  year: 2023
+  needsVerification: true
+industry: retail
+category: turnaround
+difficulty: advanced
+frameworks: [3c, profitability, porters-five-forces]
+timeEstimate: 45
+tags: [retail, department-store, turnaround, transformation]
+problemStatement: 'Westfield is a 75-store mid-tier US department-store chain that has lost 40% of revenue over the past decade. Mall traffic is declining; the apparel + cosmetics + home categories all face pure-play and category-specialist erosion. Cash is positive but thin. The board has hired you to recommend either a turnaround plan or a wind-down strategy.'
+clarifyingQuestions:
+  - 'How does revenue decline split between same-store sales and store closures?'
+  - 'What share of stores are profitable on a four-wall basis?'
+  - 'Do we own real estate or lease everything? Lease terms?'
+  - 'What is our outstanding debt and refinancing horizon?'
+commonMistakes:
+  - 'Recommending a "save them all" strategy when the math says half the stores can''t be saved.'
+  - 'Ignoring real-estate optionality — owned stores in good locations are an asset independent of retail performance.'
+  - 'Believing digital transformation alone will save a real-estate-encumbered chain.'
+variants:
+  - 'Same situation, but private equity has offered to acquire and take Westfield private. What''s your recommendation to the board?'
+  - 'Same problem, but Westfield is in a country with stronger labor protections (e.g., France). How does the wind-down calculus change?'
+relatedCases:
+  - meridian-apparel-portfolio
+  - northbay-ecommerce-strategy
+solved: false
+updatedAt: '2026-05-20'
+---
+
+<Callout tone="note" title="Illustrative case">
+  Westfield is a stylized example for retail turnaround analysis. The framework is from Cosentino + Porter; specifics are illustrative.
+</Callout>
+
+## The situation
+
+Department-store decline is one of the most-studied retail patterns of the past 20 years. The structural drivers — mall traffic decline, category specialist competition, pure-play e-commerce, real-estate cost-base mismatch — are well understood. The candidate's job isn't to discover the drivers; it's to **design a credible response** given Westfield's specific assets.
+
+The decisive question: can Westfield be a smaller, profitable department store, or is the only viable answer wind-down + real-estate monetization?
+
+## Structuring
+
+The framework that wins this case combines profitability decomposition (M1) with strategic-options analysis:<Citation publisher="Case in Point" title="Case in Point — Complete Case Interview Preparation" authors={['Cosentino, Marc']} year={2023} /> what are the realistic end-states, what's the value of each, and what's the path to get there?<Citation publisher="Competitive Strategy" title="Competitive Strategy: Techniques for Analyzing Industries and Competitors" authors={['Porter, Michael E.']} year={1980} />
+
+<IssueTreeEmbed slug="westfield-tree" height={400} />
+
+Three end-state options:
+
+1. **Smaller, profitable department store** — close bottom-tier stores, focus on top-30 high-traffic locations, exit hopeless categories. Target: $1.5B revenue from 30 stores at 6% margin.
+2. **Real-estate company with retail tenant** — convert to a REIT-like structure where the retail operation runs as a tenant of the real-estate entity. Common in private-equity playbooks for chains with valuable property.
+3. **Orderly wind-down** — sell viable real estate, liquidate inventory, return capital to shareholders. Reasonable when no version of the retail business is viable.
+
+## Key analysis
+
+The diagnostic that decides between options: **the four-wall profitability cohort.**
+
+Split the 75 stores into quartiles by four-wall operating margin:
+
+- Top quartile (19 stores) — likely the only viable retail locations.
+- Second quartile (19 stores) — break-even; could go either way.
+- Bottom half (37 stores) — losing money on a four-wall basis. Cannot be saved by digital transformation; the unit economics don't work.
+
+If the top quartile alone generates positive consolidated operating profit, Option 1 is viable. If not, Options 2 or 3.
+
+In most Westfield-like scenarios, top-quartile revenue ÷ corporate overhead doesn't justify the corporate cost structure unless overhead is **dramatically** reduced (50%+ HQ cuts).
+
+## Recommendation skeleton
+
+**Recommendation:** Hybrid path. Close 30 bottom-tier stores in year 1. Operate the remaining 45 as a smaller, focused department store. Monetize real estate from the 30 closed locations (likely 60-70% of book value). Convert holding structure to enable separation of retail + real-estate at year 3 if retail still struggles.
+
+**Three supports:**
+
+1. The bottom-half stores can't be saved — their four-wall margin is too negative for any operational improvement to fix.
+2. The 45 remaining stores can plausibly run at break-even or better if corporate overhead is cut proportionally (50%+ HQ reduction).
+3. Real-estate monetization provides bridge capital for the transformation; without it, refinancing risk could force a worse outcome.
+
+**One risk:** the closing-store labor and severance costs in year 1 are material — likely $200-400M depending on contracts. Mitigate by sequencing closures to allow some employees to transfer to remaining stores; targets WARN-Act compliance.
+
+## What judges look for
+
+- Did you recognize that **half the stores cannot be saved** and propose closure rather than treating each store as recoverable?
+- Did you size **real-estate value** as a separate asset class? Many candidates ignore it.
+- Did you propose a **hybrid path** rather than a binary "save vs wind down"?
+- Did you identify **corporate overhead** as a critical lever? Cutting HQ proportionally is harder than cutting stores but more important.

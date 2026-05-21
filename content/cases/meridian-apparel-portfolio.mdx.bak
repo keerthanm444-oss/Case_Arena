@@ -1,0 +1,97 @@
+---
+id: c-meridian-portfolio
+slug: meridian-apparel-portfolio
+title: 'Meridian Apparel: which of our 12 brands should we keep?'
+source:
+  publisher: Case in Point
+  title: 'Case in Point — Complete Case Interview Preparation'
+  authors: ['Cosentino, Marc']
+  year: 2023
+  needsVerification: true
+industry: retail
+category: portfolio
+difficulty: advanced
+frameworks: [3c, profitability]
+timeEstimate: 50
+tags: [portfolio, retail, apparel, rationalization, multi-brand]
+problemStatement: 'Meridian Apparel is a multi-brand parent with 12 brands ranging from teen fashion to luxury. Revenue is $4.2B across the portfolio; operating margin is 6.1% (vs 10-12% for best-in-class peers). The board has asked: which brands should we keep, divest, or shut down, and what does the resulting portfolio look like in 3 years?'
+clarifyingQuestions:
+  - 'What is the revenue and operating margin contribution by brand?'
+  - 'Are any of the brands actively cross-subsidized by others (shared back-office, shared sourcing)?'
+  - 'What does the brand-by-brand growth trajectory look like over the past 3 years?'
+  - 'Are there acquisition obligations or earn-outs we need to honor before divesting any brand?'
+commonMistakes:
+  - 'Recommending divestiture purely on margin without checking shared-cost allocations.'
+  - 'Treating all 12 brands as independent — many share sourcing, distribution, or licensing.'
+  - 'Ignoring the back-office unwind cost of divestment; selling a brand without infrastructure is much harder.'
+variants:
+  - 'Same problem, but a private equity owner has been acquiring brands aggressively and the question is which to acquire next, not which to divest.'
+  - 'Same data, but Meridian has a strong DTC platform that all brands could use. Does that change the calculus?'
+relatedCases:
+  - cobblestone-footwear-pricing
+solved: false
+updatedAt: '2026-05-20'
+---
+
+<Callout tone="note" title="Illustrative case">
+  Meridian is a stylized example for the portfolio-rationalization framework. The decomposition draws on Cosentino's M&A and portfolio chapters; specifics are illustrative.
+</Callout>
+
+## The situation
+
+Meridian's portfolio looks like many multi-brand apparel companies that grew via acquisition: a mix of strong brands subsidizing weak ones, shared infrastructure that's hard to allocate cleanly, and a CEO who's been protecting under-performers because divestment is operationally messy.
+
+The board's question is correct — the portfolio should be rationalized — but the answer requires more than "drop the worst-margin brands."
+
+## Structuring
+
+Two-by-two on **growth rate × operating margin**, with explicit handling for **shared-cost dependencies**:
+
+<IssueTreeEmbed slug="meridian-tree" height={400} />
+
+For each of the 12 brands, classify:
+
+| Growth | Margin | Action |
+|--------|--------|--------|
+| High | High | **Invest** — these are the keepers |
+| High | Low | **Fix** — investigate why margin is low; may be growth-investment dilution |
+| Low | High | **Harvest** — extract cash, no growth investment, eventual sale or wind-down |
+| Low | Low | **Divest** — but check shared-cost dependencies before unwinding |
+
+The two non-obvious moves:
+
+1. **Mass-market or premium concentration?** Multi-brand portfolios that span 12 price tiers usually under-perform single-tier focused portfolios. Pick a tier and own it.
+2. **Sourcing concentration.** If 4 brands share a manufacturer and you divest 2, the remaining 2 lose volume leverage. The order of divestment matters.
+
+## Key analysis
+
+A typical pattern in this portfolio dynamic:<Citation publisher="Case in Point" title="Case in Point — Complete Case Interview Preparation" authors={['Cosentino, Marc']} year={2023} />
+
+- 3-4 brands generate ~70% of operating profit
+- 5-6 brands generate the remaining ~30%
+- 2-3 brands are persistently unprofitable
+
+The standard mistake is to drop all 2-3 unprofitable brands. The correct move is more nuanced:
+
+- **Drop only the ones that are unprofitable *and* have no shared-cost dependency.** Maybe 1-2 of the 3.
+- **Hold the others until shared infrastructure can be redistributed.** Selling a brand that uses 30% of warehouse capacity stranded those costs.
+- **Sequence divestments to preserve volume leverage** with shared suppliers.
+
+## Recommendation skeleton
+
+**Recommendation:** Reduce from 12 to 7 brands over 36 months. Divest 3 brands in year 1, wind down 2 in year 2. Concentrate the remaining 7 in the mid-premium tier ($60-300). Target operating margin: 9% by year 3.
+
+**Three supports:**
+
+1. The 7 retained brands cover the strategic tier with minimal customer-base overlap (no brand cannibalizes another).
+2. Sequencing the divestments preserves supplier volume leverage and avoids stranded back-office costs.
+3. The mid-premium concentration aligns with Meridian's capital-allocation reality — luxury requires marketing budgets we don't have; budget tier requires unit-economics we don't have.
+
+**One risk:** the divestiture market for apparel brands is illiquid; we may need to take below-target sale prices. Mitigate by having operational improvement plans ready for each divestment candidate before they go to market.
+
+## What judges look for
+
+- Did you go beyond "drop the unprofitable ones" to address the **shared-cost** complication?
+- Did you propose a **sequence** for divestment, not a simultaneous unwind?
+- Did you specify the **target portfolio** (7 brands, $60-300 tier) rather than leaving the answer at "fewer brands"?
+- Did you call out divestment market illiquidity as a risk + mitigation?

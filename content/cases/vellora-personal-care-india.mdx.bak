@@ -1,0 +1,89 @@
+---
+id: c-vellora-personal
+slug: vellora-personal-care-india
+title: 'Vellora Personal Care: how do we enter India profitably?'
+source:
+  publisher: McKinsey & Company
+  title: 'McKinsey Quarterly'
+  needsVerification: true
+industry: consumer-goods
+category: market-entry
+difficulty: standard
+frameworks: [market-entry, 3c]
+timeEstimate: 35
+tags: [consumer-goods, personal-care, india, market-entry, emerging-markets]
+problemStatement: 'Vellora is a $2.4B revenue Western personal-care company (shampoo, body wash, deodorant). Indian market is large ($16B, growing 9% YoY) and attractive but dominated by HUL + local players. Vellora has limited presence (~$30M revenue via importer). The CEO is debating: (a) joint venture with an Indian distributor, (b) direct investment in local manufacturing + distribution ($300M+), (c) license brands to a local player, (d) acquire a small Indian personal-care brand as platform.'
+clarifyingQuestions:
+  - 'What is our existing brand awareness in India — do consumers know the brand?'
+  - 'What is the pricing differential between premium imported products and local mass-market?'
+  - 'Are there specific categories where Indian competition is weaker?'
+  - 'What is our prior emerging-markets entry track record?'
+commonMistakes:
+  - 'Treating India as a single market when urban + rural + regional dynamics differ enormously.'
+  - 'Underestimating the price gap; Western premium products often need 40-60% repositioning to compete in Indian mass-market.'
+  - 'Ignoring distribution complexity — modern trade is <30% of grocery; traditional kirana + wholesale dominates.'
+variants:
+  - 'Same situation, but Vellora has a strong Indian-diaspora-relevant brand. Does that change positioning?'
+  - 'Same data, but the Indian government has changed FDI rules favoring direct investment. Does that shift the recommended mode?'
+relatedCases:
+  - veridian-india-entry
+  - azura-medical-device-entry
+solved: false
+updatedAt: '2026-05-20'
+---
+
+<Callout tone="note" title="Illustrative case">
+  Vellora is a stylized example for personal-care market entry into India. Framework from McKinsey + standard market-entry methodology; specifics are illustrative.
+</Callout>
+
+## The situation
+
+Personal-care entry into India by Western CPG companies has a mixed track record. Some (Unilever via HUL, P&G via direct investment) built dominant positions over decades; others have failed despite significant investment. The successful entries share three characteristics: long-term commitment (10+ years), product localization (formulations + price points adapted), distribution depth (traditional trade penetration).
+
+The strategic options have very different risk-return profiles and time-to-impact.
+
+## Structuring
+
+Market-entry framework adapted for emerging-market CPG:<Citation publisher="McKinsey & Company" title="McKinsey Quarterly" />
+
+<IssueTreeEmbed slug="vellora-tree" height={400} />
+
+Three branches:
+
+1. **Market attractiveness** — $16B TAM, 9% growth, segments where competition is weaker (premium urban, specialty categories).
+2. **Entry mode comparison** — JV, direct investment, license, acquisition. Each has different capital, time, and control profiles.
+3. **Product strategy** — premium imports vs localized mass-market vs hybrid.
+
+## Key analysis
+
+Comparing entry modes:
+
+| Mode | Capital | Time to scale | Control | Risk |
+|------|---------|---------------|---------|------|
+| JV with distributor | $30-80M | 18-24 months | Medium | Distributor execution + alignment |
+| Direct investment | $300-500M | 36-60 months | High | Operational + market-development risk |
+| License brand | $5-15M upfront | 12-18 months | Low | Brand-equity dilution if partner mishandles |
+| Acquire local platform | $100-300M | 6-12 months to integrate | Medium-high | Integration + cultural fit |
+
+The non-obvious finding: **acquisition of a local platform is usually the strongest first move** for Western CPG entering India. The acquired company brings distribution, regulatory familiarity, local-team capability, and existing consumer relationships. Vellora's brands can be introduced through the acquired company's infrastructure rather than building from scratch.
+
+Direct investment is the "complete control" option but typically takes 5-7 years to reach meaningful scale and exposes substantial capital before validation. JV with a distributor offers fast execution but limits long-term value capture; the distributor's incentives don't always align with Vellora's brand-building goals.
+
+## Recommendation skeleton
+
+**Recommendation:** **Acquisition-led entry.** Identify and acquire a $80-150M revenue Indian personal-care company with strong distribution + 1-2 mid-tier brands ($200-300M acquisition cost). Use as platform to launch Vellora premium brands through acquired distribution. Year 1-2: integrate, learn market. Year 3-5: launch Vellora brands at premium tier; retain acquired brands at mass-market. Target $500M India revenue by year 5.
+
+**Three supports:**
+
+1. Acquired platform shortcuts the 5-7 year direct-entry timeline by 2-3 years.
+2. Existing distribution + local team reduces operational execution risk during the launch of Vellora brands.
+3. Multi-tier portfolio (acquired brands + Vellora brands) captures broader market than premium-only entry would.
+
+**One risk:** acquisition multiples in Indian CPG are elevated; we may overpay. Mitigate by patient deployment (12-18 months to find right target), avoid auction-process targets, prioritize founder-led companies seeking succession partner over financial seller.
+
+## What judges look for
+
+- Did you reject **direct investment** as too capital + time intensive for early entry?
+- Did you identify **acquisition as the platform play** rather than treating modes uniformly?
+- Did you propose **multi-tier portfolio** (acquired + Vellora brands) to capture broader market?
+- Did you address **multiple risk** in Indian acquisition markets?

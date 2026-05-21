@@ -1,0 +1,87 @@
+---
+id: c-formare-saas-pricing
+slug: formare-saas-pricing
+title: 'Formare: should we move from seat-based to usage-based pricing?'
+source:
+  publisher: McKinsey & Company
+  title: 'McKinsey Quarterly'
+  needsVerification: true
+industry: technology
+category: pricing
+difficulty: standard
+frameworks: [3c, profitability]
+timeEstimate: 35
+tags: [saas, pricing, usage-based, b2b, growth]
+problemStatement: 'Formare is a B2B workflow-automation SaaS at $80M ARR, growing 45% YoY. Pricing is per-seat at $30/user/month. The CEO is considering a switch to usage-based pricing (per workflow execution) — citing that competitors like Snowflake and Twilio have used usage-based pricing to grow much faster. The board wants a recommendation.'
+clarifyingQuestions:
+  - 'What is the current customer distribution — are most customers paying for seats they don''t use?'
+  - 'What is the relationship between seats and workflow executions? Is it linear?'
+  - 'How predictable is current revenue, and how would usage-based change that predictability?'
+  - 'What share of competitors in this specific category have moved to usage-based?'
+commonMistakes:
+  - 'Treating usage-based pricing as universally superior — it works in some categories (infrastructure, communications) and poorly in others (workflow, collaboration).'
+  - 'Underestimating the revenue volatility usage-based introduces, especially around customer downturns.'
+  - 'Ignoring the buyer-psychology shift; finance teams prefer predictable seat costs over variable usage costs.'
+variants:
+  - 'Same problem, but Formare''s competitors are all on seat-based pricing. Does that change the framing?'
+  - 'Same situation, but Formare has a hybrid option to test. How do you design the pilot?'
+relatedCases:
+  - meridian-apparel-portfolio
+solved: false
+updatedAt: '2026-05-20'
+---
+
+<Callout tone="note" title="Illustrative case">
+  Formare is a stylized example for SaaS pricing strategy. References to Snowflake/Twilio are illustrative; specific case data is not from any real company.
+</Callout>
+
+## The situation
+
+Usage-based pricing in B2B SaaS is one of the most-discussed pricing topics of the past decade. The success stories (Snowflake, Twilio, AWS) are real but specific: usage-based works when **usage tracks value** and the buyer's economics improve as usage grows.
+
+For workflow-automation, the question is harder. Workflow executions don't always correlate with customer value — some customers run high-frequency, low-value workflows; others run low-frequency, high-value ones. Pricing by execution count would penalize the first group and underprice the second.
+
+## Structuring
+
+3C lens, with explicit focus on **does usage map to value?**:
+
+<IssueTreeEmbed slug="formare-tree" height={380} />
+
+Three branches:
+
+1. **Customer perspective** — does the customer's business value scale with workflow executions, or is the relationship non-linear?
+2. **Competitive landscape** — what are similar workflow-automation tools pricing on? Is usage-based the standard in this category or an outlier?
+3. **Company economics** — how does usage-based change revenue predictability, sales-team incentives, and gross margin under different customer behaviors?
+
+## Key analysis
+
+The diagnostic question for usage-based viability: **for a given customer, does increasing usage create proportional value?**
+
+Three common patterns:
+
+- **Linear value (usage works well):** Database queries → analytical insights → business decisions. More queries usually equals more value.
+- **Stepped value (usage works imperfectly):** Marketing automation → email sends. The 10,000th email per month often delivers diminishing returns vs the first 1,000.
+- **Inverse value (usage works poorly):** Workflow automation → process executions. A customer who runs more workflows might be solving more problems, but they might also just have a worse-designed process.
+
+Workflow automation tends to sit in the third bucket. Charging per execution rewards the customer for **using your product less** — which creates a strange churn dynamic where loyal customers feel punished.
+
+The honest analysis usually shows: pure usage-based pricing **is the wrong move for workflow automation**, but a **hybrid model** (seat-based base + usage overage above a threshold) captures the upside of expansion revenue without the downside of penalizing core use.<Citation publisher="McKinsey & Company" title="McKinsey Quarterly" />
+
+## Recommendation skeleton
+
+**Recommendation:** Do **not** move to pure usage-based pricing. Instead, introduce a **hybrid tier structure**: seat-based pricing for the first N workflows per seat per month (base tier), with usage-based overage above the threshold. Test this on new customers for 6 months before migrating existing customers.
+
+**Three supports:**
+
+1. Workflow executions don't reliably track customer value — pure usage-based punishes power users.
+2. The hybrid model captures expansion revenue (high-usage customers pay more) without disrupting the existing predictable-revenue base.
+3. Testing on new customers first limits exposure; existing customers can be migrated only when the new model is validated.
+
+**One risk:** the hybrid model is harder to explain in sales conversations than either pure seat or pure usage. Mitigate by simplifying the pricing calculator + training the sales team on the most common customer-decision scenarios.
+
+## What judges look for
+
+- Did you challenge the "usage-based is universally better" framing rather than accepting it?
+- Did you map **usage-to-value** carefully? Workflow automation is the case where this mapping breaks.
+- Did you propose a **hybrid model** rather than treating it as binary?
+- Did you design a **staged rollout** (new customers first) to limit downside?

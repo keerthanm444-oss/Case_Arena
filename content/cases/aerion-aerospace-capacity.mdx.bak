@@ -1,0 +1,94 @@
+---
+id: c-aerion-aerospace
+slug: aerion-aerospace-capacity
+title: 'Aerion Aerospace: should we double our capacity?'
+source:
+  publisher: Case in Point
+  title: 'Case in Point — Complete Case Interview Preparation'
+  authors: ['Cosentino, Marc']
+  year: 2023
+  needsVerification: true
+industry: manufacturing
+category: capacity
+difficulty: standard
+frameworks: [profitability, market-entry]
+timeEstimate: 35
+tags: [manufacturing, aerospace, capacity, capex, cyclicality]
+problemStatement: 'Aerion Aerospace makes specialized aerospace fasteners + structural components for commercial aircraft programs. Current capacity is fully utilized; customers are pushing for more volume due to OEM ramp-up. Doubling capacity requires $400M capex over 3 years. The CFO worries about commercial aviation cyclicality. Should Aerion invest?'
+clarifyingQuestions:
+  - 'What is the typical commercial aerospace cycle length, and where are we in it?'
+  - 'Are customer commitments long-term contracts (10+ years) or annual purchase orders?'
+  - 'How much of our capacity could be repurposed for defense + space if commercial demand softens?'
+  - 'What is the lead time on capex — when would new capacity actually be online?'
+commonMistakes:
+  - 'Investing for peak-cycle demand without modeling trough-cycle utilization.'
+  - 'Treating aerospace customer commitments as binding when most are revisable in downturns.'
+  - 'Ignoring the timing risk; if capacity comes online during a downturn, the investment is stranded.'
+variants:
+  - 'Same situation, but a major customer offers to underwrite the capex with a 10-year volume guarantee. Recommend.'
+  - 'Same data, but defense + space demand is growing strongly. Should the capacity be repurposed?'
+relatedCases:
+  - foundry-plant-network-optimization
+  - axiom-automotive-ev-transition
+solved: false
+updatedAt: '2026-05-20'
+---
+
+<Callout tone="note" title="Illustrative case">
+  Aerion is a stylized example for cyclical-industry capacity investment. Framework from Cosentino + standard capacity-planning methodology; specifics are illustrative.
+</Callout>
+
+## The situation
+
+Aerospace capacity investment has classic cyclical-industry dynamics: investing at the cycle peak frequently produces stranded capacity in the trough. The 30-year history of commercial aviation includes multiple cycles where suppliers built capacity to match OEM forecasts, only to see those forecasts cut 30-50% within 24 months.
+
+The strategic question is whether **this cycle is different** (it usually isn't), and how to structure capacity investment to survive a downturn.
+
+## Structuring
+
+Capacity-investment framework with explicit cyclical analysis:<Citation publisher="Case in Point" title="Case in Point — Complete Case Interview Preparation" authors={['Cosentino, Marc']} year={2023} />
+
+<IssueTreeEmbed slug="aerion-tree" height={400} />
+
+Three branches:
+
+1. **Demand realism** — OEM stated demand vs realistic build rates (OEMs habitually over-state demand to suppliers to ensure capacity availability). What's the realistic trough-to-peak utilization range?
+2. **Capex commitment options** — full capacity build ($400M), phased build (50% now, 50% gated on demand validation), capacity flexibility (multi-product capability to repurpose for defense/space).
+3. **Customer commitment structure** — what % of capacity can be underwritten by long-term contracts with take-or-pay provisions?
+
+## Key analysis
+
+The diagnostic question: **at trough demand, what's the utilization of the expanded capacity?**
+
+A typical aerospace cycle has peak-to-trough demand swings of 30-50%. If Aerion's current capacity is 100% utilized and demand drops 35% during the next trough, doubled capacity would be at ~33% utilization during the trough — catastrophically below break-even.
+
+The economic test:
+
+- Cumulative revenue at expanded capacity over 10 years (assuming average utilization 75% across cycle): $X
+- Cumulative gross profit on that revenue: ~$X × 25-30%
+- Capex: $400M
+- Payback period at average utilization: 8-12 years
+- Payback period if demand softens 20% below forecast: 15+ years (potentially uneconomic)
+
+The non-obvious move: **phased capacity build tied to customer take-or-pay commitments.**
+
+If Aerion can secure long-term contracts (5+ year, take-or-pay) for 60-70% of the new capacity, the downside risk drops materially. Building uncommitted capacity hoping demand stays at peak is the failure mode.
+
+## Recommendation skeleton
+
+**Recommendation:** **Phased capacity build conditional on customer commitments.** Phase 1: $150M for 30% additional capacity, conditional on take-or-pay contracts covering ≥70% of new capacity. Phase 2 (year 3 decision): $250M for remaining capacity expansion, conditional on (a) phase 1 utilization above target, (b) customer-contract extensions on existing capacity.
+
+**Three supports:**
+
+1. Phased build limits capital at risk if demand forecasts prove optimistic.
+2. Take-or-pay contracts shift cyclical risk to customers, who are better positioned to bear it (OEMs).
+3. Gating phase 2 on phase 1 results creates an explicit go/no-go checkpoint.
+
+**One risk:** customers may refuse take-or-pay terms, forcing Aerion to either invest uncommitted capacity (high risk) or lose growth opportunity. Mitigate by offering attractive pricing on take-or-pay capacity (10-15% discount) — exchange margin for risk transfer.
+
+## What judges look for
+
+- Did you analyze the **cyclical risk** explicitly rather than projecting peak demand?
+- Did you propose **phased capex** rather than committing to the full $400M up front?
+- Did you propose **take-or-pay contracts** as a risk-transfer mechanism?
+- Did you size **trough-cycle utilization** as the binding constraint on return?

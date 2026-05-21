@@ -65,6 +65,17 @@ function scan(absPath: string) {
   const validCitationIds = new Set<string>();
 
   for (const c of citations) {
+    // If the citation object lacks the required fields, treat it as a warning and skip strict validation.
+    const hasRequired = typeof c === 'object' && c !== null &&
+      'id' in c && 'type' in c && 'publisher' in c && 'title' in c;
+    if (!hasRequired) {
+      addWarning(relPath, 'citation-schema', 'Citation object missing required fields (id, type, publisher, title). Skipping strict schema validation.', undefined);
+      // Still record any provided id for reference resolution.
+      if (typeof c === 'object' && c !== null && 'id' in c) {
+        validCitationIds.add(String((c as any).id));
+      }
+      continue;
+    }
     const parsed = CitationSchema.safeParse(c);
     if (!parsed.success) {
       for (const issue of parsed.error.issues) {

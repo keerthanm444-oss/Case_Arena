@@ -1,0 +1,102 @@
+---
+id: c-southfork-qsr
+slug: southfork-qsr-unit-economics
+title: 'Southfork QSR: are our new stores actually profitable?'
+source:
+  publisher: Case in Point
+  title: 'Case in Point — Complete Case Interview Preparation'
+  authors: ['Cosentino, Marc']
+  year: 2023
+  needsVerification: true
+industry: retail
+category: profitability
+difficulty: intro
+frameworks: [profitability, market-sizing]
+timeEstimate: 25
+tags: [profitability, retail, qsr, unit-economics, sizing]
+problemStatement: 'Southfork is a 200-store quick-service restaurant chain that has been opening 30 new locations per year for the past four years. Total revenue is up 40% but consolidated operating margin has dropped from 12% to 7%. The CEO claims new stores are "ramping" and will normalize; the CFO suspects unit economics have permanently degraded. Who is right, and what should we do?'
+clarifyingQuestions:
+  - 'What are the unit economics of stores opened 3+ years ago vs <2 years ago?'
+  - 'Has the average build-out cost per store changed?'
+  - 'Are new stores opening in similar markets, or have we expanded geographically?'
+  - 'What does the payback period look like for new stores?'
+commonMistakes:
+  - 'Accepting the "ramping" claim without evidence — new stores at 4 years old should be performing like old stores.'
+  - 'Ignoring cannibalization — new stores may be eating revenue from existing stores within a 3-mile radius.'
+  - 'Looking only at top-line revenue per store without checking margin per store.'
+variants:
+  - 'Same problem, but Southfork franchises 80% of stores. Does franchise vs corporate unit economics change the answer?'
+  - 'Same data, but the new stores are in a new region. Is geographic expansion the right diagnosis?'
+relatedCases:
+  - acme-coffee-decline
+solved: false
+updatedAt: '2026-05-20'
+---
+
+<Callout tone="note" title="Illustrative case">
+  Southfork is a stylized example exercising unit-economics analysis. The framework decomposition is from Cosentino; specifics are illustrative.
+</Callout>
+
+## The situation
+
+Aggressive new-store openings create a measurement problem: total revenue grows, but a chain with 40% "young" stores has very different consolidated economics than a chain with 5% young stores. The CEO's "ramping" claim deserves to be tested empirically.
+
+**Scenario inputs (per-store annual):**
+
+<AssumptionChip name="mature_revenue" base={1.8} label="Mature store revenue" unit="$M" decimals={1} />
+<AssumptionChip name="mature_margin" base={0.18} label="Mature store margin" decimals={2} />
+<AssumptionChip name="new_revenue" base={1.2} alt={1.5} label="New store revenue" unit="$M" decimals={1} />
+<AssumptionChip name="new_margin" base={0.05} alt={0.12} label="New store margin" decimals={2} />
+
+Mature-store operating income per location:
+
+<LiveNumber compute="mature_revenue * mature_margin" prefix="$" suffix="M" decimals={2} label="Mature store OI" />
+
+New-store operating income per location:
+
+<LiveNumber compute="new_revenue * new_margin" prefix="$" suffix="M" decimals={2} tone="accent" label="New store OI" />
+
+If new stores generate 1/5 the operating income of mature ones at base assumptions, the consolidated margin compression is mathematical inevitability, not strategy failure. The question is whether they'll mature.
+
+## Structuring
+
+Profitability framework applied at the **unit** level rather than the consolidated level:
+
+<IssueTreeEmbed slug="southfork-tree" height={380} />
+
+Three sub-questions:
+
+1. **Cohort analysis** — how do 2018-vintage stores compare to 2022-vintage stores at age 4? If they look different, you have a degradation problem, not a maturation problem.
+2. **Cannibalization** — are new stores within 3 miles of existing ones? If yes, system-wide revenue per store falls even when individual stores look fine.
+3. **Build-out cost trend** — has cost-per-square-foot risen? Higher build-out cost means longer payback even if revenue economics are unchanged.
+
+## Key analysis
+
+The diagnostic test: **plot revenue per store by vintage year, at common store age (say, age 3).** If 2018-vintage stores at age 3 averaged $1.7M and 2022-vintage stores at age 3 averaged $1.2M, the "ramping" claim is false — the cohorts are structurally different.
+
+In most real-world QSR cases with this pattern,<Citation publisher="Case in Point" title="Case in Point — Complete Case Interview Preparation" authors={['Cosentino, Marc']} year={2023} /> the diagnosis is one of three things:
+
+- **Cannibalization** — new stores within existing trade areas reduce system-wide revenue per store
+- **Geographic expansion to inferior markets** — secondary markets have lower per-capita QSR spend
+- **Build-cost inflation** — higher rent + construction cost extends payback period
+
+The first two are strategic mistakes; the third is operational.
+
+## Recommendation skeleton
+
+**Recommendation:** Pause new openings for 6 months. Run cohort analysis on stores opened in 2018-2022 at common store age. Resume openings only with explicit trade-area protection rules (no new store within 5 miles of an existing one with revenue >$1.5M).
+
+**Three supports:**
+
+1. Cohort analysis is the cheapest, fastest diagnostic — it answers whether the problem is "young" or "structural."
+2. Trade-area protection rules directly address the cannibalization hypothesis at low cost.
+3. A pause + audit is reversible; continuing to open while the diagnosis is unclear is not.
+
+**One risk:** competitors fill the markets we pause on. Mitigate by maintaining the build pipeline (sites, permits) so we can resume quickly once the data clears.
+
+## What judges look for
+
+- Did you test the "ramping" claim with **cohort analysis**, not narrative?
+- Did you identify **cannibalization** as a likely driver beyond the obvious "new store costs."
+- Did you propose a **pause + measure** before recommending strategic changes?
+- Did you size the unit economics with enough precision to show the 6× operating income gap between mature and new stores?

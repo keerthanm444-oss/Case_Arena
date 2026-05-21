@@ -1,0 +1,95 @@
+---
+id: c-meridian-city
+slug: meridian-city-digital-services
+title: 'Meridian City: how do we modernize 50 legacy government services?'
+source:
+  publisher: Case in Point
+  title: 'Case in Point — Complete Case Interview Preparation'
+  authors: ['Cosentino, Marc']
+  year: 2023
+  needsVerification: true
+industry: public-sector
+category: digital-strategy
+difficulty: standard
+frameworks: [3c, profitability]
+timeEstimate: 35
+tags: [public-sector, government, digital, modernization, services]
+problemStatement: 'Meridian City (population 1.2M) operates 50 distinct citizen-facing services (permits, licenses, tax payments, social services). Most run on legacy systems 15-25 years old, requiring in-person visits, paper forms, and 30-90 day processing. The new CIO is asked: where to invest first, and how to sequence a modernization program. The annual budget is $40M for IT modernization (constant for 5 years).'
+clarifyingQuestions:
+  - 'Which services are highest-volume and highest-pain for citizens?'
+  - 'Do existing services share underlying data (e.g., resident records) or are they fully siloed?'
+  - 'What is the existing internal IT team capability?'
+  - 'Are there commercial platforms (e.g., Tyler Technologies, Salesforce Public Sector) that could replace multiple services?'
+commonMistakes:
+  - 'Modernizing services one-by-one — replicates the silo problem in digital form.'
+  - 'Underestimating change management; staff trained on paper processes don''t adopt digital workflows easily.'
+  - 'Choosing the most-broken services first when they''re often the hardest to modernize.'
+variants:
+  - 'Same situation, but a state government offers matching grant funds if specific services are modernized. Does that shift priorities?'
+  - 'Same data, but the mayor is up for re-election in 18 months and wants visible quick wins. How does political timeline change the plan?'
+relatedCases:
+  - sentinel-cyber-platform-consolidation
+  - vertex-enterprise-expansion
+solved: false
+updatedAt: '2026-05-20'
+---
+
+<Callout tone="note" title="Illustrative case">
+  Meridian City is a stylized example for government digital transformation. Framework from Cosentino + standard public-sector methodology; specifics are illustrative.
+</Callout>
+
+## The situation
+
+Government digital transformation is one of the most-studied public-sector improvement opportunities. The patterns are consistent across jurisdictions: legacy mainframe systems, siloed databases, in-person + paper workflows, slow processing times, low citizen satisfaction. The investment economics also follow patterns: ROI from labor savings + improved compliance + citizen satisfaction, hard to quantify but real.
+
+The strategic question: with constrained budget ($40M/year × 5 years = $200M total), where to invest first?
+
+## Structuring
+
+Public-sector modernization framework:<Citation publisher="Case in Point" title="Case in Point — Complete Case Interview Preparation" authors={['Cosentino, Marc']} year={2023} />
+
+<IssueTreeEmbed slug="meridian-city-tree" height={400} />
+
+Three branches:
+
+1. **Service prioritization** — by citizen impact (volume + pain), by labor savings, by political visibility.
+2. **Platform vs point-solution** — modernize each service individually vs invest in shared platform that supports multiple services.
+3. **Change management** — staff retraining, citizen adoption, vendor management.
+
+## Key analysis
+
+A typical city's service portfolio looks like this:
+
+| Service type | Count | Annual transactions | Priority signal |
+|--------------|-------|---------------------|-----------------|
+| High-volume citizen services (DMV-equivalent, permits, tax payments) | 8-12 | 100K+ each | Highest |
+| Medium-volume citizen services (licenses, registrations, inspections) | 15-20 | 10-100K each | High |
+| Specialized services (social services, business support) | 15-25 | 1-10K each | Medium |
+
+The non-obvious move: **invest in shared platform infrastructure first** — citizen ID system, payment processing, document management — that all 50 services can leverage. Then modernize individual services on top of the platform.
+
+This approach trades short-term visibility (no single service is "modernized" in year 1) for long-term efficiency (each subsequent service modernization is much faster + cheaper).
+
+For Meridian specifically:
+- Year 1-2: $50M shared platform investment (citizen identity, payment processing, document storage, workflow engine)
+- Year 2-3: modernize 8-10 highest-volume services on the platform (each ~$2-5M leveraging platform)
+- Year 3-5: continue rolling out modernized services at faster pace (~$1-3M each)
+
+## Recommendation skeleton
+
+**Recommendation:** **Platform-first modernization over 5 years.** Year 1-2 ($80M): build shared platform — citizen ID, payments, documents, workflow engine. Year 2-3 ($60M): modernize 8 highest-volume citizen services. Year 3-5 ($60M): cascade modernization to remaining services using platform leverage. Target: 40+ services modernized by year 5; processing times reduced 60%+ across modernized services.
+
+**Three supports:**
+
+1. Platform investment compounds — each subsequent service modernization gets faster + cheaper.
+2. High-volume services first maximizes citizen impact + labor savings.
+3. Phased approach manages change-management bandwidth — staff can absorb 8-10 modernized services per year, not 30 at once.
+
+**One risk:** mayor's political timeline (18-month visible wins) doesn't align with platform-first approach. Mitigate by selecting 2-3 visible quick wins (e.g., online permit submission) for year 1 alongside platform build — gives political optics + platform foundation.
+
+## What judges look for
+
+- Did you propose **platform-first** rather than service-by-service modernization?
+- Did you size **high-volume services as priority** rather than worst-broken?
+- Did you address **change-management capacity** as a binding constraint?
+- Did you balance **political timeline** with technical strategy?

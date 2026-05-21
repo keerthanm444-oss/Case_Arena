@@ -1,0 +1,92 @@
+---
+id: c-fortis-midstream
+slug: fortis-midstream-pipeline
+title: 'Fortis Midstream: should we build the new pipeline?'
+source:
+  publisher: Boston Consulting Group
+  title: 'BCG Insights'
+  needsVerification: true
+industry: energy
+category: capacity
+difficulty: standard
+frameworks: [3c, profitability]
+timeEstimate: 35
+tags: [energy, midstream, pipeline, infrastructure, take-or-pay]
+problemStatement: 'Fortis Midstream operates natural gas pipelines + storage in the US. A proposed new 400-mile pipeline ($2.8B capex) would expand capacity to a growing LNG-export region. Producers + LNG exporters are interested but only ~60% of capacity is committed via take-or-pay contracts. The CEO must decide: proceed with current commitments, delay until 80%+ contracted, or scale down the pipeline.'
+clarifyingQuestions:
+  - 'What is the regulatory approval timeline + risk?'
+  - 'What are the take-or-pay contract terms (duration, rate)?'
+  - 'Could uncontracted capacity be filled via spot market?'
+  - 'Is competitor pipeline capacity also being built into this region?'
+commonMistakes:
+  - 'Building uncontracted capacity hoping spot market will fill it — typically doesn''t cover fixed costs.'
+  - 'Underestimating regulatory delay risk; pipeline approvals can take 3-7 years and slip.'
+  - 'Ignoring stranded-asset risk if natural gas demand transitions faster than expected.'
+variants:
+  - 'Same situation, but a new LNG export terminal has been announced that would underwrite additional capacity. Recommend.'
+  - 'Same data, but a major environmental challenge could delay approval by 4+ years. Does that change strategy?'
+relatedCases:
+  - aerion-aerospace-capacity
+  - foundry-plant-network-optimization
+solved: false
+updatedAt: '2026-05-20'
+---
+
+<Callout tone="note" title="Illustrative case">
+  Fortis is a stylized example for pipeline infrastructure investment. Framework from BCG + standard midstream methodology; specifics are illustrative.
+</Callout>
+
+## The situation
+
+Pipeline infrastructure investment is among the most capital-intensive decisions in energy. Pipelines have very long economic lives (30-50 years), highly fixed costs, and value-creation depends heavily on take-or-pay contract coverage. Underutilized pipelines are extremely expensive — fixed costs continue regardless of throughput.
+
+The strategic question: is 60% contracted enough, or should we wait?
+
+## Structuring
+
+Infrastructure investment framework:<Citation publisher="Boston Consulting Group" title="BCG Insights" />
+
+<IssueTreeEmbed slug="fortis-tree" height={400} />
+
+Three branches:
+
+1. **Demand attractiveness** — long-term natural gas demand outlook, LNG export growth, regional production trajectory.
+2. **Contract coverage** — quality and duration of existing take-or-pay commitments, willingness of additional shippers to commit.
+3. **Risk profile** — regulatory delay, cost overrun, stranded asset risk if transition accelerates.
+
+## Key analysis
+
+The economics at 60% contracted capacity:
+
+- Annual revenue from take-or-pay: $200-250M
+- Annual fixed costs (depreciation + opex + interest): $250-300M
+- Annual loss on partially-contracted basis: ~$50M
+
+Even with spot-market revenue from the remaining 40% capacity (maybe $50-100M at typical fill rates), the project IRR is only 6-8% — below typical pipeline cost-of-capital (9-11%).
+
+At 80% contracted:
+- Annual take-or-pay revenue: $260-330M
+- Same fixed costs
+- Net annual cash flow: $50-100M positive
+- Project IRR: 10-13%
+
+The non-obvious move: **delay 12-18 months to secure additional contracts** rather than building now and hoping for spot market fill. Pipeline projects can't be unwound; getting the contract structure right before construction is far cheaper than fixing it after.
+
+## Recommendation skeleton
+
+**Recommendation:** **Delay construction 12-18 months to secure 80%+ contracted capacity.** Continue regulatory + engineering work to maintain timeline if contracts emerge. Negotiate aggressively with additional shippers (LNG exporters, producers) — offer rate discounts in exchange for long-term commitment. If 80% threshold isn't reached in 18 months, scale down pipeline to 300 miles (lower capex, smaller capacity targeting just the committed customers).
+
+**Three supports:**
+
+1. Pipeline economics don't work at 60% contracted — investing now creates value-destroying asset.
+2. 12-18 month delay is cheap relative to lifetime cost of underutilized capacity.
+3. Scale-down option (300 miles) preserves value if full project doesn't get contract coverage.
+
+**One risk:** competitor builds first and captures the demand. Mitigate by maintaining permits + engineering work — Fortis remains positioned to move quickly if contracts materialize.
+
+## What judges look for
+
+- Did you size **economics at different contract coverages** rather than treating 60% as good enough?
+- Did you propose **delay** as a strategic move rather than treating it as failure?
+- Did you propose **scale-down option** as a fallback?
+- Did you recognize **pipeline economics' high fixed-cost sensitivity**?

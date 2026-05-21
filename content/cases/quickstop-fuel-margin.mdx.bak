@@ -1,0 +1,91 @@
+---
+id: c-quickstop-fuel
+slug: quickstop-fuel-margin
+title: 'QuickStop: fuel margin is crashing — sell the chain or pivot?'
+source:
+  publisher: Case in Point
+  title: 'Case in Point — Complete Case Interview Preparation'
+  authors: ['Cosentino, Marc']
+  year: 2023
+  needsVerification: true
+industry: retail
+category: profitability
+difficulty: standard
+frameworks: [profitability, 3c]
+timeEstimate: 35
+tags: [retail, convenience-store, fuel, EV-transition, profitability]
+problemStatement: 'QuickStop runs 400 convenience stores across the Midwest. Fuel sales drive ~70% of revenue but only ~25% of gross profit; the remaining 75% of gross profit comes from in-store sales (snacks, beverages, prepared food). EV adoption forecasts suggest fuel volume will decline 30%+ over 10 years. The CEO is considering: (a) selling the chain now at peak valuation, (b) pivoting hard to non-fuel revenue, or (c) becoming a fast-charging operator.'
+clarifyingQuestions:
+  - 'What is the trend in fuel margin per gallon vs in-store basket size?'
+  - 'How much of in-store revenue is dependent on fuel customers vs destination customers?'
+  - 'What is our cost to install fast-chargers, and what is the expected utilization?'
+  - 'What is the geography? Urban convenience stores have very different EV exposure than rural ones.'
+commonMistakes:
+  - 'Assuming fuel decline is uniform across the network — rural stores will face declines decades after urban ones.'
+  - 'Treating fast-charging as a fuel replacement when the economics (charge time, customer dwell, utilization) are very different.'
+  - 'Ignoring that "selling now at peak" requires a buyer who still believes in fuel — those buyers are shrinking.'
+variants:
+  - 'Same problem, but QuickStop operates exclusively in California with aggressive EV mandates. Does the timeline collapse?'
+  - 'Same data, but a private-equity firm offers 10x EBITDA. Should the CEO take the deal?'
+relatedCases:
+  - southfork-qsr-unit-economics
+solved: false
+updatedAt: '2026-05-20'
+---
+
+<Callout tone="note" title="Illustrative case">
+  QuickStop is a stylized example for retail-strategy decisions in transitioning industries. The framework is standard profitability + scenario analysis; specifics are illustrative.
+</Callout>
+
+## The situation
+
+Convenience stores have an underappreciated profit structure: **fuel is a traffic driver, not a profit center.** The actual money is in the in-store basket — coffee, snacks, prepared food, tobacco, lottery. EV adoption threatens not the fuel margin (which is small) but the **traffic** that drives in-store sales.
+
+The strategic question becomes: how to maintain traffic as fuel-driven visits decline.
+
+## Structuring
+
+Profitability framework with explicit decomposition of **what drives traffic** vs **what drives margin**:<Citation publisher="Case in Point" title="Case in Point — Complete Case Interview Preparation" authors={['Cosentino, Marc']} year={2023} />
+
+<IssueTreeEmbed slug="quickstop-tree" height={380} />
+
+Three sub-questions:
+
+1. **Fuel traffic decay curve** — how fast does EV adoption translate to fuel-station visit decline in our specific markets? Urban + coastal markets decline first; rural Midwest decades later.
+2. **In-store traffic substitution** — can we attract customers without the fuel anchor? Destination items (specialty coffee, food, alcohol) drive traffic on their own.
+3. **Charging infrastructure economics** — does owning fast-chargers replace fuel-station traffic? Probably not on the same economics; charging time is 15-45 minutes vs 5 minutes for fuel, so utilization per stall is much lower.
+
+## Key analysis
+
+Two diagnostic numbers:
+
+**Number 1 — share of in-store revenue from fuel customers:** If 70%+ of in-store basket comes from fuel customers, in-store revenue will decay nearly as fast as fuel. If 30-40%, the in-store business has independent traffic and can sustain.
+
+**Number 2 — geographic fuel-decay distribution:** Urban stores might see 40% fuel decline by 2030; rural Midwest stores might see <10%. National strategy averaged across the network misleads.
+
+A typical pattern for a Midwest convenience chain: ~55-65% of in-store revenue is fuel-driven, urban stores represent ~20% of the network but ~30% of revenue, and rural stores have 10+ years before meaningful EV penetration.
+
+The combination suggests:
+
+- **Urban stores need pivoting** — destination food, dwell-friendly amenities, possibly fast-charging where utilization can support it.
+- **Rural stores stay the course** — fuel-anchored convenience for 10+ more years.
+- **Sell now option** depends entirely on what buyers value the chain at — and most strategic buyers are also facing fuel decline.
+
+## Recommendation skeleton
+
+**Recommendation:** Reject the "sell now" option (timing already past peak). Pursue a **two-track strategy**: pivot the urban 80 stores toward destination retail + selective charging, hold rural 320 stores as a traditional convenience-fuel operation for 5-10 years. Re-evaluate in 36 months.
+
+**Three supports:**
+
+1. Geographic fuel-decay curves are too different to apply a single strategy nationally — the urban/rural split exists for good economic reasons.
+2. The rural 320 stores remain a cash-generating asset for 5-10 more years; selling them now under-monetizes the runway.
+3. Pivoting urban stores to destination retail addresses the actual risk (traffic loss) rather than the surface symptom (fuel-margin compression).
+
+**One risk:** the destination-retail pivot requires real-estate refresh + product-mix changes that historically have low success rates in convenience-store conversions. Mitigate by piloting in 10 urban stores before scaling.
+
+## What judges look for
+
+- Did you recognize that **fuel is the traffic driver, not the profit center**? This is the central reframe.
+- Did you propose **geographic differentiation** rather than a single national strategy?
+- Did you reject the "sell at peak" framing? Most candidates accept the CEO's frame uncritically.
+- Did you size **the urban-vs-rural decay curve** rather than treating EV adoption as uniform?

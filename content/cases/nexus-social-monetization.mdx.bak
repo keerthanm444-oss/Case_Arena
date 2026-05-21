@@ -1,0 +1,95 @@
+---
+id: c-nexus-social
+slug: nexus-social-monetization
+title: 'Nexus Social: how do we monetize without alienating users?'
+source:
+  publisher: Boston Consulting Group
+  title: 'BCG Insights'
+  needsVerification: true
+industry: media
+category: business-model
+difficulty: standard
+frameworks: [3c, profitability]
+timeEstimate: 30
+tags: [media, social, advertising, monetization, user-experience]
+problemStatement: 'Nexus Social is a social media platform with 120M monthly active users + $4B revenue (primarily advertising). User growth has plateaued; ad-supported revenue per user is $33 vs Meta''s $50+. The CEO is debating: (a) increase ad density on the platform, (b) launch a subscription tier (ad-free + features), (c) build commerce capabilities (social commerce, marketplace), (d) expand into adjacent products (messaging, video, audio).'
+clarifyingQuestions:
+  - 'What is the engagement (time spent) trend — flat, declining, growing?'
+  - 'How does ad density compare to peers — under or over-saturated?'
+  - 'Have we tested subscription willingness-to-pay?'
+  - 'What is the social commerce conversion rate at peers (Pinterest, TikTok, Instagram)?'
+commonMistakes:
+  - 'Increasing ad density when engagement is already declining — accelerates the decline.'
+  - 'Launching subscription before understanding what features would drive willingness-to-pay.'
+  - 'Treating social commerce as a sure thing when conversion rates are still proving uncertain.'
+variants:
+  - 'Same situation, but a major regulatory action limits user-data collection. Recommend.'
+  - 'Same data, but TikTok-style short video is taking engagement. Does that change priorities?'
+relatedCases:
+  - cascade-streaming-subscriber-strategy
+  - praxis-ai-gtm-strategy
+solved: false
+updatedAt: '2026-05-20'
+---
+
+<Callout tone="note" title="Illustrative case">
+  Nexus is a stylized example for social platform monetization. Framework from BCG + standard digital advertising methodology; specifics are illustrative.
+</Callout>
+
+## The situation
+
+Social media monetization typically follows a predictable progression: build user base, monetize via advertising at increasing density, eventually saturate. Most large platforms have hit advertising saturation; further monetization requires either subscription products, commerce, or adjacent products.
+
+For Nexus specifically, the $33 ARPU vs $50+ at peers suggests headroom — but the question is whether the gap reflects underused inventory (good news, easy fix) or weaker user data + targeting (harder fix).
+
+## Structuring
+
+Social platform monetization framework:<Citation publisher="Boston Consulting Group" title="BCG Insights" />
+
+<IssueTreeEmbed slug="nexus-tree" height={400} />
+
+Three branches:
+
+1. **Advertising optimization** — ad density, targeting effectiveness, ad format mix.
+2. **Subscription opportunities** — premium features, ad-free option, creator monetization tools.
+3. **Adjacent revenue** — commerce, messaging, payment services.
+
+## Key analysis
+
+ARPU gap analysis:
+
+| Factor | Nexus position |
+|--------|---------------|
+| Ad density per session | In line with peers |
+| Targeting effectiveness | Below peers (less user data) |
+| Ad format mix | Missing video formats |
+| Commerce integration | Minimal |
+
+The non-obvious finding: **the ARPU gap is primarily from targeting + format, not density.** Increasing ad density would hurt engagement without solving the structural ARPU gap.
+
+For Nexus specifically:
+- Improve targeting (better data infrastructure, more relevant ad placement): +$5-8 ARPU
+- Add video ad formats (short-form + longer brand video): +$3-5 ARPU
+- Launch commerce features (creator stores, marketplace transactions): +$2-5 ARPU at maturity
+- Subscription tier ($5-10/month for 5-10% of users): +$3-6 blended ARPU
+
+Combined potential: $46-57 ARPU within 3 years, closing most of the gap to peers.
+
+## Recommendation skeleton
+
+**Recommendation:** **Three-track monetization improvement.** Track 1: targeting + format optimization within 18 months ($50M investment; +$5-10 ARPU). Track 2: launch commerce features over 24 months ($100M investment; +$2-5 ARPU at maturity). Track 3: optional ad-free subscription tier at $7/month — target 5% of MAUs by year 3 (+$3-5 blended ARPU). Hold ad density flat; engagement is fragile.
+
+**Three supports:**
+
+1. Targeting + format optimization addresses the root of the ARPU gap.
+2. Commerce represents structural new revenue, not just incremental ad density.
+3. Subscription tier captures incremental willingness-to-pay without compromising the ad-supported core.
+
+**One risk:** subscription tier may cannibalize ad-supported users (some downgrade from ad-supported to subscription, reducing ad inventory). Mitigate by targeting subscription at high-engagement users where ad inventory is already maxed out.
+
+## What judges look for
+
+- Did you identify **targeting + format** as the real ARPU gap?
+- Did you reject **ad density increase** as the answer?
+- Did you propose **commerce + subscription** as structural new revenue streams?
+- Did you address **engagement fragility** as a constraint?

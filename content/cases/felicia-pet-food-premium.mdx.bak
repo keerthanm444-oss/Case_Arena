@@ -1,0 +1,87 @@
+---
+id: c-felicia-petfood
+slug: felicia-pet-food-premium
+title: 'Felicia Pet Food: how do we capture the premium humanization trend?'
+source:
+  publisher: Bain & Company
+  title: 'Bain Insights'
+  needsVerification: true
+industry: consumer-goods
+category: growth-strategy
+difficulty: standard
+frameworks: [3c, market-entry]
+timeEstimate: 30
+tags: [consumer-goods, pet-food, premium, humanization, growth]
+problemStatement: 'Felicia is a $1.8B revenue pet food company with strong mid-tier positions in dog + cat food. The "pet humanization" trend is driving premium category growth — fresh/refrigerated pet food, raw diets, prescription nutrition — at 15-25% annually vs Felicia''s 3% organic growth. The CEO wants to capture this trend but is unsure whether to build, partner, or acquire.'
+clarifyingQuestions:
+  - 'Do we have any existing premium offering, even small-scale?'
+  - 'What is the manufacturing complexity of fresh/refrigerated vs dry kibble (our current capability)?'
+  - 'Who are the leading premium players, and are any acquisition candidates?'
+  - 'Are our retail relationships in the right channels for premium (specialty pet, vet, DTC)?'
+commonMistakes:
+  - 'Underestimating the operational gap; fresh pet food requires cold chain that dry-kibble companies don''t have.'
+  - 'Treating "premium" as a single segment when fresh, raw, and prescription have very different drivers.'
+  - 'Believing existing brand equity transfers — most premium pet food consumers prefer specialist brands over mass-market brand extensions.'
+variants:
+  - 'Same situation, but Felicia has been approached by a fresh pet food startup seeking partnership/investment. Recommend.'
+  - 'Same data, but a private-label major retailer is moving heavily into premium. How does that change category attractiveness?'
+relatedCases:
+  - lumiere-beauty-growth
+  - luxa-dtc-profitability
+solved: false
+updatedAt: '2026-05-20'
+---
+
+<Callout tone="note" title="Illustrative case">
+  Felicia is a stylized example for premium pet-food expansion. Framework from Bain + standard methodology; specifics are illustrative.
+</Callout>
+
+## The situation
+
+Pet food premiumization is one of the most studied growth trends in consumer goods over the past decade. The driver — pet humanization — is structural and continues. The challenge for incumbent mass/mid-market players: premium pet food often requires different manufacturing (fresh/refrigerated), different distribution (specialty pet, vet, DTC), and different brand equity than traditional kibble.
+
+## Structuring
+
+Premium expansion framework with explicit capability assessment:<Citation publisher="Bain & Company" title="Bain Insights" />
+
+<IssueTreeEmbed slug="felicia-tree" height={400} />
+
+Three branches:
+
+1. **Segment selection** — fresh/refrigerated (largest growth), raw (smaller niche), prescription/therapeutic (high-margin, slow growth). Different capital + capability requirements.
+2. **Entry mode** — build organically, partner with a startup, acquire an existing player.
+3. **Brand strategy** — extend Felicia brand into premium, launch new sub-brand, retain acquired brand identity.
+
+## Key analysis
+
+Comparing premium pet-food segments:
+
+| Segment | Category growth | Manufacturing complexity | Distribution channel |
+|---------|------------------|--------------------------|----------------------|
+| Fresh/refrigerated | 20-30% YoY | High (cold chain) | DTC + premium grocery |
+| Raw frozen | 15-20% | High (frozen logistics) | Specialty pet + DTC |
+| Prescription | 5-10% | Medium | Vet channel |
+| Premium dry/wet | 8-12% | Low (existing capability) | Specialty pet + premium grocery |
+
+The non-obvious finding: **premium dry/wet is the natural extension** for a mass/mid-market kibble company. Fresh/refrigerated is operationally distant; acquisition is the only realistic path to scale there.
+
+For Felicia specifically: organic premium dry/wet expansion captures meaningful share with existing capabilities. Fresh requires acquisition. Mixing strategies — build + acquire — is the realistic answer.
+
+## Recommendation skeleton
+
+**Recommendation:** **Two-track premium strategy.** Track 1: launch a premium dry/wet sub-brand within 12 months, investing $40M in product development + marketing — leveraging existing manufacturing + retail relationships. Track 2: acquire a $200-400M revenue fresh/refrigerated pet food player ($800M-1.5B acquisition; 24-36 month process). Retain acquired brand identity; Felicia parent invisible to consumer.
+
+**Three supports:**
+
+1. Premium dry/wet is achievable organically; building organically here is faster + cheaper than acquiring.
+2. Fresh/refrigerated requires capabilities Felicia doesn't have — acquisition is the only credible path.
+3. Sub-brand strategy preserves premium brand equity (mass-market parent isn't seen on premium products).
+
+**One risk:** fresh pet food acquisition multiples are extremely high (15-25x EBITDA for category leaders). Mitigate with disciplined valuation — willing to wait for the right target rather than overpay; consider $50-150M tier of "challenger" fresh brands rather than only category leaders.
+
+## What judges look for
+
+- Did you separate **fresh/refrigerated** as operationally distinct from premium dry/wet?
+- Did you propose **two tracks** (build + acquire) matched to capability fit?
+- Did you size **sub-brand strategy** vs Felicia-brand extension?
+- Did you address **acquisition multiple risk** in current pet-food M&A environment?

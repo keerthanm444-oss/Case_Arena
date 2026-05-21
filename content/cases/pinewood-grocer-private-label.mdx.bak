@@ -1,0 +1,97 @@
+---
+id: c-pinewood-grocer
+slug: pinewood-grocer-private-label
+title: 'Pinewood Grocer: private-label mix shift, falling margin'
+source:
+  publisher: Case in Point
+  title: 'Case in Point — Complete Case Interview Preparation'
+  authors: ['Cosentino, Marc']
+  year: 2023
+  needsVerification: true
+industry: retail
+category: profitability
+difficulty: standard
+frameworks: [profitability, 3c]
+timeEstimate: 35
+tags: [profitability, retail, grocery, private-label, mix-shift]
+problemStatement: 'Pinewood is a regional 80-store specialty grocer. Revenue is up 6% YoY but operating margin has compressed from 4.2% to 2.8% over two years. The CEO believes the shift toward private-label products — which now make up 35% of basket value, up from 22% — should have helped margin, not hurt it. What is going on, and what should the company do?'
+clarifyingQuestions:
+  - 'What does the gross margin look like on national brands vs Pinewood private-label?'
+  - 'Has the SKU count for private-label expanded — and what is the share of revenue per SKU?'
+  - 'Are customers buying more private-label *additively* or *substituting* away from higher-margin national brands?'
+  - 'What is the trend in customer count vs basket size?'
+commonMistakes:
+  - 'Assuming private-label is always higher margin — sometimes the discount required to drive trial wipes out the manufacturing savings.'
+  - 'Ignoring the mix shift within private-label (introductory price points vs premium private-label).'
+  - 'Not separating revenue growth from margin compression — they have different drivers.'
+variants:
+  - 'Same problem, but Pinewood is a discount banner (not specialty). How does the framework change?'
+  - 'Same data, but private-label is 22% of revenue but 60% of profit. What does that imply?'
+relatedCases:
+  - acme-coffee-decline
+solved: false
+updatedAt: '2026-05-20'
+---
+
+<Callout tone="note" title="Illustrative case">
+  Pinewood is a stylized example built to exercise the profitability framework on a mix-shift dynamic. The framework decomposition is sourced from Cosentino; the industry specifics are illustrative.
+</Callout>
+
+## The situation
+
+Pinewood Grocer has been investing heavily in private-label expansion for three years. The strategic premise: private-label SKUs carry 8-12 percentage points higher gross margin than equivalent national brands, so growing private-label penetration should mechanically lift operating margin.
+
+The data doesn't agree. Private-label is up (22% → 35% of basket value), revenue is up (6% YoY), but operating margin has compressed by 140 basis points. The CEO is asking what's wrong.
+
+**Scenario inputs:**
+
+<AssumptionChip name="national_gm" base={0.28} label="National brand GM" decimals={2} />
+<AssumptionChip name="pl_gm" base={0.36} alt={0.22} label="Private-label GM" decimals={2} />
+<AssumptionChip name="pl_share" base={0.35} alt={0.22} label="Private-label share" decimals={2} />
+
+Mix-weighted gross margin:
+
+<LiveNumber compute="pl_share * pl_gm + (1 - pl_share) * national_gm" prefix="" suffix=" GM" decimals={3} tone="accent" label="Mix-weighted GM" />
+
+Toggle the private-label GM to 22%. Notice the mix-weighted GM goes **down** despite higher private-label penetration. This is the central insight: **average margin doesn't automatically rise just because higher-margin mix grows.** It depends on the actual unit economics.
+
+## Structuring
+
+Profitability framework, but with explicit decomposition of **product-mix shifts** as a top-level branch alongside the standard revenue and cost branches.<Citation publisher="Case in Point" title="Case in Point — Complete Case Interview Preparation" authors={['Cosentino, Marc']} year={2023} />
+
+<IssueTreeEmbed slug="pinewood-tree" height={380} />
+
+The three real branches to investigate:
+
+1. **Has private-label GM held up?** Likely no. Introductory price points to drive trial often run at <25% GM in year 1; legacy assumption was that these would mature toward 36% over time.
+2. **Has national brand GM dropped?** Suppliers often reduce trade promotion spend when the retailer's private-label competes directly. Lost trade dollars = lower effective GM on national brands.
+3. **Has the operating cost base scaled with SKU expansion?** Private-label SKU count likely doubled — more warehouse complexity, more labor, more shrink. Operating margin captures this; gross margin does not.
+
+## What the analysis usually shows
+
+A typical pattern in this dynamic:
+
+- Private-label GM has settled at **24-28%, not the originally projected 34-36%** — promotional pricing got sticky.
+- National brand GM dropped 2-3 points as trade dollars contracted.
+- Operating costs per unit rose ~5% from SKU complexity.
+
+The combination compresses margin even with revenue growth and "favorable" mix shift.
+
+## Recommendation skeleton
+
+**Recommendation:** Halt private-label SKU expansion for 12 months. Rationalize the lowest-velocity 20% of private-label SKUs. Renegotiate trade terms with top 5 national brand suppliers under threat of further private-label substitution.
+
+**Three supports:**
+
+1. Current private-label GM (~25%) is too close to national brand GM (~28%) to justify the operational complexity premium.
+2. SKU rationalization frees warehouse + labor capacity, addressing the operating-cost driver.
+3. Trade-term renegotiation captures real dollars; existing private-label penetration gives Pinewood credible leverage.
+
+**One risk:** suppliers retaliate by reducing slotting allowances or co-op marketing. Mitigate by sequencing the renegotiation — start with the supplier most exposed to Pinewood revenue.
+
+## What judges look for
+
+- Did you challenge the CEO's assumption that private-label growth automatically equals margin growth?
+- Did you separate the **mix-shift effect** (mechanical) from the **margin-by-SKU effect** (operational)?
+- Did you size the trade-promotion loss as a distinct line item rather than burying it in gross margin?
+- Did you recommend a **pause + rationalize** before a full reversal? Reversing private-label strategy is much more expensive than pausing it.

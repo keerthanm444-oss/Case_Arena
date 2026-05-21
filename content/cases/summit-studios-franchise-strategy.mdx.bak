@@ -1,0 +1,90 @@
+---
+id: c-summit-studios
+slug: summit-studios-franchise-strategy
+title: 'Summit Studios: extend franchises or invest in originals?'
+source:
+  publisher: Bain & Company
+  title: 'Bain Insights'
+  needsVerification: true
+industry: media
+category: portfolio
+difficulty: standard
+frameworks: [3c, profitability]
+timeEstimate: 35
+tags: [media, film, franchise, content, ip]
+problemStatement: 'Summit Studios produces 18-25 theatrical films annually. Revenue is $5.2B with ~10% operating margin. The film slate is 65% franchise sequels/spinoffs + 35% original films. Sequel/spinoff economics are improving (lower marketing cost, predictable audiences); original films are increasingly hit-or-miss. The CEO is debating shifting further toward franchises (80%+) or maintaining originals investment for long-term IP creation.'
+clarifyingQuestions:
+  - 'What is the hit rate (revenue exceeds 2x production cost) for franchise vs original films?'
+  - 'How does franchise audience age — are existing franchises maturing?'
+  - 'What is the streaming + home entertainment revenue contribution by film type?'
+  - 'What is the M&A market for franchise IP currently?'
+commonMistakes:
+  - 'Over-relying on franchises — audience fatigue eventually sets in.'
+  - 'Underestimating the long-term value of original IP that becomes future franchise.'
+  - 'Treating film economics as theatrical-only when streaming + home entertainment now drive significant value.'
+variants:
+  - 'Same situation, but a major streaming partner offers exclusive deal for theatrical-then-streaming originals. Recommend.'
+  - 'Same data, but a major franchise is hitting fatigue (declining box office on recent installments). Does that change strategy?'
+relatedCases:
+  - cascade-streaming-subscriber-strategy
+  - amalfi-beauty-acquisition
+solved: false
+updatedAt: '2026-05-20'
+---
+
+<Callout tone="note" title="Illustrative case">
+  Summit Studios is a stylized example for film studio strategy. Framework from Bain + standard media methodology; specifics are illustrative.
+</Callout>
+
+## The situation
+
+Film studio economics have shifted dramatically over the past 15 years. Franchise films (Marvel, Fast & Furious, Mission Impossible) have become more important to studio P&Ls as theatrical attendance for original films declines. The economic argument for franchises is strong: pre-existing audience, lower marketing cost, predictable opening weekends, international scalability.
+
+But franchises eventually mature. The studios that have survived multiple cycles (Disney, Universal) have always maintained an original-content pipeline that creates future franchises.
+
+## Structuring
+
+Film portfolio framework:<Citation publisher="Bain & Company" title="Bain Insights" />
+
+<IssueTreeEmbed slug="summit-studios-tree" height={400} />
+
+Three branches:
+
+1. **Economics by film type** — franchise vs original, theatrical performance, streaming + home entertainment, international markets.
+2. **Franchise health** — age and audience trajectory of each major franchise, "fatigue" indicators.
+3. **Original-IP pipeline** — what's the pipeline of original projects that could become future franchises?
+
+## Key analysis
+
+Economics comparison:
+
+| Film type | Hit rate | Avg production | Avg revenue | Margin |
+|-----------|---------|----------------|-------------|--------|
+| Established franchise sequel | 75-85% | $150-250M | $500-900M | 25-35% |
+| Franchise spinoff | 55-65% | $100-180M | $300-500M | 15-25% |
+| Original tentpole | 35-45% | $100-200M | $250-500M (high variance) | 5-25% |
+| Mid-budget original | 30-40% | $30-60M | $80-180M | 10-20% |
+| Auteur-driven prestige | 25-35% | $20-50M | $60-150M | 5-15% |
+
+The non-obvious finding: **originals are higher-variance but include the franchise-creating bets.** Eliminating originals removes the path to future franchises. Studios that have only milked existing franchises have eventually declined as those franchises matured.
+
+For Summit specifically: the 35% original-films share is on the higher end of major studios; some have moved to 20-25%. But cutting originals further weakens the future franchise pipeline.
+
+## Recommendation skeleton
+
+**Recommendation:** **Maintain original investment with portfolio rotation.** Hold original films at 35% of slate, but shift mix within originals toward mid-budget genre films (horror, action, thriller) — better risk-reward than auteur prestige. Maintain 65% franchise share but actively develop spinoffs + new franchise launches from existing IP. Invest selectively in original IP positioned for franchise extension (build "franchise potential" into greenlight criteria).
+
+**Three supports:**
+
+1. Maintaining original investment preserves the franchise creation pipeline.
+2. Mid-budget genre films have better risk-reward than prestige originals.
+3. Greenlight criteria explicitly designed for franchise extension improve hit-rate on originals.
+
+**One risk:** mid-budget genre may saturate as more studios adopt similar strategy. Mitigate by leveraging IP advantages — Summit's library + relationships with established filmmakers create defensible competitive position.
+
+## What judges look for
+
+- Did you reject **pure franchise strategy** despite its near-term economics?
+- Did you size **franchise creation as a long-term consideration**?
+- Did you propose **mid-budget genre** as risk-managed original strategy?
+- Did you address **franchise fatigue** as a structural risk?

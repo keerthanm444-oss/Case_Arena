@@ -1,0 +1,94 @@
+---
+id: c-luminite-steel
+slug: luminite-steel-decarbonization
+title: 'Luminite Steel: how do we decarbonize without going bankrupt?'
+source:
+  publisher: McKinsey & Company
+  title: 'McKinsey Quarterly'
+  needsVerification: true
+industry: manufacturing
+category: business-model
+difficulty: advanced
+frameworks: [3c, profitability]
+timeEstimate: 50
+tags: [manufacturing, steel, decarbonization, esg, transition]
+problemStatement: 'Luminite Steel operates 6 blast furnaces producing 12M tons of steel annually. Carbon emissions are ~24M tons CO2/year. Regulatory + customer pressure requires meaningful decarbonization within 10 years. Options: (a) hydrogen-based direct reduction iron (DRI) — proven but $5B+ capex, (b) electric arc furnaces fed by scrap — limited by scrap supply, (c) carbon capture on existing blast furnaces — uncertain economics. The board wants a 10-year roadmap.'
+clarifyingQuestions:
+  - 'What is the customer mix — automotive (high-quality steel) vs construction (more flexible)?'
+  - 'What is our current cost position vs global competitors?'
+  - 'Is regulated carbon pricing (e.g., EU CBAM) significant in our markets?'
+  - 'What government incentives exist for hydrogen, electrification, or carbon capture?'
+commonMistakes:
+  - 'Choosing one technology fully — different products + furnaces support different decarbonization paths.'
+  - 'Ignoring the timing of capex relative to existing-asset depreciation; replacing furnaces with 20-year life is wildly different from those with 3-5 years.'
+  - 'Treating the decision as binary when regulatory + customer + financial constraints already force partial transition.'
+variants:
+  - 'Same situation, but Luminite is in a country with aggressive carbon pricing already at $80/ton CO2. Does that change the urgency?'
+  - 'Same data, but a major automotive customer commits to buying green steel at 30% price premium for 20% of their procurement. How does that shift the recommendation?'
+relatedCases:
+  - axiom-automotive-ev-transition
+  - meridian-mfg-supply-chain
+solved: false
+updatedAt: '2026-05-20'
+---
+
+<Callout tone="note" title="Illustrative case">
+  Luminite is a stylized example for industrial decarbonization strategy. Frameworks from McKinsey + standard methodology; specifics are illustrative.
+</Callout>
+
+## The situation
+
+Steel decarbonization is one of the largest industrial transitions underway globally. Steel accounts for ~7-9% of global CO2 emissions; technology options exist but are expensive, immature, or supply-constrained. The decision matrix is genuinely hard: full-scale hydrogen DRI is proven only at limited scale, EAF is constrained by scrap availability, carbon capture economics are uncertain.
+
+The decision needs to be made under regulatory uncertainty (carbon pricing trajectory), technology uncertainty (hydrogen cost, capture efficiency), and customer-demand uncertainty (will customers pay premium for green steel?).
+
+## Structuring
+
+Decarbonization-roadmap framework:<Citation publisher="McKinsey & Company" title="McKinsey Quarterly" />
+
+<IssueTreeEmbed slug="luminite-tree" height={420} />
+
+Three branches:
+
+1. **Technology options** — for each of the three primary paths, what's the cost, timeline, technology readiness, and supply constraints?
+2. **Asset realism** — for each of our 6 blast furnaces, what's its remaining useful life? Replacing a 25-year-old furnace is different from a 5-year-old one.
+3. **Customer + regulatory horizon** — what carbon pricing and customer-willingness-to-pay assumptions justify each technology path?
+
+## Key analysis
+
+Decarbonization economics by technology:
+
+| Technology | Capex | CO2 reduction | Cost premium | Maturity |
+|------------|-------|---------------|--------------|----------|
+| Hydrogen DRI | $800-1500/ton capacity | 80-95% | 25-50% | Limited commercial scale |
+| EAF (scrap) | $300-600/ton capacity | 60-80% | 5-15% | Mature, scrap-constrained |
+| Carbon capture | $400-700/ton capacity | 50-90% | 20-40% | Pilot scale |
+
+The non-obvious finding: **a phased multi-technology portfolio beats any single-technology bet.**
+
+A typical sequencing:
+
+- **Year 1-3:** Maximize EAF / scrap usage in furnaces that support it. Captures 15-20% of total emissions reduction at the lowest cost.
+- **Year 4-7:** Pilot hydrogen DRI on one furnace ($1-1.5B). Validates technology + cost trajectory.
+- **Year 7-10:** Scale hydrogen DRI to 2-3 furnaces if pilot economics work, leaving 1-2 furnaces on improved blast-furnace technology.
+
+This sequencing avoids committing $5B+ to unproven technology before understanding real-world costs.
+
+## Recommendation skeleton
+
+**Recommendation:** **Phased portfolio approach over 10 years.** Year 1-3: aggressive EAF expansion + scrap procurement (~$800M capex; 20% emissions reduction). Year 4-7: hydrogen DRI pilot on one furnace ($1.5B). Year 7-10: scale to 2-3 furnaces conditional on pilot economics. Maintain 1-2 blast furnaces with potential carbon-capture retrofit. Total capex over 10 years: $4-5B; emissions reduction: 60-75%.
+
+**Three supports:**
+
+1. Phased commitment avoids betting the company on any single uncertain technology.
+2. EAF expansion captures meaningful reduction at low cost while waiting for hydrogen economics to clarify.
+3. Furnace-by-furnace decisions match the technology to product mix + asset age.
+
+**One risk:** if regulatory carbon pricing escalates faster than expected (e.g., $200/ton by year 7), the slower transition becomes uneconomic. Mitigate with explicit accelerate-option provisions in the year 4-7 phase.
+
+## What judges look for
+
+- Did you reject **single-technology commitment** in favor of phased portfolio?
+- Did you tie technology selection to **asset age and product mix** rather than treating uniformly?
+- Did you size **capex per phase** with realistic numbers?
+- Did you identify **regulatory carbon pricing trajectory** as a key sensitivity?

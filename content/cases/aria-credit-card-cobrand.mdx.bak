@@ -1,0 +1,93 @@
+---
+id: c-aria-cobrand
+slug: aria-credit-card-cobrand
+title: 'Aria Bank: should we extend our airline co-brand for another 10 years?'
+source:
+  publisher: Boston Consulting Group
+  title: 'BCG Insights'
+  needsVerification: true
+industry: financial-services
+category: m-and-a
+difficulty: standard
+frameworks: [3c, profitability]
+timeEstimate: 35
+tags: [financial-services, credit-card, cobrand, partnership, loyalty]
+problemStatement: 'Aria Bank''s 10-year co-brand credit card partnership with a major US airline is expiring in 18 months. The airline is asking for materially better economics in renewal — higher payment for miles, larger card-acquisition bounties, exclusive lounge access. The current portfolio generates $400M in annual revenue at ~12% net margin. The CEO must decide: renew at new economics, walk away, or counter with a different deal structure.'
+clarifyingQuestions:
+  - 'What is the unit economics breakdown — interchange + interest + fees vs miles cost + airline payments?'
+  - 'How much of the portfolio is cardholders who fly the airline vs general spenders?'
+  - 'Are there competitive bidders for the partnership (Chase, Amex, Citi)?'
+  - 'What would happen to the existing cardholder base if Aria loses the contract?'
+commonMistakes:
+  - 'Treating the renewal as a binary "match the new economics or walk" — the deal structure can be redesigned.'
+  - 'Underestimating cardholder transfer; most loyalty cardholders follow the airline, not the bank.'
+  - 'Ignoring the competitive bid dynamic; if Chase or Amex is willing to pay more, Aria can''t outbid sustainably.'
+variants:
+  - 'Same situation, but the airline has just announced a frequent-flyer program overhaul that may reduce program value. Recommend.'
+  - 'Same data, but Aria has just acquired a digital banking startup with 5M users. Does that change the co-brand calculus?'
+relatedCases:
+  - tessera-payments-competitive-response
+  - keystone-pe-exit-timing
+solved: false
+updatedAt: '2026-05-20'
+---
+
+<Callout tone="note" title="Illustrative case">
+  Aria is a stylized example for co-brand credit card partnership strategy. Framework from BCG + standard methodology; specifics are illustrative.
+</Callout>
+
+## The situation
+
+Co-brand credit card partnerships are some of the largest and most strategically loaded deals in consumer financial services. The economics involve interlocking flows: cardholder spending (revenue), interchange (revenue), miles cost (expense), airline-specific bounties (expense), funding costs, fraud, charge-offs. Small economics changes compound into hundreds of millions over a 10-year contract.
+
+The renewal negotiation is high-stakes: walking away means losing the portfolio (cardholders typically migrate to whoever wins the contract); renewing at unsustainable economics means a decade of low profitability.
+
+## Structuring
+
+Co-brand renewal framework with explicit economic decomposition:<Citation publisher="Boston Consulting Group" title="BCG Insights" />
+
+<IssueTreeEmbed slug="aria-tree" height={400} />
+
+Three branches:
+
+1. **Portfolio unit economics** — revenue per cardholder, miles cost per cardholder, net margin trajectory at current vs proposed terms.
+2. **Competitive dynamics** — what are competing banks likely to bid? If a competitor is willing to pay materially more, can Aria match while remaining profitable?
+3. **Walk-away alternative** — what's our position if we lose the contract? Cardholder retention, alternative product offerings, brand impact.
+
+## Key analysis
+
+Working through the economics:
+
+**Current state:**
+- 8M cardholders × $50 net margin/year = $400M revenue, ~$48M net profit
+- Per cardholder economics: $80 interchange + $40 interest + $30 fees − $60 miles cost − $20 marketing − $20 other = $50 net
+
+**Proposed renewal terms (airline's ask):**
+- Per cardholder miles cost: $60 → $85 (higher mile payment)
+- Per cardholder bounty: $20 → $35 (higher acquisition payment)
+- Net margin: $50 → $20 per cardholder = $160M revenue, ~$10M profit
+
+The new economics are barely break-even. **The airline is asking for more than the portfolio can profitably support** — unless cardholder spending volumes increase enough to offset, which would require either higher per-card spend or significant cardholder growth.
+
+The non-obvious move: **counter with a deal structure that ties payments to performance.** Instead of fixed miles cost + bounty, propose variable structure where higher cardholder spend or higher engagement metrics earn higher airline payments. This aligns incentives — both parties benefit from a more engaged portfolio.
+
+If the airline rejects performance-tied structure, the renewal is uneconomic. Walking away is rational despite the cardholder loss.
+
+## Recommendation skeleton
+
+**Recommendation:** **Counter with performance-tied economics.** Propose: lower fixed payments but variable bonuses tied to portfolio spend volume + new card additions. Offer $300-400M in committed marketing investment over the contract life. If airline refuses and demands fixed escalation, walk away — better to lose $50M annual profit than commit to a decade of $10M annual profit. Prepare a "Aria-branded travel rewards" alternative product to retain a share of the cardholder base.
+
+**Three supports:**
+
+1. Fixed-economics renewal at airline's ask is unprofitable; renewal only makes sense with variable structure.
+2. Performance-tied economics protects Aria while still upside-aligning with airline goals.
+3. Standalone product alternative provides a meaningful fallback (typically retains 25-35% of cardholders).
+
+**One risk:** the airline may have a strong competing bid from Chase or Amex; our counter may be moot. Mitigate by preserving optionality — initiate the standalone product build before renewal closes, so we're not starting from scratch if we walk.
+
+## What judges look for
+
+- Did you build **per-cardholder unit economics** to assess the renewal terms?
+- Did you propose **performance-tied structure** rather than just countering on price?
+- Did you accept **walking away** as a rational option despite the portfolio loss?
+- Did you prepare **a standalone alternative** to mitigate the walk-away downside?

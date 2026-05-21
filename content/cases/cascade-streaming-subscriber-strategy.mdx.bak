@@ -1,0 +1,93 @@
+---
+id: c-cascade-streaming
+slug: cascade-streaming-subscriber-strategy
+title: 'Cascade Streaming: subscriber growth has stalled — pivot to ads?'
+source:
+  publisher: McKinsey & Company
+  title: 'McKinsey Quarterly'
+  needsVerification: true
+industry: media
+category: business-model
+difficulty: standard
+frameworks: [3c, profitability]
+timeEstimate: 35
+tags: [media, streaming, subscribers, advertising, content]
+problemStatement: 'Cascade Streaming has 25M subscribers + $3.2B revenue. Subscriber growth has slowed from 25% to 4% YoY. The CEO is debating: (a) launch an ad-supported tier at lower price ($6 vs $15 standard), (b) raise prices on existing subs while doubling content investment, (c) acquire a complementary streamer, (d) bundle with partner products (broadband, mobile).'
+clarifyingQuestions:
+  - 'What is the churn rate, and how does it vary by tenure?'
+  - 'Are ad-supported tiers cannibalizing or attracting incremental subs at peers?'
+  - 'What is the content cost trajectory — sustainable or unsustainable?'
+  - 'How does engagement (hours/month) compare to competitors?'
+commonMistakes:
+  - 'Launching ads as cost-cutting move when it actually requires sales-team investment.'
+  - 'Raising prices when churn is already elevated.'
+  - 'Treating bundles as universally accretive; bundle economics depend on partner negotiation.'
+variants:
+  - 'Same situation, but a major content partner is pulling out at contract renewal. Recommend.'
+  - 'Same data, but a competitor has just announced merger creating a much larger streamer. How does competitive dynamics shift?'
+relatedCases:
+  - laneshare-marketplace
+  - finch-challenger-bank-path-to-profit
+solved: false
+updatedAt: '2026-05-20'
+---
+
+<Callout tone="note" title="Illustrative case">
+  Cascade is a stylized example for streaming platform strategy. Framework from McKinsey + standard media methodology; specifics are illustrative.
+</Callout>
+
+## The situation
+
+Streaming subscriber growth has saturated across most developed markets. The growth playbook of the past decade (high content investment, low prices, rapid global rollout) is producing diminishing returns. Most major streamers (Netflix, Disney+, Max, Paramount+) have launched ad-supported tiers, raised prices, or both.
+
+The strategic challenge: maintain revenue + subscriber growth without trapping the company in unsustainable content-spend escalation.
+
+## Structuring
+
+Streaming strategy framework:<Citation publisher="McKinsey & Company" title="McKinsey Quarterly" />
+
+<IssueTreeEmbed slug="cascade-tree" height={400} />
+
+Three branches:
+
+1. **Revenue lever options** — ad tier (lower-price + ad revenue), price increases, bundling, premium tiers.
+2. **Content strategy** — invest more (compete on quality), invest less (sustainability), invest differently (genre focus, regional content).
+3. **Cost structure** — content as largest cost, technology + customer acquisition + customer support.
+
+## Key analysis
+
+Comparing revenue strategies:
+
+| Strategy | Revenue impact | Risk |
+|----------|----------------|------|
+| Ad-supported tier at $6 | Adds $3-5/sub via ads + grows subscribers | Cannibalizes premium subs |
+| Price increase $15 → $18 | +10% revenue per sub | Drives churn |
+| Bundle with broadband | Lower ARPU but stickier subs | Negotiation complexity |
+| Content investment increase | Long-term sub retention | Margin compression now |
+
+The non-obvious finding: **ad-tier launch is roughly accretive when properly executed** because:
+
+- 50-70% of ad-tier subs are incremental (would not have subscribed at premium price)
+- 25-35% downgrade from premium (cannibalization)
+- 5-15% upgrade from ad-tier to premium over time
+
+Net revenue per sub: ad-tier ($6 subscription + $4-6 ad ARPU = $10-12/month) vs premium ($15) — lower but with much larger addressable market.
+
+## Recommendation skeleton
+
+**Recommendation:** **Launch ad-supported tier + selective price increases.** Action 1: launch $6 ad-tier within 9 months — target 5M ad-tier subs in year 1, 15M by year 3. Action 2: raise standard tier $15 → $17, premium tier $20 → $24 — modest churn but offsetting revenue. Action 3: maintain content investment at current levels; defer aggressive new-investment until ad-tier matures. Bundle exploration with telco partners as opportunistic upside.
+
+**Three supports:**
+
+1. Ad-tier captures incremental customers + new revenue stream.
+2. Price increases on existing tiers extract value from inelastic premium subs.
+3. Holding content investment avoids accelerating an already-unsustainable spend trajectory.
+
+**One risk:** ad-tier may cannibalize premium subs more than projected, hurting overall ARPU. Mitigate by designing ad-tier with meaningful limitations (content windowing, ads density) that preserve premium upgrade incentive.
+
+## What judges look for
+
+- Did you analyze **ad-tier net economics** including cannibalization?
+- Did you propose **multi-lever approach** rather than single solution?
+- Did you reject **continued content investment escalation** as the answer?
+- Did you address the **premium tier protection** in ad-tier design?

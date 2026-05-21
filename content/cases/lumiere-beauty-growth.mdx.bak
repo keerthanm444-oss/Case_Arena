@@ -1,0 +1,92 @@
+---
+id: c-lumiere-beauty
+slug: lumiere-beauty-growth
+title: 'Lumiere Beauty: where do we put our next $200M of investment?'
+source:
+  publisher: Boston Consulting Group
+  title: 'BCG Insights'
+  needsVerification: true
+industry: retail
+category: growth-strategy
+difficulty: standard
+frameworks: [3c, market-entry]
+timeEstimate: 35
+tags: [retail, beauty, growth, capital-allocation, DTC]
+problemStatement: 'Lumiere is a specialty beauty retailer with 280 stores in the US. Revenue is $1.6B growing at 12% YoY. The board has approved a $200M growth investment and asks where to put it: (a) open 60 new stores, (b) build a stronger DTC platform, (c) launch a private-label brand, (d) acquire a complementary indie beauty brand. Pick one, or propose a mix.'
+clarifyingQuestions:
+  - 'What is the same-store-sales trend? If 12% comes from new stores rather than existing, the math is different.'
+  - 'Does our DTC currently exist, and what is its growth rate vs in-store?'
+  - 'What does our customer mix look like — heavy / mid / light loyalty?'
+  - 'Are competitive indie acquisition targets actually available at reasonable valuations?'
+commonMistakes:
+  - 'Spreading $200M across all four options thinly — capital allocation works better concentrated.'
+  - 'Recommending DTC reflexively without checking whether the beauty category actually rewards DTC ROAS at scale.'
+  - 'Ignoring the operational complexity differential — private label requires R&D + manufacturing relationships; acquisition requires integration capability.'
+variants:
+  - 'Same situation, but Lumiere is profitable but cash-tight. Does the recommendation change?'
+  - 'Same options, but only $80M is available — how does the prioritization shift?'
+relatedCases:
+  - cobblestone-footwear-pricing
+solved: false
+updatedAt: '2026-05-20'
+---
+
+<Callout tone="note" title="Illustrative case">
+  Lumiere is a stylized example for capital-allocation decisions. Frameworks (3C, market-entry) from cited references; specifics are illustrative.
+</Callout>
+
+## The situation
+
+Capital allocation among 4 distinct growth options is a different problem than evaluating any single option. The case requires both **individual ROI analysis** for each option and **portfolio thinking** about how the options interact.
+
+The temptation is to "do a bit of everything." The right answer is usually to **concentrate** — pick 1-2 options and resource them properly rather than spread thinly across all four.
+
+## Structuring
+
+Capital-allocation framework with explicit ROI + risk analysis per option:<Citation publisher="Boston Consulting Group" title="BCG Insights" />
+
+<IssueTreeEmbed slug="lumiere-tree" height={400} />
+
+For each of the four options, evaluate:
+
+1. **Expected return** — what's the realistic ROIC given category dynamics?
+2. **Capital efficiency** — how much of the $200M does it absorb? Diminishing returns kick in where?
+3. **Strategic fit** — does this build on Lumiere's existing capabilities or stretch into unfamiliar territory?
+4. **Time-to-impact** — when does this contribute to results?
+
+## Key analysis
+
+A typical ranking for a beauty specialty retailer:
+
+| Option | Expected ROIC | Capital absorbed | Time to impact |
+|--------|---------------|------------------|----------------|
+| (a) 60 new stores | 12-15% | $120-150M | 18-30 months |
+| (b) DTC platform | 18-25% | $40-60M | 12 months |
+| (c) Private-label launch | 30-40% (if it works) | $20-40M | 18-24 months |
+| (d) Indie acquisition | Highly variable | $80-150M | 6-18 months |
+
+Two insights from this table:
+
+- DTC has the best ROIC for the capital absorbed — beauty is a category where DTC works well because of demonstrable product (swatches, tutorials) + repeat-purchase economics.
+- Private-label has the highest theoretical ROIC but the highest execution risk — Lumiere has zero R&D capability.
+
+**The non-obvious move:** Lumiere's DTC platform isn't competing with pure-play beauty e-commerce; it's competing with the in-store experience the brand already offers. DTC investment is mostly **defensive** — preventing existing customers from defecting to pure-play — rather than offensive.
+
+## Recommendation skeleton
+
+**Recommendation:** Concentrate the $200M across **two options**: (b) DTC platform ($60M) + (a) selective new stores ($120M). Reject private-label (too execution-risky without R&D) and acquisitions (most indie targets currently overpriced). Reserve $20M as opportunistic acquisition reserve.
+
+**Three supports:**
+
+1. DTC + new stores compound: DTC drives discovery, stores drive conversion + retention. Both options share customer-acquisition infrastructure.
+2. Lumiere has demonstrated capability in store operations + customer experience — building on these reduces execution risk vs entering R&D-heavy private label.
+3. The acquisition market for indie beauty has compressed valuations recently — there may be opportunistic deals worth jumping on, but not predictably.
+
+**One risk:** new-store expansion at the same time as DTC investment can stretch operating capacity. Mitigate by phasing — DTC investment in year 1 (~$40M), new stores in years 2-3 ($80M + $40M).
+
+## What judges look for
+
+- Did you **reject the spread-thin** instinct and concentrate the budget?
+- Did you size **DTC ROIC** with realism — beauty rewards DTC but not at unbounded scale.
+- Did you identify **private-label as high theoretical ROIC but high execution risk** for Lumiere specifically?
+- Did you reserve **opportunistic capital** for acquisitions rather than commit it speculatively?

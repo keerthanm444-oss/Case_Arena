@@ -1,0 +1,91 @@
+---
+id: c-volta-storage
+slug: volta-battery-storage-entry
+title: 'Volta: should we build a utility-scale battery storage business?'
+source:
+  publisher: Bain & Company
+  title: 'Bain Insights'
+  needsVerification: true
+industry: energy
+category: market-entry
+difficulty: standard
+frameworks: [market-entry, 3c]
+timeEstimate: 35
+tags: [energy, battery, storage, market-entry, renewables]
+problemStatement: 'Volta is a $3B revenue renewable energy developer (solar + wind). The CEO sees an emerging opportunity in utility-scale battery storage: grid services revenue ($30-80/kW-yr), integration with existing renewable projects, attractive tax credits. Should Volta enter battery storage, and if so via build, partner, or acquire?'
+clarifyingQuestions:
+  - 'What is the typical revenue stack for utility-scale battery storage in our target markets?'
+  - 'Are there incumbent storage developers in our regions?'
+  - 'Do our existing renewable projects benefit from co-located storage?'
+  - 'What is the competitive intensity for battery procurement (Tesla, CATL, BYD)?'
+commonMistakes:
+  - 'Treating storage as a standalone revenue stream when it''s mostly a co-located complement to renewable generation.'
+  - 'Underestimating battery procurement complexity — supply, pricing, and warranty terms are challenging.'
+  - 'Ignoring the merchant-vs-contracted distinction; storage revenue from merchant arbitrage is volatile.'
+variants:
+  - 'Same situation, but a battery manufacturer offers exclusive long-term supply agreement. Recommend.'
+  - 'Same data, but tax credits change reducing storage economics. Does that shift the answer?'
+relatedCases:
+  - helia-solar-project-finance
+  - meridian-utility-renewables
+solved: false
+updatedAt: '2026-05-20'
+---
+
+<Callout tone="note" title="Illustrative case">
+  Volta is a stylized example for battery storage market entry. Framework from Bain + standard renewables methodology; specifics are illustrative.
+</Callout>
+
+## The situation
+
+Utility-scale battery storage has been one of the fastest-growing energy infrastructure categories of the past 5 years. The drivers — declining battery costs, increasing grid renewable share, tax credits — are structural. Multiple revenue streams exist (energy arbitrage, capacity, ancillary services) but vary by region and dispatch behavior.
+
+For an existing renewable developer, battery storage is a natural adjacency — co-located storage at solar/wind sites captures additional revenue without new development costs.
+
+## Structuring
+
+Adjacency-entry framework:<Citation publisher="Bain & Company" title="Bain Insights" />
+
+<IssueTreeEmbed slug="volta-tree" height={400} />
+
+Three branches:
+
+1. **Market attractiveness** — TAM, growth rate, revenue stack stability.
+2. **Capability fit** — does Volta's existing development capability map to storage? (Mostly yes — site control, interconnection, EPC, financing all transfer.)
+3. **Entry mode** — co-locate with existing projects (organic build), greenfield standalone storage, acquire storage developer.
+
+## Key analysis
+
+Storage revenue stack typically includes:
+
+| Source | Revenue range ($/kW-yr) | Stability |
+|--------|--------------------------|-----------|
+| Energy arbitrage | $20-60 | Volatile |
+| Capacity payments | $30-100 | Stable (contracted) |
+| Ancillary services | $10-40 | Moderate |
+| Co-location synergies with renewable | $5-15 | Stable |
+
+Total: $65-215/kW-yr depending on region + market structure.
+
+The non-obvious finding: **co-located storage with existing renewable projects is the highest-IRR entry path.** Volta's existing solar/wind sites can add storage capacity with minimal incremental development cost. Standalone storage requires full development cycle (site, interconnection, permitting) — much more capital-intensive.
+
+For Volta specifically: roughly 30-40% of existing projects could economically host co-located storage. That's 800-1200MW of storage opportunity from existing pipeline alone — a meaningful first phase before considering standalone development.
+
+## Recommendation skeleton
+
+**Recommendation:** **Enter via co-located storage on existing renewable projects.** Phase 1 (24 months): add 600MW storage to 8-10 existing solar projects in markets with attractive revenue stacks. Phase 2 (months 24-48): selective standalone storage projects ($800M capex, target 1.5GW). Defer storage developer acquisition unless multiples become favorable. Total 4-year deployment: 2GW storage, ~$1.5-2B capex.
+
+**Three supports:**
+
+1. Co-located storage leverages existing development capability + asset base — highest capital efficiency.
+2. Phased approach validates economics before committing to greenfield standalone storage.
+3. Battery procurement at this scale supports favorable supplier terms; deferred acquisition path preserves capital.
+
+**One risk:** battery prices may rise unexpectedly (commodity volatility, supply chain). Mitigate by phasing procurement contracts + hedging via multi-vendor relationships.
+
+## What judges look for
+
+- Did you identify **co-located storage as the highest-IRR entry**?
+- Did you size **revenue stack components** explicitly?
+- Did you propose **phased deployment** to validate economics?
+- Did you address **battery procurement** as a key operational risk?

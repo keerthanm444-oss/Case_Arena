@@ -1,0 +1,100 @@
+---
+id: c-evermore-cpg
+slug: evermore-cpg-brand-pruning
+title: 'Evermore Foods: which of our 40 brands deserve to live?'
+source:
+  publisher: Case in Point
+  title: 'Case in Point — Complete Case Interview Preparation'
+  authors: ['Cosentino, Marc']
+  year: 2023
+  needsVerification: true
+industry: consumer-goods
+category: portfolio
+difficulty: advanced
+frameworks: [3c, profitability]
+timeEstimate: 50
+tags: [consumer-goods, cpg, portfolio, brand-pruning, divestiture]
+problemStatement: 'Evermore Foods is a $12B revenue CPG company with 40 brands across snacks, condiments, frozen foods, beverages. The portfolio includes legacy giants ($1B+ each) alongside small acquired brands ($50-300M). Overall organic growth is flat; ROIC has declined from 18% to 12% over a decade. The CEO believes 40 brands is too many and wants to divest ~15. Which ones?'
+clarifyingQuestions:
+  - 'What is the revenue and growth profile for each brand?'
+  - 'How concentrated is marketing spend — are the small brands starved while the giants are over-supported?'
+  - 'Are there shared manufacturing, distribution, or sales force that brands depend on?'
+  - 'What is the divestiture market for small CPG brands currently?'
+commonMistakes:
+  - 'Pruning purely on revenue size — small high-growth brands are often worth more than large declining ones.'
+  - 'Ignoring back-office allocations; some "unprofitable" small brands are made unprofitable by overhead allocation that doesn''t actually flex with the divestiture.'
+  - 'Underestimating divestment friction — finding buyers for declining small brands at fair prices is hard.'
+variants:
+  - 'Same situation, but a major activist investor has pushed for break-up into 3 publicly-traded companies. Compare.'
+  - 'Same data, but Evermore has just acquired a major plant-based foods brand. How does that change priorities?'
+relatedCases:
+  - meridian-apparel-portfolio
+  - altruum-chemicals-portfolio
+solved: false
+updatedAt: '2026-05-20'
+---
+
+<Callout tone="note" title="Illustrative case">
+  Evermore is a stylized example for CPG portfolio rationalization. Framework from Cosentino + standard CPG methodology; specifics are illustrative.
+</Callout>
+
+## The situation
+
+CPG portfolio rationalization is one of the most-studied strategy problems in consumer goods. Large CPG companies have accumulated brands through decades of acquisitions; many sit in slow-decline categories or are starved for marketing support. The classic playbook — prune small brands to focus the portfolio — is right but execution requires careful selection.
+
+The selection criteria must distinguish **brands that are small because they were acquired late** (potential growth assets) from **brands that are small because they're structurally subscale** (divestment candidates).
+
+## Structuring
+
+Brand-pruning framework with explicit segmentation by growth + profitability + strategic role:<Citation publisher="Case in Point" title="Case in Point — Complete Case Interview Preparation" authors={['Cosentino, Marc']} year={2023} />
+
+<IssueTreeEmbed slug="evermore-tree" height={420} />
+
+Two-by-two on each brand:
+
+| Growth | Margin | Action |
+|--------|--------|--------|
+| High | High | **Invest** — these are growth engines, often underfunded |
+| High | Low | **Fix or divest** — investigate why margin is low |
+| Low | High | **Harvest** — extract cash, modest investment |
+| Low | Low | **Divest or kill** — but check shared-cost dependencies |
+
+For a portfolio of 40 brands, a typical breakdown:
+
+- 5-8 "invest" brands — usually growth segments (better-for-you, plant-based, premium)
+- 10-15 "harvest" brands — large legacy giants in mature categories
+- 10-15 "fix or divest" small/mid brands
+- 5-8 "divest or kill" structurally subscale brands
+
+## Key analysis
+
+The diagnostic for "fix or divest" brands: **can we credibly fix the margin?**
+
+Margin problems usually come from:
+
+- **Subscale manufacturing** — fixable by transferring to shared lines, or unfixable if brand requires unique production
+- **Sales force allocation** — fixable by re-allocating selling effort, or unfixable in highly fragmented channels
+- **Marketing efficiency** — usually unfixable for small brands due to media-buying scale disadvantages
+
+Most small mid-tier brands have at least one structural problem that can't be fixed inside a 40-brand portfolio. Divestiture to a focused mid-market CPG company often achieves better outcomes — the smaller acquirer values the brand more highly and runs it more efficiently.
+
+The non-obvious move: **divest mid-sized "harvest" candidates, not just the smallest brands.** Mid-sized declining brands ($300M-$1B revenue) typically attract better buyers (PE, mid-cap CPG companies) at better multiples than tiny brands. The valuation realized often funds reinvestment in the keeper portfolio.
+
+## Recommendation skeleton
+
+**Recommendation:** **Divest 12-15 brands over 36 months in three buckets.** Bucket 1: 5-6 small subscale brands sold individually or in clusters to strategic acquirers ($50-150M each, $400-700M total). Bucket 2: 3-4 mid-sized declining brands sold to PE or focused CPG buyers ($200-500M each, $1.0-1.5B total). Bucket 3: 3-5 brands wound down where divestment fails (low priority). Reinvest proceeds in top 5-8 growth brands + selective M&A in growth categories.
+
+**Three supports:**
+
+1. Multi-bucket divestiture captures different buyer profiles and maximizes realized proceeds.
+2. Including mid-sized brands in divestiture (not just tiny ones) generates the proceeds needed for strategic redeployment.
+3. Capital recycled into growth brands directly addresses the declining ROIC.
+
+**One risk:** divestment in current CPG market may not achieve target multiples — buyers are selective. Mitigate by structuring divestitures with seller financing or earn-outs where buyer interest exists but valuation is below target.
+
+## What judges look for
+
+- Did you classify brands along **multiple dimensions** rather than just by revenue size?
+- Did you identify **mid-sized brands** as divestiture candidates alongside small ones?
+- Did you propose **capital recycling** from divestiture proceeds to growth brands?
+- Did you address **divestiture market conditions** as a structural constraint?

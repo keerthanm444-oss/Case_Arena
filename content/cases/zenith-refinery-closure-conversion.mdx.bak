@@ -1,0 +1,101 @@
+---
+id: c-zenith-refinery
+slug: zenith-refinery-closure-conversion
+title: 'Zenith Refining: close or convert our aging refinery?'
+source:
+  publisher: Case in Point
+  title: 'Case in Point — Complete Case Interview Preparation'
+  authors: ['Cosentino, Marc']
+  year: 2023
+  needsVerification: true
+industry: energy
+category: portfolio
+difficulty: advanced
+frameworks: [profitability, 3c]
+timeEstimate: 45
+tags: [energy, refining, closure, biofuels, conversion]
+problemStatement: 'Zenith Refining operates a 220K bpd refinery in California — 50 years old, requires $1.5B in upgrades to meet emissions regulations through 2035. Operating margin has declined as California gasoline demand falls. The CEO is debating: (a) make the $1.5B investment + continue refining, (b) close the refinery (~$400M decommissioning cost), (c) convert to renewable diesel / biofuels production ($800M conversion capex).'
+clarifyingQuestions:
+  - 'What is the projected gasoline demand trajectory in our market over 10 years?'
+  - 'What is the feedstock availability for biofuels (used cooking oil, soybean oil, etc.)?'
+  - 'Do current regulatory incentives (LCFS credits, RIN values) support biofuels economics?'
+  - 'What is the labor + community impact of closure vs conversion?'
+commonMistakes:
+  - 'Treating renewable diesel as straightforward — feedstock supply + price volatility is a major issue.'
+  - 'Underestimating decommissioning costs for old refineries (environmental remediation, asset disposal).'
+  - 'Ignoring the political + regulatory pressure favoring conversion over closure in some jurisdictions.'
+variants:
+  - 'Same situation, but California has announced specific incentives for refinery conversions. Recommend.'
+  - 'Same data, but a major airline wants to commit to long-term sustainable aviation fuel (SAF) purchase. Does that change the conversion calculus?'
+relatedCases:
+  - corvus-paper-mill-closure
+  - luminite-steel-decarbonization
+solved: false
+updatedAt: '2026-05-20'
+---
+
+<Callout tone="note" title="Illustrative case">
+  Zenith is a stylized example for refining asset strategy. Framework from Cosentino + standard refining methodology; specifics are illustrative.
+</Callout>
+
+## The situation
+
+US refining asset rationalization has been a defining theme of the past decade. California demand is declining ~2-3% YoY; East Coast refineries face similar pressures. The choices are limited: invest to keep running (uncertain demand), close (definite cost), or convert to biofuels (technology + feedstock risk).
+
+Multiple refineries have already attempted biofuels conversion with mixed results — some successful (Marathon's Martinez), some abandoned.
+
+## Structuring
+
+Asset portfolio framework adapted for refining:<Citation publisher="Case in Point" title="Case in Point — Complete Case Interview Preparation" authors={['Cosentino, Marc']} year={2023} />
+
+<IssueTreeEmbed slug="zenith-tree" height={420} />
+
+Three branches:
+
+1. **Continue refining economics** — demand trajectory, regulatory cost compliance, competitive position vs other refineries serving the market.
+2. **Close economics** — decommissioning cost, environmental remediation, land monetization, asset disposal.
+3. **Convert economics** — capex, feedstock supply, off-take contracts, regulatory incentive durability.
+
+## Key analysis
+
+Three-option NPV analysis:
+
+**Option A — Invest $1.5B + continue:**
+- Annual EBITDA: $300-500M (decreasing as demand falls)
+- 10-year NPV: $1-2B (sensitive to demand decline rate)
+- Risk: California gasoline demand could fall faster than expected
+
+**Option B — Close + decommission:**
+- One-time cost: $400-600M
+- Land monetization: $200-300M potential
+- 10-year NPV: -$200-400M
+- Risk: stranded asset
+
+**Option C — Convert to renewable diesel:**
+- Capex: $800M-1.2B
+- Annual EBITDA at scale: $200-400M (highly dependent on feedstock + credit values)
+- 10-year NPV: $500M-1.5B
+- Risk: feedstock supply, LCFS credit value, demand growth
+
+The non-obvious finding: **conversion economics depend heavily on regulatory durability.** If LCFS + federal incentives compress in 5-10 years, renewable diesel margins collapse. The regulatory uncertainty is the largest single variable.
+
+For Zenith specifically: conversion is attractive at current incentive levels but creates regulatory dependency. Closing is the simplest path but forfeits potential upside.
+
+## Recommendation skeleton
+
+**Recommendation:** **Convert with phased commitment.** Phase 1 (months 1-12): commit $200M for engineering + feedstock contracts; secure off-take agreements with major customers. Phase 2 (months 12-36): full conversion construction ($600M) IF feedstock + off-take secured. If conversion economics deteriorate during Phase 1, pivot to closure. Continue refining operations through conversion period.
+
+**Three supports:**
+
+1. Phased conversion limits capital at risk until critical contracts secured.
+2. Renewable diesel economics at current incentive levels support conversion NPV exceeding both close + continue alternatives.
+3. Phase 1 pivot-to-closure preserves optionality if conversion thesis weakens.
+
+**One risk:** federal renewable fuel policy may change, compressing economics. Mitigate by securing long-term contracts (3-5+ year) with off-takers willing to bear policy risk.
+
+## What judges look for
+
+- Did you analyze **all three options on NPV basis** rather than choosing intuitively?
+- Did you identify **regulatory incentive durability** as the key sensitivity for conversion?
+- Did you propose **phased commitment** with go/no-go gate?
+- Did you size **feedstock supply** as the operational binding constraint?

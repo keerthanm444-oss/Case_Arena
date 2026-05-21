@@ -1,0 +1,130 @@
+---
+id: c-veridian-india
+slug: veridian-india-entry
+title: 'Veridian Telehealth: should we enter India?'
+source:
+  publisher: Case in Point
+  title: 'Case in Point — Complete Case Interview Preparation'
+  authors: ['Cosentino, Marc']
+  year: 2023
+  needsVerification: true
+industry: healthcare
+category: market-entry
+difficulty: standard
+frameworks:
+  - market-entry
+  - porters-five-forces
+timeEstimate: 45
+tags: [market-entry, healthcare, telehealth, emerging-markets]
+problemStatement: 'Veridian is a mid-sized US telehealth platform with $200M ARR and a dominant position in employer-sponsored mental-health benefits. The board is debating whether to enter India, where smartphone penetration has grown rapidly among the urban middle class. The CEO asks: should we enter, and if so, how?'
+clarifyingQuestions:
+  - 'What is our strategic objective — revenue diversification, talent access, or both?'
+  - 'Do we have a target revenue contribution from India by year 3?'
+  - 'What is our risk appetite for a regulated healthcare market we do not understand well?'
+  - 'How does our current employer-channel model translate when a large share of urban workers are not in formal employer-sponsored benefit programs?'
+commonMistakes:
+  - 'Treating India as a single market — Tier 1 cities and Tier 3 towns are functionally different markets.'
+  - 'Underestimating the role of trust + language localization in a regulated category like mental health.'
+  - 'Modeling revenue using a price-point that assumes US willingness-to-pay.'
+  - 'Forgetting that healthcare regulation can shift on a multi-year timescale and impact the unit economics.'
+variants:
+  - 'Same question, but Veridian is a B2C app (not B2B / employer-sponsored). How does the framework change?'
+  - 'Same question, but the CEO has already privately committed to the launch and wants the analysis to support it. How do you handle that?'
+  - 'Same problem, different country: Brazil instead of India. What flips?'
+relatedCases:
+  - acme-coffee-decline
+solved: false
+updatedAt: '2026-05-20'
+---
+
+<Callout tone="note" title="Illustrative case">
+  Veridian is a stylized example built to exercise the market-entry framework. The framework decomposition is sourced from <em>Case in Point</em>; the industry specifics are illustrative, not assertions about any real company or market.
+</Callout>
+
+## The situation
+
+Veridian Telehealth has done well in a narrow lane: employer-sponsored mental-health benefits in the US. Customers are HR teams at mid-to-large companies; the product is therapist-matching, async messaging, and structured care plans. Margins are healthy because the employer pays per-seat regardless of utilization.
+
+The board sees two motivations to expand internationally. First, **revenue diversification**: the US employer-benefits market is consolidating around a few large incumbents. Second, **talent access**: India has a large pool of English-speaking clinicians whose hourly cost is significantly below US rates.
+
+Press the assumption chips below to toggle between the conservative base case and a more bullish case.
+
+**Market scenario:**
+
+<AssumptionChip name="addressable_urban_pop" base={150} alt={300} label="Urban TAM" unit="M" />
+<AssumptionChip name="annual_arpu" base={20} alt={50} label="ARPU" unit="$" decimals={0} />
+<AssumptionChip name="penetration_y5" base={0.005} alt={0.02} label="Y5 penetration" decimals={3} />
+
+A bottom-up year-5 revenue estimate:
+
+<LiveNumber large compute="addressable_urban_pop * penetration_y5 * annual_arpu" prefix="$" suffix="M" decimals={1} tone="accent" label="Year-5 revenue estimate" />
+
+In the conservative case this is meaningful but not life-changing. In the bullish case, it would roughly double the size of the company. The spread between the two scenarios — almost an order of magnitude — is itself the key insight: this is a high-variance bet.
+
+## Structuring the problem
+
+This is a market-entry case. The canonical decomposition has three branches:<Citation publisher="Case in Point" title="Case in Point — Complete Case Interview Preparation" authors={['Cosentino, Marc']} year={2023} />
+
+1. **Is the market attractive?** — size, growth, profitability dynamics, regulatory environment.
+2. **Can we win?** — fit between our capabilities and what the market rewards.
+3. **How to enter?** — build a new operation, acquire a local player, or partner.
+
+Build your own tree first, then compare.
+
+<IssueTreeEmbed slug="veridian-india-tree" height={400} />
+
+## Branch 1 — is the market attractive?
+
+Three sub-questions matter:
+
+- **Segment.** "Urban middle class earning above a threshold" is functionally a different market from "rural population". You're not entering "India" — you're entering a specific income-and-geography segment. That distinction collapses the headline TAM from country-scale to perhaps the figure above (<LiveNumber compute="addressable_urban_pop" suffix="M" decimals={0} /> people).
+
+- **Pay willingness.** Out-of-pocket mental-health spending in any emerging market is a small fraction of US levels. The employer-sponsored channel that drives Veridian's US business covers a much smaller share of urban workers in most emerging markets. So either you reduce the price point dramatically (lower ARPU above) or you find a different payer.
+
+- **Competition.** A 5-Forces lens<Citation publisher="Competitive Strategy" title="Competitive Strategy: Techniques for Analyzing Industries and Competitors" authors={['Porter, Michael E.']} year={1980} /> typically shows: local incumbents have first-mover trust + distribution; international players usually struggle on localization; substitutes (in-person at low cost) are abundant; switching costs are negligible. Conclusion: competition is intense and differentiation is hard.
+
+The headline read: **TAM is real but narrower than the headline figure**; competition is fierce; the regulatory backdrop is favorable in directionally most major emerging markets but specific rules require verification before commit.
+
+## Branch 2 — can we win?
+
+Veridian's US edge is employer-channel relationships + structured care plans for mental health. Of those, only the second translates directly. The first (employer-sponsored model) maps to a much smaller share of urban Indian workers.
+
+The honest assessment: Veridian has weak distribution advantage, mediocre brand recognition, and zero local clinical network. Their strongest asset — the care-plan IP — is the part that's hardest for incumbents to copy.
+
+This argues for an **asset-light, partner-heavy** entry: license the care-plan IP to a local platform, take a revenue share, avoid the brand-building + distribution lift. Build-from-scratch would be slow and expensive; acquiring an existing local player would be capital-intensive and require operational depth Veridian doesn't have.
+
+## Branch 3 — how to enter?
+
+Three options, ranked by capital efficiency:
+
+1. **License + revenue share with a local incumbent.** Lowest capital, lowest control, fastest. Best for a "is this market real?" first foray.
+2. **Joint venture with a local healthcare brand.** Medium capital, shared control, medium speed. Better when the local partner brings distribution + you bring product.
+3. **Acquire a local player.** Highest capital, full control, slowest to integrate. Better only if you've already validated the market with options 1 or 2.
+
+A staged approach — option 1, then 2, then maybe 3 — limits downside. The board's pressure for "a big India bet" should be resisted: the variance in our year-5 revenue estimate (above) tells us the responsible move is to learn first, then scale.
+
+## A recommendation skeleton
+
+**Recommendation:** Enter India in 2026 via a licensing partnership with a Tier-1-focused mental-health platform. Cap initial investment at <LiveNumber compute="5" prefix="$" suffix="M" decimals={0} />. Re-evaluate at the 18-month mark with three hard go/no-go criteria.
+
+**Supporting points:**
+
+1. The urban-segment TAM is meaningful but the penetration curve is uncertain — partnering lets us learn without committing capital we can't recover.
+2. Veridian's competitive edge — care-plan IP — is the asset most easily licensed and least diluted by partnership.
+3. The cost of being wrong is bounded; the cost of being right and slow is the entire opportunity.
+
+**Three go/no-go criteria at month 18:**
+
+- ARPU above $25 in the partnership cohort.
+- Active retention above 40% at month 6.
+- Regulatory environment unchanged (especially on cross-border data flow).
+
+If all three are yes at month 18, Veridian invests deeper — likely option 2 (JV) — with a target of <LiveNumber compute="addressable_urban_pop * 0.001 * annual_arpu" prefix="$" suffix="M" decimals={1} /> ARR by year 5.
+
+## What judges look for
+
+- Did you **size both scenarios** and call out the spread? The variance is the insight.
+- Did you challenge "should we enter India" by asking what segment of India?
+- Did you **separate** the entry decision from the entry mode?
+- Did you propose a **staged commitment** with hard checkpoints, rather than a binary yes/no?
+- Did you call out **bias risk** (CEO already wants this) and design a measurement plan that could falsify the bet?

@@ -1,0 +1,96 @@
+---
+id: c-sentinel-cyber
+slug: sentinel-cyber-platform-consolidation
+title: 'Sentinel: should we consolidate our 6 cyber products into a platform?'
+source:
+  publisher: Case in Point
+  title: 'Case in Point — Complete Case Interview Preparation'
+  authors: ['Cosentino, Marc']
+  year: 2023
+  needsVerification: true
+industry: technology
+category: portfolio
+difficulty: advanced
+frameworks: [3c, profitability]
+timeEstimate: 45
+tags: [saas, cybersecurity, portfolio, platform-consolidation]
+problemStatement: 'Sentinel is a $400M ARR cybersecurity company with 6 distinct products (EDR, SIEM, identity, email security, network detection, vulnerability management) — built and acquired separately, sold separately. CISOs are increasingly demanding "platform" purchases. The CEO is debating: (a) integrate the 6 products into a tightly-coupled platform, (b) keep them as standalone but improve cross-product workflows, (c) divest the weaker products to focus.'
+clarifyingQuestions:
+  - 'Which products are growing fastest, and which are flat or declining?'
+  - 'How much customer overlap is there — what share of customers buy 2+ products?'
+  - 'What is the engineering integration cost to make these 6 products into a real platform?'
+  - 'Who are the platform competitors (CrowdStrike, Palo Alto, Microsoft) and how strong is their position?'
+commonMistakes:
+  - 'Treating "platform" as a marketing message rather than a deeply integrated product.'
+  - 'Underestimating the engineering integration cost; turning 6 separately-built products into a coherent platform is years of work.'
+  - 'Ignoring that some products may be unfixable from a platform-fit standpoint.'
+variants:
+  - 'Same situation, but Microsoft has just announced free bundled versions of two of Sentinel''s products. How does pricing pressure shift the strategy?'
+  - 'Same data, but a private equity firm offers to acquire Sentinel at 8x revenue and consolidate the products themselves. Should the board sell?'
+relatedCases:
+  - vertex-enterprise-expansion
+solved: false
+updatedAt: '2026-05-20'
+---
+
+<Callout tone="note" title="Illustrative case">
+  Sentinel is a stylized example for cybersecurity portfolio strategy. The framework adapts standard portfolio analysis; specifics are illustrative.
+</Callout>
+
+## The situation
+
+Cybersecurity has shifted from "best of breed" buying to "platform" buying over the past 5 years. CISOs are exhausted from managing 50+ point tools and increasingly prefer consolidated vendors. CrowdStrike, Palo Alto, Microsoft are the platform leaders. Sentinel risks being squeezed between platform giants and specialist best-of-breed players.
+
+The platform consolidation question is whether Sentinel can become a credible platform, or whether it should pick a focused position instead.
+
+## Structuring
+
+Portfolio framework with explicit decomposition by product and consolidation feasibility:<Citation publisher="Case in Point" title="Case in Point — Complete Case Interview Preparation" authors={['Cosentino, Marc']} year={2023} />
+
+<IssueTreeEmbed slug="sentinel-tree" height={400} />
+
+Three branches:
+
+1. **Market trend reality** — how strong is the platform shift? Are CISOs actually consolidating, or talking about it?
+2. **Product portfolio strength** — for each of the 6 products, is it a market leader, mid-tier, or weak? Platform value requires the products to be individually strong.
+3. **Integration economics** — what's the engineering cost + timeline to true platform integration vs the value created?
+
+## Key analysis
+
+A typical 6-product cybersecurity company portfolio:
+
+| Product | Market position | Growth | Platform fit |
+|---------|-----------------|--------|--------------|
+| EDR | Top 3 | 30%+ YoY | Strong (telemetry backbone) |
+| SIEM | Mid-tier | 15% YoY | Strong (data plane) |
+| Identity | Top 5 | 40% YoY | Strong (controls backbone) |
+| Email security | Mid-tier | 5% YoY | Weak (specialized domain) |
+| Network detection | Bottom tier | -5% YoY | Weak (declining category) |
+| Vulnerability mgmt | Mid-tier | 10% YoY | Medium |
+
+Three insights:
+
+1. **The platform thesis works best around EDR + SIEM + Identity** — these share data, share workflows, and the integration creates real customer value.
+2. **Email security and network detection are off-platform** — they don't share telemetry or workflows in a meaningful way, and the market positions are weak.
+3. **Vulnerability management could go either way** — strong customer overlap with EDR, but the integration effort is non-trivial.
+
+The non-obvious move: **platform requires divestment, not consolidation of everything.** Trying to integrate 6 products into one platform when 2 of them don't belong creates a worse product than focusing on the 4 that do.
+
+## Recommendation skeleton
+
+**Recommendation:** Build a **focused platform** around EDR + SIEM + Identity + Vulnerability Management. Divest email security (sell to a specialist) and wind down or sell network detection. Invest the freed engineering capacity in deep platform integration of the remaining 4. Target: by year 3, 60%+ of new ACV comes from multi-product deals.
+
+**Three supports:**
+
+1. A true platform requires deep integration; 4 well-integrated products beat 6 loosely-coupled ones.
+2. Divestment generates capital + frees engineering to focus on the platform integration work.
+3. The 4 retained products have strong individual market positions; the platform is additive.
+
+**One risk:** divesting email security loses ~$50M ARR in the near term, and existing customers may see it as a signal Sentinel is retreating. Mitigate by structuring the email-security divestment with a 24-month transition + co-marketing agreement.
+
+## What judges look for
+
+- Did you recognize that **platform value requires divestment**, not addition?
+- Did you classify the 6 products by **individual market position + platform fit** rather than treating them as equal?
+- Did you propose **a focused platform** with specific product retention?
+- Did you size the **engineering integration cost** as a real constraint?

@@ -1,0 +1,97 @@
+---
+id: c-pioneer-bank
+slug: pioneer-bank-profitability
+title: 'Pioneer Bank: why is our ROE half the peer average?'
+source:
+  publisher: Case in Point
+  title: 'Case in Point — Complete Case Interview Preparation'
+  authors: ['Cosentino, Marc']
+  year: 2023
+  needsVerification: true
+industry: financial-services
+category: profitability
+difficulty: standard
+frameworks: [profitability, 3c]
+timeEstimate: 35
+tags: [financial-services, banking, profitability, ROE, regional-bank]
+problemStatement: 'Pioneer Bank is a $40B asset regional bank with branch operations across 6 states. ROE has stagnated at 7-8% over 5 years vs peer benchmark 12-14%. Net interest margin is in line; non-interest income is below peers; cost-to-income ratio is 65% (peers 55%). The CEO wants to know where the gap comes from and how to close it.'
+clarifyingQuestions:
+  - 'What is the trend in branch count and per-branch profitability?'
+  - 'What is the digital banking adoption rate among our customers?'
+  - 'How does non-interest income decompose (fees, wealth management, treasury)?'
+  - 'Are there specific geographies where the cost-to-income ratio is unusually high?'
+commonMistakes:
+  - 'Treating ROE compression as a single problem when it''s typically multiple linked issues.'
+  - 'Focusing on net interest margin when the gap is in cost structure or non-interest income.'
+  - 'Underestimating how much of the cost gap is structural (branch network, legacy IT) vs operational (process inefficiency).'
+variants:
+  - 'Same situation, but a regional competitor offers to acquire Pioneer at 1.2x tangible book. Should we sell?'
+  - 'Same data, but the Federal Reserve is signaling rate cuts. How does that change strategic priorities?'
+relatedCases:
+  - rivercrest-pharmacy-margin
+  - westfield-department-transformation
+solved: false
+updatedAt: '2026-05-20'
+---
+
+<Callout tone="note" title="Illustrative case">
+  Pioneer is a stylized example for banking-industry profitability analysis. Framework from Cosentino + standard banking-strategy methodology; specifics are illustrative.
+</Callout>
+
+## The situation
+
+Regional banking ROE compression is one of the most-studied financial services patterns of the past 15 years. The structural drivers are well understood: digital channel migration reducing branch traffic, fintech competition for non-interest income, regulatory cost increases, low-rate environment compressing margins.
+
+For most regional banks, the gap to peers comes from a combination of (1) under-monetized customer relationships and (2) over-invested branch infrastructure.
+
+## Structuring
+
+Banking-profitability framework with explicit decomposition by income source + cost driver:<Citation publisher="Case in Point" title="Case in Point — Complete Case Interview Preparation" authors={['Cosentino, Marc']} year={2023} />
+
+<IssueTreeEmbed slug="pioneer-tree" height={400} />
+
+Three branches:
+
+1. **Net interest margin** — usually in line with peers for similar-sized banks; not the main driver.
+2. **Non-interest income** — fees, wealth management, treasury services, card interchange. Often the largest variance vs peers.
+3. **Cost structure** — branch network, IT infrastructure, regulatory compliance, headcount.
+
+## Key analysis
+
+For Pioneer specifically, the 65% cost-to-income vs peer 55% suggests $400M+ of excess cost annually. Decomposing that gap:
+
+| Cost category | Pioneer vs peer | Gap |
+|---------------|-----------------|-----|
+| Branch network | Higher branch count per $B assets | $150-200M |
+| IT / legacy systems | Higher than peers, ongoing modernization | $80-120M |
+| Headcount (back office) | Higher than peers | $60-100M |
+| Risk + compliance | In line | Minimal |
+
+The non-interest income gap is typically driven by:
+
+- Underpenetrated wealth management (~30-50% of customers eligible but not enrolled)
+- Lower interchange income (legacy debit card relationships at lower rates)
+- Underutilized treasury services for commercial customers
+
+The combined gap analysis suggests ROE could improve to 11-13% within 36 months if both cost reduction and non-interest income growth execute well.
+
+The non-obvious move: **the branch network is the largest single lever** — but closures are politically painful for a regional bank with customer loyalty tied to local presence. Phased branch consolidation with strong digital migration support is the only way.
+
+## Recommendation skeleton
+
+**Recommendation:** **Three-track ROE improvement over 36 months.** Track 1: close 15-20% of branches in over-banked metros + invest digital experience (saves $80-120M annually). Track 2: roll out wealth management to top 30% of customers (adds $60-80M non-interest income). Track 3: legacy IT modernization (saves $50-80M annually starting year 2). Combined target: 12% ROE by year 3.
+
+**Three supports:**
+
+1. Branch + IT cost gap is the largest opportunity, but execution requires multi-year commitment.
+2. Non-interest income growth (wealth, treasury) leverages existing customer relationships at high marginal margin.
+3. Multi-track approach distributes execution risk; no single initiative carries the entire ROE improvement target.
+
+**One risk:** branch closures may drive customer attrition in tight regional markets. Mitigate by closing only in metros with peer branches nearby; maintain branch presence in single-bank-town markets where attrition risk is highest.
+
+## What judges look for
+
+- Did you **decompose ROE gap by component** (NIM, non-interest income, cost) rather than treating as monolithic?
+- Did you identify **branch network as the largest single cost lever** while recognizing the political constraints?
+- Did you size **non-interest income growth opportunities** (wealth, treasury) specifically?
+- Did you propose a **multi-track plan** with realistic 36-month timeline?

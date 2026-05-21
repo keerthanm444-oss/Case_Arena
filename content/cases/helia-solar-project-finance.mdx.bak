@@ -1,0 +1,92 @@
+---
+id: c-helia-solar
+slug: helia-solar-project-finance
+title: 'Helia Solar: how should we finance our 5GW pipeline?'
+source:
+  publisher: Case in Point
+  title: 'Case in Point — Complete Case Interview Preparation'
+  authors: ['Cosentino, Marc']
+  year: 2023
+  needsVerification: true
+industry: energy
+category: business-model
+difficulty: standard
+frameworks: [profitability, 3c]
+timeEstimate: 35
+tags: [energy, solar, project-finance, ppa, renewables]
+problemStatement: 'Helia Solar is a utility-scale solar developer with a 5GW pipeline across 8 states. Building all 5GW requires ~$5B equity + $7B debt over 5 years. The CEO is debating financing strategy: (a) develop + own all assets (highest long-term cash flow, highest capital need), (b) develop + flip to yieldco / infrastructure buyer (faster capital recycling), (c) JV with utility buyers (lower capital but lower returns).'
+clarifyingQuestions:
+  - 'What is our equity vs debt cost of capital relative to project economics?'
+  - 'What share of pipeline has signed PPAs vs uncontracted?'
+  - 'How does the secondary market for operating solar assets currently price (yieldco multiples)?'
+  - 'What is our development capability — can we accelerate beyond 5GW if capital available?'
+commonMistakes:
+  - 'Choosing "own all assets" without checking equity-financing capacity.'
+  - 'Underestimating PPA contractedness as the key risk — uncontracted projects have very different economics.'
+  - 'Treating yieldco flip as free option — the multiple on which assets sell is uncertain.'
+variants:
+  - 'Same situation, but a major utility offers to acquire Helia for $2.5B. Should we sell?'
+  - 'Same data, but interest rates have risen 200bps. Does that change financing strategy?'
+relatedCases:
+  - meridian-utility-renewables
+  - cascadian-oil-capital-allocation
+solved: false
+updatedAt: '2026-05-20'
+---
+
+<Callout tone="note" title="Illustrative case">
+  Helia is a stylized example for solar developer capital strategy. Framework from Cosentino + standard renewable-finance methodology; specifics are illustrative.
+</Callout>
+
+## The situation
+
+Utility-scale solar economics depend critically on three things: (1) project capital structure (debt:equity), (2) PPA contractedness (signed offtake), (3) timing of capital recycling (sell to yieldco vs hold). Developer companies face a tradeoff between maximizing long-term cash flow (own assets) and maximizing growth velocity (recycle capital).
+
+## Structuring
+
+Renewable capital strategy framework:<Citation publisher="Case in Point" title="Case in Point — Complete Case Interview Preparation" authors={['Cosentino, Marc']} year={2023} />
+
+<IssueTreeEmbed slug="helia-tree" height={400} />
+
+Three branches:
+
+1. **Ownership model** — develop + own (long-term IRR), develop + sell (development margin), develop + JV (split economics).
+2. **Project risk profile** — contracted vs uncontracted, geography, regulatory environment.
+3. **Capital recycling efficiency** — how fast can equity be redeployed into new pipeline?
+
+## Key analysis
+
+Comparing the three models for a typical 100MW solar project:
+
+| Model | Equity capital | IRR | Time to deploy |
+|-------|----------------|-----|----------------|
+| Develop + own | $60-80M | 8-12% over 25 years | Tied up for life |
+| Develop + sell at COD | $20-30M (recovered at sale) | 18-25% (development margin) | 18-24 months |
+| Develop + JV with utility | $30-40M | 10-15% blended | Partial recovery at COD |
+
+The non-obvious finding: **develop-and-flip generates higher IRR per dollar deployed** because capital recycles into new projects, but absolute dollar returns over a 25-year horizon are lower than own-asset model.
+
+For Helia specifically with 5GW pipeline:
+
+- All own-asset: requires $5B equity, generates ~$300-500M annual cash flow at maturity
+- All develop-and-flip: requires ~$1.5B working capital, generates ~$1-1.5B development margins over 5 years + ability to develop additional pipeline
+- Hybrid: develop-and-flip the highest-risk projects (uncontracted, smaller scale), own-asset the best-quality projects (contracted, scale, attractive geography)
+
+## Recommendation skeleton
+
+**Recommendation:** **Hybrid model — own ~40%, flip ~60%.** Own the highest-quality 2GW (long-term PPAs, large scale, attractive geographies): provides annuity cash flow. Develop + sell the remaining 3GW: recycles capital into expanded pipeline. Total equity required: ~$2.5B over 5 years (manageable with mix of retained earnings + selective equity raises).
+
+**Three supports:**
+
+1. Hybrid captures best of both models — annuity cash flow plus growth capital efficiency.
+2. Quality differentiation between own + flip projects matches risk tolerance.
+3. Capital requirement ($2.5B) is achievable without forcing distressed equity raises.
+
+**One risk:** yieldco multiples may compress if interest rates rise, reducing flip exit values. Mitigate by maintaining flexibility — projects can shift between own + flip buckets based on market conditions at COD.
+
+## What judges look for
+
+- Did you reject **single-model strategy** in favor of hybrid?
+- Did you analyze **IRR vs absolute returns** as distinct metrics?
+- Did you propose **quality differentiation** between own + flip buckets?
+- Did you address **yieldco multiple risk** with project-allocation flexibility?

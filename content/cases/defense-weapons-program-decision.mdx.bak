@@ -1,0 +1,87 @@
+---
+id: c-defense-weapons-program
+slug: defense-weapons-program-decision
+title: 'Defense Acquisition: continue, restructure, or kill this weapons program?'
+source:
+  publisher: Boston Consulting Group
+  title: 'BCG Insights'
+  needsVerification: true
+industry: public-sector
+category: portfolio
+difficulty: advanced
+frameworks: [3c, profitability]
+timeEstimate: 45
+tags: [public-sector, defense, acquisition, weapons-program, portfolio]
+problemStatement: 'A defense department weapons program (next-generation combat vehicle) is 8 years into development. Original budget $30B; cost-to-complete estimates now $52B. Schedule has slipped 5 years. Combat requirements have evolved; some original capability targets are now less relevant. The new Secretary must decide: (a) continue at current pace, (b) restructure with reduced scope + revised baseline, (c) cancel and restart with new requirements, (d) buy from international ally.'
+clarifyingQuestions:
+  - 'What capabilities have already been demonstrated vs still uncertain?'
+  - 'What is the sunk cost vs cost-to-complete ratio?'
+  - 'Are there allied alternatives that meet requirements at lower cost?'
+  - 'What is the industrial base impact of cancellation?'
+commonMistakes:
+  - 'Continuing because of sunk cost — the $25B already spent is not recoverable regardless of decision.'
+  - 'Cancellation analysis that ignores industrial base + political consequences.'
+  - 'Treating "buy allied" as a clean substitute; integration + sovereignty matter.'
+variants:
+  - 'Same situation, but a peer adversary has just deployed a related capability. How does urgency shift?'
+  - 'Same data, but Congress has earmarked program funding making cancellation politically infeasible. Recommend.'
+relatedCases:
+  - aerion-aerospace-capacity
+  - federal-agency-procurement-reform
+solved: false
+updatedAt: '2026-05-20'
+---
+
+<Callout tone="note" title="Illustrative case">
+  This is a stylized example for defense acquisition decision-making. Framework from BCG + standard defense acquisition methodology; specifics are illustrative.
+</Callout>
+
+## The situation
+
+Major defense acquisition programs frequently experience cost overruns + schedule slippage. The historical pattern: programs over $20B and 10+ year timelines have 60-80% probability of significant cost growth + schedule slip. The strategic question is rarely "is this on track" (it usually isn't) but "what's the best path forward given current state?"
+
+## Structuring
+
+Defense acquisition decision framework:<Citation publisher="Boston Consulting Group" title="BCG Insights" />
+
+<IssueTreeEmbed slug="defense-program-tree" height={420} />
+
+Three branches:
+
+1. **Operational requirement validity** — are the original requirements still valid given evolved threat environment + technology landscape?
+2. **Cost-to-complete economics** — sunk cost is sunk; what does completing the program cost vs alternatives?
+3. **Industrial base + alliance considerations** — what are the second-order impacts of each decision path?
+
+## Key analysis
+
+Comparing the four options:
+
+| Option | Cost-to-complete | Time-to-fielding | Risk |
+|--------|------------------|------------------|------|
+| Continue current | $27B more | 4-5 years | Further overruns likely |
+| Restructure (reduced scope) | $18-22B | 3-4 years | Capability gaps vs original spec |
+| Cancel + restart | $5B exit cost + $25-35B new | 7-10 years | Long capability gap |
+| Buy allied | $12-18B | 2-3 years | Integration + sovereignty |
+
+The non-obvious finding: **restructure is usually the right answer for large troubled programs.** Cancellation is psychologically appealing but creates a long capability gap + wastes most of the technical knowledge developed. Continuing without restructure repeats the failure mode that produced the overruns.
+
+For this program specifically: the 5-year schedule slip + 75% cost growth + evolved requirements all support restructuring. Maintain critical capabilities; defer secondary capabilities to follow-on increments; lock requirements at restructured baseline.
+
+## Recommendation skeleton
+
+**Recommendation:** **Restructure with reduced scope.** Maintain top-3 capability requirements at restructured baseline. Defer remaining capabilities to a follow-on Increment 2 program. Revised cost-to-complete: $18B over 4 years. Concurrent: explore allied co-production for accelerated initial fielding of a subset of capabilities. Cancel only if restructure milestones aren't met at month 18.
+
+**Three supports:**
+
+1. Restructure preserves most of the technical knowledge while removing the scope/cost spiral.
+2. Allied co-production provides accelerated fielding option without abandoning domestic program.
+3. Milestone-gated cancellation preserves the ultimate exit option without committing to continued spend.
+
+**One risk:** restructure may set precedent for tolerating cost overruns; future programs may experience similar drift. Mitigate by establishing explicit consequence framework — restructured program leadership rotated, contractor performance incentives revised.
+
+## What judges look for
+
+- Did you ignore **sunk cost** in decision analysis?
+- Did you propose **restructure** rather than continuing or cancelling?
+- Did you analyze **allied procurement** as a partial-substitute option?
+- Did you address the **precedent risk** of restructuring vs cancellation?

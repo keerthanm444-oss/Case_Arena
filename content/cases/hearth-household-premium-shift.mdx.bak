@@ -1,0 +1,86 @@
+---
+id: c-hearth-household
+slug: hearth-household-premium-shift
+title: 'Hearth Household: should we abandon the mass-market value tier?'
+source:
+  publisher: Boston Consulting Group
+  title: 'BCG Insights'
+  needsVerification: true
+industry: consumer-goods
+category: business-model
+difficulty: standard
+frameworks: [3c, porters-five-forces]
+timeEstimate: 35
+tags: [consumer-goods, household, premium, repositioning, private-label]
+problemStatement: 'Hearth Household makes laundry, dishwashing, and surface-cleaning products. 60% of revenue is from mass-market tiers ($3-6 retail) being eroded by retailer private-label; 40% is from premium tiers ($8-15 retail) with stronger margins and growing. The CEO is debating: (a) abandon mass-market entirely, (b) maintain both tiers, (c) launch a separate value brand to fight private-label directly.'
+clarifyingQuestions:
+  - 'What is the gross margin spread between mass-market and premium tiers?'
+  - 'How concentrated is the customer overlap — are premium customers also mass-market customers?'
+  - 'What share of mass-market revenue is being lost to private-label vs other branded competitors?'
+  - 'Do we have shared manufacturing for mass-market and premium products?'
+commonMistakes:
+  - 'Abandoning mass-market without modeling the loss of trade leverage (retailer relationships, slotting, shelf space).'
+  - 'Believing premium growth can fully offset mass-market decline — premium TAM may be too small.'
+  - 'Launching value brand to fight private-label — usually escalates margin pressure without winning share back.'
+variants:
+  - 'Same situation, but Hearth has a leading position in premium (top 3 in category) and a #4 position in mass-market. Does the strategic answer change?'
+  - 'Same data, but a major retailer demands a low-priced exclusive line. How should we respond?'
+relatedCases:
+  - cobblestone-footwear-pricing
+  - pinewood-grocer-private-label
+solved: false
+updatedAt: '2026-05-20'
+---
+
+<Callout tone="note" title="Illustrative case">
+  Hearth is a stylized example for CPG tier strategy. Frameworks from BCG + Porter; specifics are illustrative.
+</Callout>
+
+## The situation
+
+Mass-market household-goods erosion to retailer private-label has been one of the dominant trends in US consumer goods over 20 years. Retailers extracted scale-driven cost positions (Costco Kirkland, Walmart Great Value, Amazon brands) and produced credible quality at much lower prices. Branded CPG companies are forced to choose: defend at thin margins, retreat to premium, or attempt new positioning.
+
+## Structuring
+
+Tier-strategy framework with explicit private-label dynamics:<Citation publisher="Boston Consulting Group" title="BCG Insights" /><Citation publisher="Competitive Strategy" title="Competitive Strategy: Techniques for Analyzing Industries and Competitors" authors={['Porter, Michael E.']} year={1980} />
+
+<IssueTreeEmbed slug="hearth-tree" height={400} />
+
+Three branches:
+
+1. **Mass-market dynamics** — private-label share, growth rate, brand-margin sustainability, retailer leverage if we exit.
+2. **Premium opportunity** — TAM size, growth rate, competitive density, our right to win.
+3. **Operational interdependence** — do mass-market and premium share manufacturing, sales force, distribution? Full exit costs may be larger than they appear.
+
+## Key analysis
+
+The diagnostic test: **for mass-market specifically, what's the realistic 5-year margin trajectory?**
+
+A typical pattern:
+
+- Mass-market gross margin compressing from 35% to 25% as retailer leverage increases
+- Mass-market unit volume declining 3-5% annually to private-label
+- Premium gross margin stable at 50-55%, volume growing 5-8%
+
+If mass-market crosses below cost-of-capital ROIC within 3-5 years, exit makes economic sense. But shared infrastructure means exit isn't free — losing volume scale at shared plants raises premium per-unit costs.
+
+The non-obvious move: **selective mass-market presence rather than full exit.** Keep mass-market SKUs in product categories where shared manufacturing is critical, exit categories where mass-market is operationally separable. Premium investment focuses on adjacencies (premium-natural, professional-grade, specialty) that command true premium pricing.
+
+## Recommendation skeleton
+
+**Recommendation:** **Selective tier strategy.** Maintain mass-market in laundry (shared with premium plants) but exit dishwashing mass-market entirely (no manufacturing overlap, declining category). Invest $200M over 3 years in premium-natural + professional-grade adjacencies. Target: 60% revenue from premium tiers by year 5; mass-market scale-down rather than zero.
+
+**Three supports:**
+
+1. Manufacturing interdependence makes full mass-market exit operationally damaging — selective approach preserves scale benefits.
+2. Premium investment in adjacencies has higher growth potential than defending existing premium tier.
+3. Dish + laundry category dynamics differ; treating them uniformly underperforms category-specific strategies.
+
+**One risk:** retailers may reduce premium-tier shelf allocation if Hearth exits mass-market category entirely. Mitigate by signaling continued category commitment via premium-tier investment + retailer-specific premium variants.
+
+## What judges look for
+
+- Did you reject **blanket exit** in favor of category-specific decisions?
+- Did you identify **shared manufacturing** as a binding constraint on exit economics?
+- Did you size **premium adjacencies** as the strategic growth bet?
+- Did you address **retailer perception** of mass-market exit?

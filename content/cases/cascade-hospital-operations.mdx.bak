@@ -1,0 +1,94 @@
+---
+id: c-cascade-hospital
+slug: cascade-hospital-operations
+title: 'Cascade Health: ED throughput is killing our margin'
+source:
+  publisher: Harvard Business School
+  title: 'Cascade Health (illustrative)'
+  needsVerification: true
+industry: healthcare
+category: operations
+difficulty: standard
+frameworks: [profitability]
+timeEstimate: 35
+tags: [healthcare, hospital, operations, throughput, ED]
+problemStatement: 'Cascade Health is a regional non-profit health system operating 4 hospitals. The flagship facility has an emergency department (ED) that is consistently at >95% utilization with average length-of-stay (LOS) 30% above peer benchmarks. The CFO reports this is the single largest contributor to negative operating margin in the system. The CEO asks: how do we fix it?'
+clarifyingQuestions:
+  - 'Where is the LOS bottleneck — admission delays, discharge delays, or in-ED workup?'
+  - 'What is the share of ED visits that result in admission to inpatient beds?'
+  - 'Are admitted patients waiting in ED beds for inpatient capacity?'
+  - 'What is the case mix index trend — are we seeing sicker patients on average?'
+commonMistakes:
+  - 'Treating ED throughput as an ED problem when the bottleneck is usually downstream (inpatient discharge).'
+  - 'Solving for staffing without solving for flow — adding nurses to a downstream-blocked ED produces no throughput gain.'
+  - 'Ignoring the payer-mix effect; ED throughput improvements have different economic value for commercial vs Medicare/Medicaid patients.'
+variants:
+  - 'Same problem, but Cascade is a for-profit system. Does the payer mix vs operating margin calculation change the recommendation priority?'
+  - 'Same data, but the CEO wants to grow ED volumes 20% in 3 years. What does that imply about the throughput fix?'
+relatedCases:
+  - veridian-india-entry
+solved: false
+updatedAt: '2026-05-20'
+---
+
+<Callout tone="note" title="Illustrative case">
+  Cascade is a stylized example for hospital-operations analysis. The framework approach reflects standard healthcare-operations methodology; specifics are illustrative.
+</Callout>
+
+## The situation
+
+ED throughput is one of the most-studied healthcare operations problems. The pattern Cascade is describing — high utilization, extended LOS, negative margin contribution — usually reflects a flow problem, not an ED-capacity problem.
+
+The diagnostic question: **where do patients spend their time in the ED?** A typical breakdown:
+
+- **Triage to provider:** 30-90 minutes (provider availability)
+- **Provider workup:** 60-120 minutes (orders, results, imaging)
+- **Disposition decision:** 0-30 minutes
+- **Wait for inpatient bed:** 60-600+ minutes (admitted patients waiting for inpatient capacity)
+
+The last bucket — admitted patients **boarding** in the ED waiting for inpatient beds — is most often the dominant LOS driver. ED beds full of admitted patients = no capacity for new patients = utilization stays at 95%+ regardless of how fast the ED itself works.
+
+## Structuring
+
+Profitability framework adapted for the operational lens — the "cost" side is opportunity cost from constrained throughput:
+
+<IssueTreeEmbed slug="cascade-tree" height={380} />
+
+Three branches:
+
+1. **ED-internal flow** — provider staffing, triage process, order set efficiency, fast-track for low-acuity.
+2. **Boarding (downstream bottleneck)** — inpatient discharge timing, weekend discharge volumes, capacity allocation.
+3. **Inflow management** — Are some ED visits avoidable (non-emergent conditions that could be primary care)? Are payer mix or community-care alternatives in play?
+
+## Key analysis
+
+The diagnostic move that resolves most cases like this: **measure the share of ED LOS attributable to boarding.** If >40% of admitted patients board for 2+ hours, the bottleneck is downstream — fixing the ED itself won't help.
+
+A typical Cascade-like pattern:
+
+- 18-22% of ED visits result in admission
+- 50-60% of those admissions board for 4+ hours
+- Average boarding patient occupies an ED bed that would otherwise serve 1.5-2 new visits
+
+The math: solving boarding can free up 30-40% of ED bed-hours, which translates directly to throughput improvement without adding any physical capacity.
+
+The structural fix for boarding is **inpatient discharge timing** — most hospitals discharge inpatients between 11am-5pm. If discharges shifted earlier (e.g. by 10am), inpatient beds open up before the ED's peak admission hours (afternoon/evening), and boarding drops materially.
+
+## Recommendation skeleton
+
+**Recommendation:** Implement an **early-discharge initiative** for inpatient units (target: 50% of discharges by 11am, up from typical 20%). Pair with an **ED fast-track** for ESI level 4-5 visits. Re-measure after 90 days; if boarding shares haven't dropped, escalate to inpatient capacity expansion.
+
+**Three supports:**
+
+1. Boarding is the largest single LOS driver; addressing it has the highest leverage.
+2. Early-discharge is operationally low-cost (process change + dashboard) compared to capacity expansion (build/buy).
+3. Fast-track addresses the secondary lever — lower-acuity patients can move through faster, opening more ED bed-hours.
+
+**One risk:** early-discharge requires coordination with discharge planning, transport, and (often) family logistics. Mitigate by piloting on 2 medical units before system-wide rollout.
+
+## What judges look for
+
+- Did you identify **boarding** as the likely root cause, rather than ED-internal flow?
+- Did you separate the **operational fix** (early discharge) from the **structural fix** (capacity)?
+- Did you propose a measurement protocol (re-measure after 90 days) rather than committing to capital before validating?
+- Did you call out the **payer-mix dependency** — ED throughput improvements have very different economic value depending on whether new visits are commercially insured?

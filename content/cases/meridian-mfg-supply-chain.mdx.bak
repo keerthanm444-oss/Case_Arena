@@ -1,0 +1,94 @@
+---
+id: c-meridian-mfg-supply
+slug: meridian-mfg-supply-chain
+title: 'Meridian Manufacturing: should we reshore production?'
+source:
+  publisher: Boston Consulting Group
+  title: 'BCG Insights'
+  needsVerification: true
+industry: manufacturing
+category: supply-chain
+difficulty: standard
+frameworks: [3c, profitability]
+timeEstimate: 35
+tags: [manufacturing, supply-chain, reshoring, nearshoring, geopolitics]
+problemStatement: 'Meridian Manufacturing produces specialty industrial equipment, with 70% of components sourced from a single Asian country. Recent geopolitical tensions, transport disruptions, and tariff changes have raised costs 18% over 18 months. The CEO is considering: (a) full reshoring to US/Mexico, (b) diversification across Asian countries, (c) status quo with risk-management contingencies. Recommend.'
+clarifyingQuestions:
+  - 'What is the labor cost differential between current sourcing and US/Mexico?'
+  - 'How concentrated are the suppliers — is it 1 supplier or 50 suppliers in the same country?'
+  - 'Are there technical capabilities that exist only in the current sourcing region?'
+  - 'What is the lead-time difference for current vs alternative sourcing?'
+commonMistakes:
+  - 'Treating "reshoring" as a single decision when component-by-component the answer varies.'
+  - 'Ignoring the multi-year transition cost of supplier qualification + tooling moves.'
+  - 'Overstating the political-risk premium; many components are not actually high-political-risk.'
+variants:
+  - 'Same situation, but Meridian has $200M in cash earmarked for capital allocation. How does that change reshoring vs other investments?'
+  - 'Same data, but a US government program offers subsidies for reshoring specific component categories. Does it change the calculus?'
+relatedCases:
+  - foundry-plant-network-optimization
+solved: false
+updatedAt: '2026-05-20'
+---
+
+<Callout tone="note" title="Illustrative case">
+  Meridian is a stylized example for supply-chain restructuring. Frameworks adapted from BCG + standard operations methodology; specifics are illustrative.
+</Callout>
+
+## The situation
+
+Supply-chain restructuring has been one of the most-discussed corporate strategy topics of the past 5 years. The pendulum has swung from "single-source for cost optimization" to "diversify for resilience," but the actual financial analysis often shows that **diversification is cheaper than full reshoring**, and **component-by-component decisions beat blanket strategies.**
+
+The decision frame: which components warrant reshoring, which warrant Asian diversification, and which should stay as-is?
+
+## Structuring
+
+Supply-chain framework with explicit component-level decomposition:<Citation publisher="Boston Consulting Group" title="BCG Insights" />
+
+<IssueTreeEmbed slug="meridian-mfg-tree" height={400} />
+
+Three branches:
+
+1. **Component classification** — for each major component, classify as (a) commodity (easily sourced anywhere), (b) specialized (specific suppliers needed), (c) strategic (truly differentiated, single-source).
+2. **Risk assessment** — for each component category, what's the realistic supply-disruption probability + impact?
+3. **Sourcing strategy** — for each component, what's the best sourcing approach (single-source, dual-source, diversify across countries, reshore)?
+
+## Key analysis
+
+A typical industrial-component breakdown:
+
+| Component type | Share of cost | Suggested action |
+|----------------|---------------|------------------|
+| Commodity (raw materials, basic components) | 30-40% | Diversify across countries; cost is the main driver |
+| Specialized | 40-50% | Dual-source across 2 countries; balance cost + resilience |
+| Strategic (single-source critical) | 10-20% | Either reshore or invest in supplier-relationship to reduce single-source risk |
+
+For the strategic components: full reshoring usually costs 30-50% more per unit, but reduces disruption risk. The economic question is whether the disruption-risk premium justifies the cost.
+
+Two useful diagnostic numbers:
+
+- **Annual disruption-risk cost** = probability of disruption × revenue impact. For most companies, this is 1-3% of revenue.
+- **Reshoring cost premium** = (reshore unit cost − current unit cost) × volume. Typically 5-10% of revenue.
+
+If reshoring premium > disruption-risk cost, status quo wins (with risk-management investments). If reshoring premium < disruption-risk cost, reshoring wins for the components in question.
+
+The non-obvious move: **dual-sourcing across Asian countries** is often the cost-resilience sweet spot — captures most of the resilience benefit at much lower cost than reshoring.
+
+## Recommendation skeleton
+
+**Recommendation:** **Component-segmented strategy.** Commodity components (~35% of cost): diversify across 3 Asian countries over 24 months. Specialized components (~45%): dual-source across 2 countries over 36 months. Strategic components (~20%): reshore to Mexico over 48 months for the most-critical 5-10 items; invest in supplier relationships for the rest. Total transition cost: ~$80M over 4 years; ongoing cost premium: ~3% over status quo.
+
+**Three supports:**
+
+1. Component segmentation produces a more efficient outcome than uniform reshoring or status quo.
+2. Diversification across countries captures most of the resilience benefit at far lower cost than reshoring.
+3. Reshoring is reserved for components where the disruption-risk math justifies it, not as a blanket strategy.
+
+**One risk:** dual-source qualification takes 12-24 months per supplier; transitioning too fast could compromise quality. Mitigate with explicit qualification protocols + parallel-running before cutover.
+
+## What judges look for
+
+- Did you reject **blanket reshoring** in favor of component-segmented decisions?
+- Did you size **disruption-risk cost vs reshoring premium** as the economic test?
+- Did you identify **dual-source Asian diversification** as the cost-resilience sweet spot?
+- Did you sequence the transition over realistic timelines (24-48 months by component)?

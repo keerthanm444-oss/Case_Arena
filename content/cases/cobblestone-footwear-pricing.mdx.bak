@@ -1,0 +1,83 @@
+---
+id: c-cobblestone-pricing
+slug: cobblestone-footwear-pricing
+title: 'Cobblestone Footwear: should we reposition upmarket?'
+source:
+  publisher: Case in Point
+  title: 'Case in Point — Complete Case Interview Preparation'
+  authors: ['Cosentino, Marc']
+  year: 2023
+  needsVerification: true
+industry: retail
+category: pricing
+difficulty: standard
+frameworks: [3c, porters-five-forces]
+timeEstimate: 30
+tags: [pricing, retail, footwear, repositioning, brand]
+problemStatement: 'Cobblestone is a mid-tier US footwear brand selling primarily through department stores at $80–$120 price points. Revenue has been flat for three years; competitors at the $40 budget tier and the $200 premium tier are both gaining share. The CEO is debating whether to reposition upmarket toward $150–$200, retire the lower SKUs, and exit department stores in favor of direct-to-consumer.'
+clarifyingQuestions:
+  - 'Do we have any brand-perception data — do consumers see us as premium-aspirational or budget-default?'
+  - 'What is our current direct-to-consumer share, if any?'
+  - 'What does our product lineup look like at the $150+ price point today?'
+  - 'How concentrated is our wholesale channel — what does dropping department stores actually cost?'
+commonMistakes:
+  - 'Treating the repositioning as a pricing decision when it is fundamentally a brand-equity decision.'
+  - 'Underestimating the gross margin needed to fund direct-to-consumer operations.'
+  - 'Ignoring the customer-acquisition cost reality of going DTC at a premium price point.'
+variants:
+  - 'Same situation, but our wholesale relationships are exclusive (department store has paid for that). What changes?'
+  - 'Same question, but with a path to acquire a premium brand instead of repositioning Cobblestone. Compare.'
+relatedCases:
+  - pinewood-grocer-private-label
+solved: false
+updatedAt: '2026-05-20'
+---
+
+<Callout tone="note" title="Illustrative case">
+  Cobblestone is a stylized example exercising brand repositioning + channel strategy. Frameworks (3C, 5 Forces) are from cited references; industry specifics are illustrative.
+</Callout>
+
+## The situation
+
+Cobblestone sits in the squeezed middle of footwear retail. The $40 tier eats share via fast-fashion-style refresh cycles; the $200 tier wins on aspiration + heritage marketing. Cobblestone has neither edge — its $80-120 product is functionally fine but emotionally generic.
+
+The CEO's instinct is to "go premium". That's a major strategic move: brand re-architecture, product portfolio changes, channel exit, marketing investment. Before recommending, the question to answer is whether Cobblestone has the **right to win** in the $150-200 tier.
+
+## Structuring
+
+3C lens<Citation publisher="Case in Point" title="Case in Point — Complete Case Interview Preparation" authors={['Cosentino, Marc']} year={2023} /> with Five Forces as the competitive backdrop<Citation publisher="Competitive Strategy" title="Competitive Strategy: Techniques for Analyzing Industries and Competitors" authors={['Porter, Michael E.']} year={1980} />:
+
+<IssueTreeEmbed slug="cobblestone-tree" height={380} />
+
+- **Customer** — is the premium consumer's purchase decision driven by attributes Cobblestone has (quality, craftsmanship) or doesn't (heritage, status symbol)?
+- **Competition** — what is the existing $150-200 player set, and what defines their advantages? Are they vulnerable on any axis Cobblestone could attack?
+- **Company** — what assets does Cobblestone have that translate to a $150+ tier? Manufacturing capability typically translates; brand equity rarely does.
+
+## Key analysis
+
+Two numbers usually decide this case:
+
+**Number 1 — premium-tier gross margin:** $150-200 footwear typically runs 55-65% GM at retail<Citation publisher="Case in Point" title="Case in Point — Complete Case Interview Preparation" authors={['Cosentino, Marc']} year={2023} needsVerification /> vs. 40-45% at Cobblestone's current tier. The margin uplift funds the DTC operations, marketing, and slower turnover required at the premium tier.
+
+**Number 2 — DTC customer-acquisition cost:** Premium footwear DTC CAC is structurally high because the buyer wants tactile experience first. CAC payback periods of 18-24 months are common. Cobblestone needs to model whether its existing customer base will transition (most won't) and whether new-customer acquisition economics work.
+
+The honest read: Cobblestone has manufacturing + product-quality assets that map to premium, but lacks brand heritage and DTC operational depth. The two missing pieces take 3-5 years and significant investment to build.
+
+## Recommendation skeleton
+
+**Recommendation:** Do **not** reposition the entire brand. Instead, launch a premium sub-line at $150-180 under a new sub-brand, maintain the core $80-120 lineup, and pilot DTC for the sub-line only. Re-evaluate at 24 months with explicit go/no-go criteria.
+
+**Three supports:**
+
+1. A binary "reposition or not" is the wrong frame — the gradient between "stay" and "pivot fully" includes a sub-brand pilot that preserves optionality.
+2. The premium sub-line lets Cobblestone build DTC capability without betting the wholesale business.
+3. If the sub-line works, Cobblestone can migrate the brand toward premium over 5 years. If it fails, the core business is intact.
+
+**One risk:** the sub-line dilutes management focus + capital from the core. Mitigate by capping sub-line investment at <15% of total marketing spend in years 1-2.
+
+## What judges look for
+
+- Did you separate the **brand repositioning** decision from the **channel strategy** decision? They're related but not identical.
+- Did you propose a **staged commitment** (sub-brand) rather than a binary pivot?
+- Did you size **DTC CAC + payback** as a critical input rather than waving at it?
+- Did you call out the brand-equity gap honestly? Premium tier rewards heritage Cobblestone doesn't have.

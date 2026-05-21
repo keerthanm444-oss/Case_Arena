@@ -1,0 +1,90 @@
+---
+id: c-prismatic-energy
+slug: prismatic-energy-retail-pricing
+title: 'Prismatic Energy: should we offer time-of-use pricing?'
+source:
+  publisher: McKinsey & Company
+  title: 'McKinsey Quarterly'
+  needsVerification: true
+industry: energy
+category: pricing
+difficulty: standard
+frameworks: [3c, profitability]
+timeEstimate: 30
+tags: [energy, retail, pricing, time-of-use, demand-response]
+problemStatement: 'Prismatic Energy is a competitive retail electricity supplier with 1.8M residential customers. Wholesale power costs are increasingly volatile due to renewable intermittency; peak-hour wholesale prices have spiked frequently. The CEO is debating whether to introduce time-of-use (TOU) pricing — customers pay more during peak hours, less off-peak — to align retail rates with wholesale cost dynamics.'
+clarifyingQuestions:
+  - 'What share of our customers have smart meters that support TOU billing?'
+  - 'What is the typical residential consumption pattern by hour?'
+  - 'How does churn correlate with bill volatility?'
+  - 'What is the regulatory framework — do we need state approval for TOU rate structures?'
+commonMistakes:
+  - 'Treating TOU as universally good — it benefits customers who can shift consumption but penalizes those who can''t.'
+  - 'Underestimating customer-communication complexity; TOU plans confuse most residential customers.'
+  - 'Ignoring the segment dynamics; TOU works for tech-savvy customers, alienates traditional ones.'
+variants:
+  - 'Same situation, but Prismatic also sells home solar + battery storage. How does TOU interact with those products?'
+  - 'Same data, but a competitor has launched aggressive TOU pricing taking share. Does urgency shift?'
+relatedCases:
+  - meridian-utility-renewables
+  - formare-saas-pricing
+solved: false
+updatedAt: '2026-05-20'
+---
+
+<Callout tone="note" title="Illustrative case">
+  Prismatic is a stylized example for retail electricity pricing strategy. Framework from McKinsey + standard energy-retail methodology; specifics are illustrative.
+</Callout>
+
+## The situation
+
+Time-of-use pricing has been discussed in electricity retail for decades but adoption has been slow. The economic logic is compelling — TOU aligns retail rates with wholesale costs, incentivizes load shifting, reduces system peak demand. The barriers are practical: customer complexity, smart-meter requirements, regulatory approval, segment heterogeneity.
+
+For competitive retailers like Prismatic, TOU offers margin upside but introduces customer-retention risk.
+
+## Structuring
+
+Pricing strategy framework with customer segmentation:<Citation publisher="McKinsey & Company" title="McKinsey Quarterly" />
+
+<IssueTreeEmbed slug="prismatic-tree" height={400} />
+
+Three branches:
+
+1. **Customer segmentation** — tech-savvy + flexible-schedule (TOU-ready) vs traditional (TOU-averse).
+2. **Economic mechanics** — wholesale cost variation by hour, retail rate design that captures the spread while protecting customer relationships.
+3. **Operational requirements** — smart meter coverage, billing system capability, customer communication.
+
+## Key analysis
+
+A typical residential consumption pattern by hour:
+
+| Time | Share of daily kWh | Wholesale cost | TOU rate |
+|------|-------------------|----------------|----------|
+| Off-peak (10pm-6am) | 25% | Low | -20% from flat |
+| Mid (6-2pm, 8-10pm) | 35% | Mid | Flat reference |
+| Peak (2-8pm) | 40% | High | +30-50% from flat |
+
+The math: a customer who maintains the typical pattern under TOU pays roughly +5-10% more than under flat rates. Customers who shift just 20% of peak consumption to off-peak save 5-10%.
+
+The non-obvious finding: **opt-in TOU plans capture the willing customers without alienating the traditional ones.** Mandatory TOU rollout drives churn; opt-in TOU attracts the segment that benefits + creates brand differentiation.
+
+For Prismatic specifically: launching an opt-in TOU plan targeting tech-savvy customers (solar/EV/smart-home owners) captures margin upside from a segment willing to engage, while maintaining the flat-rate plan for the larger base.
+
+## Recommendation skeleton
+
+**Recommendation:** **Launch opt-in TOU plan within 12 months, retain flat-rate plan as default.** Target tech-savvy customer segments — solar owners, EV owners, smart-home enthusiasts. Marketing emphasizes "savings for those who can shift consumption." Limit churn risk by keeping flat-rate plan available + competitively priced. Within 24 months, evaluate TOU adoption + economics; consider mandatory TOU only if voluntary takeup exceeds 25%.
+
+**Three supports:**
+
+1. Opt-in design captures willing customers without alienating traditional base.
+2. Tech-savvy target segment has already adopted enabling technology (smart thermostats, EVs) and will actually shift consumption.
+3. Default flat-rate maintains customer retention while TOU experimentation proceeds.
+
+**One risk:** if wholesale price volatility increases dramatically, flat-rate customers become unprofitable for Prismatic. Mitigate by adjusting flat-rate pricing to reflect ongoing wholesale volatility + regulatory rate-adjustment mechanisms.
+
+## What judges look for
+
+- Did you propose **opt-in TOU** rather than mandatory rollout?
+- Did you identify **specific target segments** (solar, EV, smart-home)?
+- Did you size **consumption shifting economics** to validate the rate-design approach?
+- Did you address **competitor pricing dynamics** in the retail electricity market?

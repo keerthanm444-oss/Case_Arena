@@ -1,0 +1,91 @@
+---
+id: c-resonance-music
+slug: resonance-music-royalty-strategy
+title: 'Resonance Music: should we renegotiate label deals or build artist-direct?'
+source:
+  publisher: Case in Point
+  title: 'Case in Point — Complete Case Interview Preparation'
+  authors: ['Cosentino, Marc']
+  year: 2023
+  needsVerification: true
+industry: media
+category: business-model
+difficulty: standard
+frameworks: [3c, porters-five-forces]
+timeEstimate: 35
+tags: [media, music, streaming, royalties, content]
+problemStatement: 'Resonance Music is a music streaming service with 50M paid subscribers + $2.8B revenue. Label royalties consume 68% of revenue (industry norm 65-70%); operating margin is 4%. The CEO is debating: (a) aggressive renegotiation with major labels, (b) build artist-direct relationships to reduce label dependence, (c) acquire publishing rights, (d) accept current economics + focus on subscriber growth.'
+clarifyingQuestions:
+  - 'What is label bargaining power — do the three majors collectively control catalog access?'
+  - 'How much catalog is independent / artist-direct vs major label?'
+  - 'What is the typical churn impact if specific artists are removed?'
+  - 'Have peers (Spotify, Apple, Amazon) successfully renegotiated label terms?'
+commonMistakes:
+  - 'Underestimating label bargaining power — three majors collectively control 70%+ of streaming catalog.'
+  - 'Treating "artist-direct" as substitute for major label — artists typically can''t walk away from existing contracts.'
+  - 'Acquiring publishing rights without checking if it actually reduces royalty obligations (different right).'
+variants:
+  - 'Same situation, but a major label is acquired by a tech company. Does that change negotiation dynamics?'
+  - 'Same data, but AI-generated music is starting to compete. Does that shift the strategy?'
+relatedCases:
+  - cascade-streaming-subscriber-strategy
+  - amalfi-beauty-acquisition
+solved: false
+updatedAt: '2026-05-20'
+---
+
+<Callout tone="note" title="Illustrative case">
+  Resonance is a stylized example for music streaming economics. Framework from Cosentino + Porter; specifics are illustrative.
+</Callout>
+
+## The situation
+
+Music streaming is one of the most-studied examples of suppliers (labels) extracting value from a platform business. Three major labels (Universal, Sony, Warner) collectively control most popular music; streaming services must license from them. Royalty rates are largely standardized at 65-72% of revenue, leaving narrow operating margins for streaming services.
+
+The strategic question: are there structural moves to improve margin economics, or is accepting current economics the right path?
+
+## Structuring
+
+Platform economics framework with explicit supplier-power analysis:<Citation publisher="Case in Point" title="Case in Point — Complete Case Interview Preparation" authors={['Cosentino, Marc']} year={2023} /><Citation publisher="Competitive Strategy" title="Competitive Strategy: Techniques for Analyzing Industries and Competitors" authors={['Porter, Michael E.']} year={1980} />
+
+<IssueTreeEmbed slug="resonance-tree" height={400} />
+
+Three branches:
+
+1. **Label bargaining power** — Five Forces analysis showing concentrated suppliers with substitution-resistant catalog.
+2. **Artist-direct opportunity** — direct deals with artists outside major-label contracts; size of addressable catalog.
+3. **Strategic alternatives** — publishing acquisition, podcast investment (lower royalty content), social audio.
+
+## Key analysis
+
+The bargaining-power reality:
+
+- 3 major labels control ~70% of streaming consumption
+- Top 10% of artists drive ~80% of streams
+- Removing one major's catalog drops subscriber engagement 30-50% (catastrophic churn)
+- Substitution from one streamer to another is low-cost for consumers
+
+This is a textbook supplier-power problem. Streaming services have very limited bargaining leverage.
+
+The non-obvious move: **content diversification beyond music.** Spotify's pivot to podcasts is the template — podcast content has dramatically better economics (royalties or production costs much lower than music). Subscriber growth + engagement on podcasts reduces dependency on music economics over time.
+
+For Resonance specifically: aggressive label renegotiation is unlikely to succeed (no peer has). Artist-direct catalog is too small to materially change economics. Publishing acquisition doesn't reduce master-recording royalties. Content diversification (podcasts, audiobooks) is the structural answer.
+
+## Recommendation skeleton
+
+**Recommendation:** **Content diversification + selective renegotiation.** Track 1: invest $400-600M in podcast + audiobook content + exclusive deals over 3 years — shift 15-20% of listening time to non-music content. Track 2: incremental renegotiation with labels at contract renewal — small rate improvements possible, not transformative. Track 3: defer artist-direct + publishing acquisition unless industry conditions change. Target operating margin: 4% → 8% by year 5 through content mix shift.
+
+**Three supports:**
+
+1. Content diversification has structural margin benefit that direct label negotiation can't achieve.
+2. Renegotiation is incremental; structural margin improvement requires changing the content mix.
+3. Music-only strategy traps Resonance in unfavorable supplier economics indefinitely.
+
+**One risk:** podcast + audiobook investment may not generate enough subscriber growth or engagement to justify the capex. Mitigate by phased investment + measuring engagement metrics at each phase before committing more.
+
+## What judges look for
+
+- Did you recognize **label bargaining power** as structurally insurmountable?
+- Did you propose **content diversification** as structural margin improvement?
+- Did you reject **direct renegotiation** as the primary strategy?
+- Did you size **podcast economics** as the realistic margin lever?

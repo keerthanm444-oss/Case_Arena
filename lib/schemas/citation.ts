@@ -1,14 +1,16 @@
 import { z } from 'zod';
 import { APPROVED_PUBLISHERS } from '../../types/citation';
 
-export const SourceTypeSchema = z.enum([
-  'academic',
-  'consulting-firm',
-  'competition',
-  'book',
-  'journal',
-  'firm-report',
-]);
+export   const SourceTypeSchema = z.enum([
+    'academic',
+    'consulting-firm',
+    'competition',
+    'book',
+    'journal',
+    'firm-report',
+    'generic',
+  ]);
+
 
 /**
  * Publisher schema: must be in the approved list UNLESS the citation is

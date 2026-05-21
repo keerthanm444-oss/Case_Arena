@@ -1,0 +1,89 @@
+---
+id: c-swiftride
+slug: swiftride-market-entry
+title: 'SwiftRide: enter the autonomous-vehicle rideshare market?'
+source:
+  publisher: McKinsey & Company
+  title: 'McKinsey Quarterly'
+  needsVerification: true
+industry: transport
+category: market-entry
+difficulty: standard
+frameworks: [market-entry, 3c]
+timeEstimate: 35
+tags: [transport, ridesharing, autonomous, market-entry, mobility]
+problemStatement: 'SwiftRide is a $6B revenue regional ride-hailing company. Autonomous-vehicle (AV) rideshare is launching in selected cities (Waymo, Cruise). SwiftRide''s competitive moat (driver network, brand) erodes if AV scales. Options: (a) partner with an AV operator (license SwiftRide brand + customer base), (b) acquire AV technology, (c) compete with driver-based service longer, (d) exit / sell.'
+clarifyingQuestions:
+  - 'How realistic is AV at scale — 5 years? 10? 15?'
+  - 'What is the cost structure of AV rideshare vs driver-based today?'
+  - 'Who are the realistic AV partners — Waymo, Cruise, Tesla, Mobileye?'
+  - 'How portable is our customer base to AV — would users switch?'
+commonMistakes:
+  - 'Treating AV timeline as certain when commercialization has been delayed repeatedly.'
+  - 'Underestimating cost of AV technology acquisition; building or buying AV tech costs $5-15B+.'
+  - 'Choosing partnership terms that lock SwiftRide into unfavorable economics if AV succeeds.'
+variants:
+  - 'Same situation, but a major AV company offers exclusive partnership in our region. Recommend.'
+  - 'Same data, but regulatory backlash against AVs is growing. Does that change urgency?'
+relatedCases:
+  - laneshare-marketplace
+  - axiom-automotive-ev-transition
+solved: false
+updatedAt: '2026-05-20'
+---
+
+<Callout tone="note" title="Illustrative case">
+  SwiftRide is a stylized example for ride-hailing strategic response to AV. Framework from McKinsey + standard mobility methodology; specifics are illustrative.
+</Callout>
+
+## The situation
+
+Autonomous-vehicle rideshare has been "5 years away" for over a decade. Waymo has deployed driverless service in limited geographies (Phoenix, San Francisco); Cruise has paused operations after safety incidents; Tesla's full autonomy timeline has slipped repeatedly. The realistic timeline for AV rideshare at meaningful scale is 7-15 years depending on technology + regulatory progression.
+
+The strategic question for ride-hailing incumbents: invest now in AV capability (capital-intensive, uncertain timeline) or maintain driver-based service longer (uncertain competitive position when AV does scale)?
+
+## Structuring
+
+Disruption-response framework:<Citation publisher="McKinsey & Company" title="McKinsey Quarterly" />
+
+<IssueTreeEmbed slug="swiftride-tree" height={400} />
+
+Three branches:
+
+1. **AV timeline scenarios** — fast (5-7 year scale), moderate (10-15 years), slow (>15 years).
+2. **SwiftRide capability gap** — what would it cost to build vs buy vs partner for AV capability?
+3. **Strategic positioning** — first-mover in AV, fast-follower, customer-base monetization, or strategic exit.
+
+## Key analysis
+
+Cost analysis by entry mode:
+
+| Entry mode | Investment | AV capability gain | Risk |
+|------------|------------|---------------------|------|
+| Build internal AV team | $5-10B over 7 years | Highest control, lowest probability of catching technology leaders | High |
+| Acquire AV company | $3-15B (depends on target) | Variable; integration risk | Very high |
+| Partner with AV operator | $50-200M | Lowest control, fastest market presence | Medium |
+| Wait + observe | $0 | None until forced action | Medium-high (timing) |
+
+The non-obvious finding: **for a regional ride-hailing company, AV partnership is the realistic best option.** Building AV is implausibly capital-intensive; acquiring at peak valuations is risky; waiting risks disintermediation when AV scales.
+
+Partnership structure matters enormously: SwiftRide must retain customer relationship + brand + data while AV partner provides vehicles + technology. The economics split — typically AV partner gets 60-70% of revenue, ride-hailing partner gets 30-40% — but the absolute revenue from a brand + customer-base partnership can be substantial.
+
+## Recommendation skeleton
+
+**Recommendation:** **Partnership-led AV entry.** Within 18 months, negotiate exclusive partnership with one AV operator (Waymo or comparable) for our regional market — SwiftRide brand + customer base + operations support; partner provides vehicles + technology. Maintain driver-based service in parallel for 5-7 years until AV reaches meaningful share. Structure partnership with explicit data-sharing + customer-relationship protections.
+
+**Three supports:**
+
+1. Partnership is the only realistic path given SwiftRide's capital + technology limitations.
+2. Customer base + brand are SwiftRide's contribution — locking in partnership terms preserves these assets.
+3. Parallel driver service maintains revenue during the long AV ramp.
+
+**One risk:** AV partner may eventually want to disintermediate SwiftRide. Mitigate with multi-year exclusive agreement + data + customer-relationship contractual protections.
+
+## What judges look for
+
+- Did you analyze **AV timeline scenarios** rather than assuming certainty?
+- Did you reject **building AV internally** for capital reasons?
+- Did you size **partnership economics** specifically?
+- Did you address **disintermediation risk** in the partnership structure?

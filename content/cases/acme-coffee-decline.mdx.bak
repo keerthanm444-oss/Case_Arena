@@ -1,0 +1,87 @@
+---
+id: c-demo-acme-coffee
+slug: acme-coffee-decline
+title: 'Acme Coffee: stagnant revenue, falling profit'
+source:
+  publisher: 'Case in Point'
+  title: 'Case in Point — Complete Case Interview Preparation'
+  authors: ['Cosentino, Marc']
+  year: 2023
+  needsVerification: true
+industry: retail
+category: profitability
+difficulty: intro
+frameworks:
+  - profitability
+  - 3c
+timeEstimate: 35
+tags: [profitability, retail, coffee]
+problemStatement: 'Acme Coffee is a regional 50-store specialty coffee chain. Revenue has been roughly flat over the last six quarters, but operating profit has fallen 30%. The CEO wants to know what is driving the squeeze and what to do about it.'
+clarifyingQuestions:
+  - 'Is the revenue stagnation across all stores, or concentrated in specific markets?'
+  - 'Has same-store traffic changed, or only ticket size?'
+  - 'Are competitors expanding faster than us?'
+  - 'What time period are we measuring "operating profit" over?'
+commonMistakes:
+  - 'Jumping straight to cost cutting without diagnosing what changed.'
+  - 'Treating "revenue is flat" as a non-issue — flat revenue + cost inflation IS a problem.'
+  - 'Ignoring per-store unit economics and going straight to company-level totals.'
+  - 'Failing to ask about the time horizon — quarterly vs annual changes the diagnosis.'
+variants:
+  - 'Same company, but revenue is DOWN 5% instead of flat. Does the diagnosis change?'
+  - 'Same problem, but Acme is a coffee SUPPLIER selling to corporate cafeterias, not a retailer.'
+relatedCases: []
+solved: false
+updatedAt: '2025-01-01'
+---
+
+## Background
+
+Acme Coffee operates 50 specialty coffee stores across the Mid-Atlantic. The CEO is concerned: top-line revenue has held steady at roughly **<AssumptionChip name="revenue" base={200} unit="$M" />** for six straight quarters, but operating profit margin has compressed from 12% to 8.5%.
+
+That's a real squeeze. Total profit:
+
+<LiveNumber large compute="revenue * margin" prefix="$" suffix="M" decimals={1} tone="accent" label="Operating profit today" />
+
+### Setting up the structure
+
+Use the profit-equation tree as your starting point.<Citation publisher="Case in Point" title="Case in Point — Complete Case Interview Preparation" authors={['Cosentino, Marc']} year={2023} /> The classic decomposition:
+
+$$
+\text{Profit} = \text{Revenue} - \text{Cost}
+$$
+
+Revenue is flat, so the question is cost — but be disciplined: check both sides anyway. A revenue mix shift toward lower-margin items would *also* look like flat revenue + falling profit.
+
+<IssueTreeEmbed slug="acme-coffee" height={380} />
+
+## The diagnosis
+
+Press the assumption chips below to toggle between the as-is and a stressed scenario. Watch the live profit number change.
+
+**Margin scenario:**
+
+<AssumptionChip name="margin" base={0.085} alt={0.12} label="Margin" decimals={3} />
+<AssumptionChip name="cost_inflation" base={0.04} alt={0.08} label="Cost inflation" unit="%" decimals={2} />
+
+If costs grow at <LiveNumber compute="cost_inflation * 100" suffix="%" decimals={1} /> per year while revenue holds flat, the squeeze gets worse fast.
+
+### Where to dig first
+
+In Acme's situation:
+
+- **Variable costs** — coffee beans, milk, cups — have seen real input-price inflation over the last 2 years. Probably the biggest single driver.
+- **Labor** — wage pressure especially for shift staff. Check whether stores have absorbed that into ticket prices.
+- **Real estate** — fixed rent steps tend to move up at renewal. If renewals clustered into the period in question, that explains a meaningful chunk.
+
+### Recommendation skeleton
+
+1. **Diagnose** which of the three drivers above is largest — get last quarter's P&L by line item.
+2. **Address inputs** Acme can control: re-bid bean contracts, sequence the rent renewals.
+3. **Address inputs** Acme can't directly control: take small, frequent price increases on the highest-margin SKUs to absorb cost pressure without losing traffic.
+
+## What judges look for
+
+- Did you ask about **store-level vs. company-level** dynamics? You need both.
+- Did you ask about **time horizon** before quantifying anything?
+- Did you propose a **specific** action (re-bid contracts) rather than a vague one ("reduce costs")?

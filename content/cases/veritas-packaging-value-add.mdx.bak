@@ -1,0 +1,88 @@
+---
+id: c-veritas-packaging
+slug: veritas-packaging-value-add
+title: 'Veritas Packaging: how do we escape commodity competition?'
+source:
+  publisher: Boston Consulting Group
+  title: 'BCG Insights'
+  needsVerification: true
+industry: manufacturing
+category: business-model
+difficulty: standard
+frameworks: [3c, porters-five-forces]
+timeEstimate: 35
+tags: [manufacturing, packaging, commodity, differentiation, value-add]
+problemStatement: 'Veritas Packaging makes corrugated containers and folding cartons — $2.1B revenue. The industry is fragmented; corrugated is essentially a commodity priced on input costs + transport. Operating margin has compressed from 8% to 5% over 5 years. The CEO is debating: (a) consolidate via M&A to gain scale advantage, (b) invest in differentiated value-add capabilities (sustainable materials, smart packaging, design services), or (c) both.'
+clarifyingQuestions:
+  - 'What share of revenue is from large customers (mostly commodity) vs mid-market (more design-sensitive)?'
+  - 'What does our cost position look like vs the largest players (e.g., International Paper, WestRock, Smurfit)?'
+  - 'Are there customers asking for sustainable / smart packaging today?'
+  - 'What is our M&A capability — have we successfully integrated past acquisitions?'
+commonMistakes:
+  - 'Treating consolidation as a margin solution — bigger commodity is still commodity.'
+  - 'Underestimating the customer-development cost of selling differentiated packaging.'
+  - 'Ignoring the segmentation; the answer for large-CPG customers is very different from the answer for mid-market customers.'
+variants:
+  - 'Same situation, but a competitor just announced a $2B sustainable-packaging investment. Does urgency shift?'
+  - 'Same data, but Veritas has limited capital — can do M&A *or* value-add investment but not both. Compare.'
+relatedCases:
+  - altruum-chemicals-portfolio
+  - meridian-apparel-portfolio
+solved: false
+updatedAt: '2026-05-20'
+---
+
+<Callout tone="note" title="Illustrative case">
+  Veritas is a stylized example for commodity-industry differentiation strategy. Frameworks from BCG + Porter; specifics are illustrative.
+</Callout>
+
+## The situation
+
+Corrugated packaging is one of the most-studied commodity industries. Industry structure (Five Forces) is unfavorable: many sellers, large buyers (CPG companies, e-commerce), commodity inputs, no real differentiation, high transport costs limiting geographic reach. Margin compression is structural unless individual companies find a way to differentiate.
+
+Two paths exist: **scale** (consolidate to capture purchasing + manufacturing efficiency) and **differentiation** (invest in value-add capabilities customers will pay premium for). Most successful packaging companies pursue both selectively.
+
+## Structuring
+
+Industry-structure analysis combined with value-chain decomposition:<Citation publisher="Boston Consulting Group" title="BCG Insights" /><Citation publisher="Competitive Strategy" title="Competitive Strategy: Techniques for Analyzing Industries and Competitors" authors={['Porter, Michael E.']} year={1980} />
+
+<IssueTreeEmbed slug="veritas-tree" height={400} />
+
+Three branches:
+
+1. **Customer segmentation** — large CPG buyers (price-driven, scale-dependent) vs mid-market brands (design-sensitive, willing to pay premium for differentiation) vs e-commerce shippers (volume + cost focused).
+2. **Competitive position** — scale-wise, who are we vs the top 3? Are we structurally cost-disadvantaged?
+3. **Differentiation options** — sustainable materials (recyclable, compostable), smart packaging (RFID, QR, freshness sensors), design services (in-house creative team).
+
+## Key analysis
+
+The diagnostic insight: **different customer segments support different strategies.**
+
+For large CPG buyers (~40% of Veritas revenue): pure cost game. Either Veritas matches the cost position of larger competitors (requires M&A consolidation) or loses share. M&A is the answer for this segment.
+
+For mid-market brands (~35% of revenue): differentiation rewards. Brands launching new product lines value design support, sustainable substrates, fast turnaround. Willing to pay 15-25% premium. Differentiation investment is the answer.
+
+For e-commerce shippers (~25% of revenue): volume + cost. Similar to large CPG.
+
+So the answer is **both M&A and differentiation** — but targeted at different customer segments rather than as a blanket strategy.
+
+The non-obvious move: **structure Veritas as two distinct business units**, one focused on scale-commodity (mostly automated, cost-driven), one focused on differentiated mid-market (sales force, design services, sustainability expertise). The current single-business structure forces compromises that hurt both.
+
+## Recommendation skeleton
+
+**Recommendation:** **Dual-strategy with internal restructuring.** M&A: acquire 1-2 mid-sized commodity-packaging players to gain scale in CPG + e-commerce segments ($800M-1.2B over 36 months). Differentiation: invest $200M in sustainable materials capability + design services targeting mid-market brands. Restructure into two business units to avoid compromise.
+
+**Three supports:**
+
+1. Customer segments have different economic drivers; one-size-fits-all strategy underperforms.
+2. M&A captures scale-commodity opportunity where Veritas is structurally disadvantaged.
+3. Differentiation investment captures mid-market premium where Veritas can win.
+
+**One risk:** running two distinct business units requires management capability the company may not have. Mitigate by hiring a dedicated leader for the differentiated unit with packaging-innovation track record.
+
+## What judges look for
+
+- Did you reject **single-strategy** in favor of segment-specific approaches?
+- Did you identify **mid-market as the differentiation opportunity** rather than treating all customers similarly?
+- Did you propose **structural separation** (two business units) to avoid compromise?
+- Did you size **M&A capital + differentiation investment** as distinct buckets?

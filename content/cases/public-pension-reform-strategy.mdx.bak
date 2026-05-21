@@ -1,0 +1,91 @@
+---
+id: c-public-pension
+slug: public-pension-reform-strategy
+title: 'State Pension: $25B underfunded — how do we close the gap?'
+source:
+  publisher: McKinsey & Company
+  title: 'McKinsey Quarterly'
+  needsVerification: true
+industry: public-sector
+category: business-model
+difficulty: advanced
+frameworks: [profitability, 3c]
+timeEstimate: 45
+tags: [public-sector, pension, retirement, fiscal, reform]
+problemStatement: 'A state public pension system covers 500,000 active + retired employees with $60B in assets vs $85B in liabilities (71% funded ratio). Annual required contribution is $4B; state currently pays $2.8B. The unfunded liability is growing. The Governor must propose reform: (a) raise contribution rates, (b) reduce benefit accruals for new employees, (c) shift to defined-contribution model, (d) reduce cost-of-living adjustments, (e) some combination.'
+clarifyingQuestions:
+  - 'What is the actuarial assumption for return on assets — is it realistic given current markets?'
+  - 'What is the demographic profile — active-to-retiree ratio, projected retirements?'
+  - 'Have prior reform attempts been successfully implemented?'
+  - 'What are the constitutional or contractual protections on existing benefits?'
+commonMistakes:
+  - 'Treating pension reform as binary "fix or don''t" — most reforms are incremental.'
+  - 'Underestimating constitutional/contractual barriers; many states cannot reduce promised benefits to current employees.'
+  - 'Choosing DC conversion without addressing the unfunded liability — DC conversion doesn''t reduce existing pension obligations.'
+variants:
+  - 'Same situation, but state has just passed a constitutional amendment allowing benefit modification. Recommend.'
+  - 'Same data, but market downturn has reduced asset values by 15%. How does that change urgency or options?'
+relatedCases:
+  - meridian-asset-management-fees
+  - state-medicaid-reform
+solved: false
+updatedAt: '2026-05-20'
+---
+
+<Callout tone="note" title="Illustrative case">
+  State Pension is a stylized example for public pension reform. Framework from McKinsey + standard pension actuarial methodology; specifics are illustrative.
+</Callout>
+
+## The situation
+
+US state pension systems collectively face $1+ trillion in unfunded liabilities. The drivers — aging workforces, longer retirement durations, conservative actuarial assumptions giving way to market reality, decades of contribution underpayment — are largely shared. Reforms have been attempted with mixed success; constitutional + contractual barriers limit options in many states.
+
+The strategic question isn't whether to reform but which mix of reforms produces sustainable funding without triggering legal or political crisis.
+
+## Structuring
+
+Pension reform framework:<Citation publisher="McKinsey & Company" title="McKinsey Quarterly" />
+
+<IssueTreeEmbed slug="pension-tree" height={420} />
+
+Three branches:
+
+1. **Asset-side levers** — investment return assumptions, asset allocation, contribution increases.
+2. **Liability-side levers** — benefit modifications (typically only for new employees due to legal constraints), retirement age increases, COLA modifications.
+3. **Plan structure** — DB-only continuation, DB + DC hybrid for new employees, full DC conversion.
+
+## Key analysis
+
+Reform impact estimates for a typical underfunded state plan:
+
+| Lever | Annual impact | Implementation barrier |
+|-------|---------------|------------------------|
+| Lower assumed return rate (8% → 7%) | -$0 immediate (higher reported liability, more transparency) | Political pushback on higher contribution requirement |
+| Increase employer contribution to ARC | +$1.2B funding | State budget pressure |
+| Reduce benefits for new hires | -$300M/year accruing benefit (long-term) | Political — affects future workers only |
+| Increase retirement age (new hires) | -$200M/year | Political |
+| COLA modifications (current retirees) | $400-600M/year | Constitutional in many states |
+| Hybrid DB+DC for new hires | -$200M/year long-term | Implementation complexity |
+
+The non-obvious move: **the largest immediate funding improvement comes from paying the full actuarial required contribution, not from benefit reductions.** Benefit reductions help long-term but don't close the existing gap.
+
+For the state specifically: the $1.2B annual underpayment ($4B ARC minus $2.8B actual) is the largest single lever — but requires state budget commitment.
+
+## Recommendation skeleton
+
+**Recommendation:** **Five-track reform package.** Track 1: phase in full ARC payment over 5 years ($1.2B annual increase, funded by dedicated revenue sources). Track 2: hybrid DB+DC plan for new hires after 2025. Track 3: increased employee contribution rate (1-2 percentage points). Track 4: retirement age increase for new hires (62 → 65). Track 5: explicit COLA cap (CPI-tied, capped at 2%). Target: 90% funding within 20 years.
+
+**Three supports:**
+
+1. Paying full ARC is the largest immediate-impact lever; the other reforms compound over decades.
+2. New-hire reforms avoid constitutional challenges while reducing future liability growth.
+3. Dedicated revenue source for ARC funding (e.g., sin tax, fee increases) creates fiscal sustainability without competing with other priorities annually.
+
+**One risk:** legislative resistance to ARC funding or new-hire reforms may produce watered-down legislation. Mitigate by transparent communication of unfunded liability trajectory + downstream taxpayer cost.
+
+## What judges look for
+
+- Did you separate **immediate funding fixes** from **long-term liability reduction**?
+- Did you identify **full ARC payment** as the largest single lever?
+- Did you address **constitutional/contractual barriers** on benefit modification?
+- Did you propose **multi-track reform** rather than single-lever solution?

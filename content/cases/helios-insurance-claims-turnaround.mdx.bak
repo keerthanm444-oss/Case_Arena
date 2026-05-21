@@ -1,0 +1,92 @@
+---
+id: c-helios-insurance
+slug: helios-insurance-claims-turnaround
+title: 'Helios Insurance: our claims combined ratio is killing us'
+source:
+  publisher: Case in Point
+  title: 'Case in Point — Complete Case Interview Preparation'
+  authors: ['Cosentino, Marc']
+  year: 2023
+  needsVerification: true
+industry: financial-services
+category: operations
+difficulty: standard
+frameworks: [profitability, 3c]
+timeEstimate: 35
+tags: [financial-services, insurance, claims, operations, combined-ratio]
+problemStatement: 'Helios Insurance is a $4.2B annual premium P&C insurer specializing in commercial auto + small commercial. Combined ratio has deteriorated from 96% to 104% over three years (peer benchmark 98-101%). Claims costs are the primary driver. The CEO needs to know whether this is industry-wide pricing pressure, claims-cost inflation, or operational inefficiency — and what to do.'
+clarifyingQuestions:
+  - 'How does loss ratio decompose by line — auto vs property vs liability?'
+  - 'What is the trend in claim severity vs frequency?'
+  - 'What share of claims goes to litigation vs settles directly?'
+  - 'Have we changed our pricing or underwriting in the past 3 years?'
+commonMistakes:
+  - 'Treating combined ratio as a single number when loss ratio and expense ratio have different drivers.'
+  - 'Ignoring social inflation — jury verdicts and litigation settlements have risen far faster than CPI for commercial liability.'
+  - 'Underestimating the time required to fix underwriting; mispriced policies remain on the books for the policy term.'
+variants:
+  - 'Same situation, but reinsurance market has hardened. Does that change risk-retention strategy?'
+  - 'Same data, but a strategic buyer offers to acquire Helios at 1.1x book. Should we sell?'
+relatedCases:
+  - pioneer-bank-profitability
+  - meridiem-medicare-advantage
+solved: false
+updatedAt: '2026-05-20'
+---
+
+<Callout tone="note" title="Illustrative case">
+  Helios is a stylized example for P&C insurance operations analysis. Framework from Cosentino + standard insurance-industry methodology; specifics are illustrative.
+</Callout>
+
+## The situation
+
+P&C insurance combined ratio above 100% means underwriting losses — the company is paying out more in claims + expenses than it collects in premium. Investment income on float can offset some underwriting loss, but a combined ratio of 104% is concerning regardless of investment performance.
+
+The diagnostic challenge: combined ratio compresses three distinct phenomena (loss ratio, LAE ratio, expense ratio) that have very different drivers and fixes.
+
+## Structuring
+
+Insurance profitability framework:<Citation publisher="Case in Point" title="Case in Point — Complete Case Interview Preparation" authors={['Cosentino, Marc']} year={2023} />
+
+<IssueTreeEmbed slug="helios-tree" height={400} />
+
+Three branches:
+
+1. **Loss ratio** (claims paid / earned premium) — typically 65-75% for healthy P&C. Driven by claim severity × frequency, mix of business, pricing adequacy.
+2. **LAE ratio** (loss adjustment expense) — typically 10-13%. Driven by claims-handling efficiency, litigation rates, fraud detection.
+3. **Expense ratio** (commissions + operating) — typically 15-25%. Driven by distribution channel, operational efficiency.
+
+## Key analysis
+
+For commercial auto + small commercial specifically, the dominant deterioration drivers over the past 3-5 years have been:
+
+- **Severity inflation in bodily injury claims** — medical costs + jury awards rising 8-12% annually
+- **Distracted-driving frequency increases** — collision frequency up ~10% in some segments
+- **Litigation rates** — share of claims going to lawsuit up materially in many jurisdictions
+
+This is industry-wide; many commercial auto insurers have seen combined ratios at 105-110%. The strategic question is whether Helios is performing in line with the industry or worse.
+
+The diagnostic test: **decompose loss ratio change into severity vs frequency vs mix.**
+
+If severity is the driver, the fix is repricing (takes 18-24 months because rate filings + policy turnover are slow). If frequency is the driver, the fix is underwriting (decline higher-risk applicants). If mix is the driver, the fix is portfolio shift.
+
+The non-obvious move: **most commercial auto books need a multi-year repricing combined with selective non-renewal of worst-performing accounts.** This shrinks the book temporarily (premium-and-revenue dip) but restores combined ratio.
+
+## Recommendation skeleton
+
+**Recommendation:** **Three-action plan over 24 months.** Action 1: file commercial auto rate increases of 12-18% across affected states (18-month implementation). Action 2: non-renew bottom-decile loss-ratio accounts (~10% of policy count, 5-7% of premium). Action 3: invest $25M in claims technology — telematics adoption incentives, fraud detection, predictive claims triage. Target combined ratio: 99% by year 3.
+
+**Three supports:**
+
+1. Rate filings address the dominant driver (claim severity) directly but slowly.
+2. Selective non-renewal removes the worst risks faster than rate increases can compensate.
+3. Claims technology addresses LAE and downstream loss costs (telematics on commercial fleets reduces frequency).
+
+**One risk:** rate increases drive customer attrition to competitors who haven't yet raised rates. Mitigate by sequencing geography — start in states with most severe deterioration where competitors are also raising — to avoid being first to raise in benign markets.
+
+## What judges look for
+
+- Did you **decompose combined ratio** into loss / LAE / expense components rather than treat as monolithic?
+- Did you identify **severity inflation as industry-wide** rather than treating as Helios-specific?
+- Did you propose **rate + underwriting + technology** as multi-track response?
+- Did you address the **revenue dip risk** from non-renewal + repricing?

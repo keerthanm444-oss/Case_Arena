@@ -1,0 +1,87 @@
+---
+id: c-luminath-digital
+slug: luminath-digital-therapeutic
+title: 'Luminath Therapeutics: how should we price our FDA-cleared digital therapeutic?'
+source:
+  publisher: McKinsey & Company
+  title: 'McKinsey Quarterly'
+  needsVerification: true
+industry: healthcare
+category: pricing
+difficulty: standard
+frameworks: [3c, profitability]
+timeEstimate: 30
+tags: [healthcare, digital-therapeutic, pricing, reimbursement, FDA]
+problemStatement: 'Luminath Therapeutics has just received FDA clearance for a prescription digital therapeutic (PDT) for insomnia. Clinical trials show outcomes comparable to first-line CBT-I in-person therapy. The CEO is debating pricing: (a) per-prescription pricing at parity with a generic drug ($30/month), (b) per-episode pricing at parity with CBT-I therapy ($1,200 per 6-week course), (c) value-based pricing tied to outcomes ($600 + $400 if HAM-A scores improve by month 3).'
+clarifyingQuestions:
+  - 'What is the reimbursement landscape — are PBMs paying for PDTs at all?'
+  - 'What is the cost per acquired patient through digital channels vs traditional pharma channels?'
+  - 'What is the comparable product universe — other FDA-cleared PDTs and their pricing?'
+  - 'What is our go-to-market — direct-to-physician, direct-to-employer, or both?'
+commonMistakes:
+  - 'Pricing like a drug when the reimbursement infrastructure for drugs doesn''t cover most PDTs.'
+  - 'Pricing like a therapy without considering the unit economics of digital delivery (variable cost near zero, fixed cost in clinical study + FDA).'
+  - 'Ignoring outcome variability — value-based pricing only works if outcomes are measurable + verifiable.'
+variants:
+  - 'Same product, but Luminath has a strategic investor that''s a major pharma. Does that shift the GTM and therefore pricing?'
+  - 'Same situation, but the PDT is for diabetes management (chronic) instead of insomnia (episodic). How does pricing structure change?'
+relatedCases:
+  - rivercrest-pharmacy-margin
+  - formare-saas-pricing
+solved: false
+updatedAt: '2026-05-20'
+---
+
+<Callout tone="note" title="Illustrative case">
+  Luminath is a stylized example for digital-health pricing strategy. Frameworks adapted from cited sources; specifics are illustrative.
+</Callout>
+
+## The situation
+
+Prescription digital therapeutics (PDTs) sit between drugs and therapy in the healthcare reimbursement system, which has historically been a problem. Drug-channel pricing assumes PBM reimbursement that PDTs often don't get; therapy-channel pricing assumes a delivery model (clinician time) that PDTs don't have.
+
+Several first-wave PDT companies have struggled with this exact pricing problem. The case rewards candidates who recognize that **pricing strategy is downstream of channel strategy**.
+
+## Structuring
+
+3C framework with explicit decomposition of **who's paying:**<Citation publisher="McKinsey & Company" title="McKinsey Quarterly" />
+
+<IssueTreeEmbed slug="luminath-tree" height={380} />
+
+Three branches:
+
+1. **Customer (who pays)** — patient OOP, employer, PBM, health plan. Each channel has different willingness to pay and different sales motion.
+2. **Competition (what's the alternative)** — generic sleep aids (~$10/month, low efficacy), CBT-I therapy ($150-200/session × 6-8 sessions, hard to access), or untreated (the most common alternative).
+3. **Company (cost structure)** — variable cost per patient ~$10-30; fixed costs in clinical evidence + FDA + sales force. Margin structure is closer to software than pharma.
+
+## Key analysis
+
+The pivot question: **who's actually going to pay, and what do they value?**
+
+For each potential payer, sketched economics:
+
+- **Patient OOP** — sustainable only at $20-50/month for chronic conditions, much less for episodic. Acquisition cost dominates economics.
+- **Employer (self-insured)** — willing to pay $500-2,000 per qualifying employee for a clinically proven intervention with productivity benefits. Sleep is a known productivity driver.
+- **PBM / pharmacy benefit** — pricing per Rx; reimbursement currently inconsistent for PDTs. Long sales cycle.
+- **Medical benefit (insurance)** — pricing per episode; requires payer contracting. Longer sales cycle.
+
+The non-obvious finding: **employer-direct** is often the highest-margin channel for PDTs. Employers care about productivity + ROI, can decide quickly, and pay annually for a "covered employees" deal. Pharma-channel approaches that try to compete with drugs typically lose on the reimbursement game.
+
+## Recommendation skeleton
+
+**Recommendation:** Lead with **employer-direct go-to-market** at $1,200 per qualifying employee per year (covers unlimited course-based usage). Maintain a separate $300 per-course direct-to-patient channel for cash-pay patients. Pursue PBM reimbursement as a longer-term track (24+ months to first contract).
+
+**Three supports:**
+
+1. Employers are the lowest-friction payer for digital therapeutics — they can decide quickly + pay per-employee annually.
+2. $1,200 per employee positions Luminath as an HR-benefit cost rather than a pharmacy cost, where the alternatives are absenteeism + presenteeism.
+3. Separating cash-pay + employer channels avoids reference-price problems while maintaining patient access.
+
+**One risk:** the employer-direct sales cycle is 6-12 months and requires building a sales force the company doesn't have. Mitigate by partnering with an existing benefits broker network in year 1, then building direct sales in year 2-3.
+
+## What judges look for
+
+- Did you recognize that **pricing strategy is downstream of channel strategy**?
+- Did you identify **employer-direct as the highest-margin path** for PDTs?
+- Did you reject the **pharma-channel default**? Most candidates anchor on drug-channel reimbursement.
+- Did you propose a **multi-channel strategy** rather than committing to a single payer?

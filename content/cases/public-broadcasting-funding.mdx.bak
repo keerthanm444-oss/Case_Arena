@@ -1,0 +1,95 @@
+---
+id: c-public-broadcasting
+slug: public-broadcasting-funding
+title: 'Public Broadcasting: federal funding declining — what now?'
+source:
+  publisher: Case in Point
+  title: 'Case in Point — Complete Case Interview Preparation'
+  authors: ['Cosentino, Marc']
+  year: 2023
+  needsVerification: true
+industry: public-sector
+category: business-model
+difficulty: standard
+frameworks: [3c, profitability]
+timeEstimate: 30
+tags: [public-sector, media, broadcasting, funding, nonprofit]
+problemStatement: 'A state public broadcasting network (PBS + NPR affiliates) operates 12 stations with $80M annual budget. Federal CPB funding (currently 18% of budget) faces potential reduction or elimination. State funding (12%) is also under pressure. Member donations (40%), foundation grants (20%), and other revenue (10%) round out the budget. The new CEO must develop a 5-year financial sustainability plan.'
+clarifyingQuestions:
+  - 'Has audience size been stable, growing, or declining (broadcast TV + radio specifically)?'
+  - 'What is the donor demographic — aging or includes younger members?'
+  - 'Are there underutilized assets (broadcasting spectrum, real estate, content libraries)?'
+  - 'How successful have peer stations been at digital revenue?'
+commonMistakes:
+  - 'Treating public broadcasting like commercial media — different mission constraints, different audience expectations.'
+  - 'Underestimating the donor base aging dynamics; current major donor cohorts are 55+ and not being replaced.'
+  - 'Ignoring digital transition reality — broadcast revenue is structurally declining alongside audience migration.'
+variants:
+  - 'Same situation, but a major foundation offers $50M endowment if matching funds are raised. Recommend.'
+  - 'Same data, but federal funding is fully eliminated. How does that change the urgency?'
+relatedCases:
+  - stateu-enrollment-strategy
+  - westfield-department-transformation
+solved: false
+updatedAt: '2026-05-20'
+---
+
+<Callout tone="note" title="Illustrative case">
+  Public Broadcasting is a stylized example for nonprofit media sustainability. Framework from Cosentino + standard nonprofit methodology; specifics are illustrative.
+</Callout>
+
+## The situation
+
+US public broadcasting faces a structural challenge: traditional revenue streams (federal + state appropriations, traditional member donations, foundation grants) face long-term pressure while costs continue to rise. The audience for broadcast TV + radio is aging; younger audiences consume content via streaming, podcasts, and social media — channels where traditional public broadcasting has weaker positions.
+
+Long-term sustainability requires both cost rationalization and revenue diversification.
+
+## Structuring
+
+Nonprofit sustainability framework:<Citation publisher="Case in Point" title="Case in Point — Complete Case Interview Preparation" authors={['Cosentino, Marc']} year={2023} />
+
+<IssueTreeEmbed slug="public-bcast-tree" height={400} />
+
+Three branches:
+
+1. **Revenue diversification** — major donor cultivation, expanded membership, digital sponsorship, content licensing, real estate monetization, endowment building.
+2. **Cost rationalization** — station network consolidation, shared services across stations, technology efficiency.
+3. **Mission focus** — what content + audience does the network uniquely serve that justifies public-broadcasting existence?
+
+## Key analysis
+
+Revenue diversification potential:
+
+| Source | Current | 5-yr potential | Effort |
+|--------|---------|----------------|--------|
+| Major donors ($10K+ donations) | $5M | $15-20M | High; requires development team buildout |
+| Digital sponsorship | $3M | $10-15M | Medium; requires digital audience growth |
+| Content licensing | $2M | $5-8M | Low-medium; depends on content library |
+| Endowment income (5% draw on growing endowment) | $4M | $12-18M | High; multi-decade buildout |
+| Foundation grants (program-focused) | $16M | $20-25M | Medium |
+
+Cost rationalization potential:
+
+- Station consolidation (back-office, technology, programming): 10-15% of cost
+- Programming sharing across stations: 5-10% additional savings
+
+The non-obvious move: **endowment building should be the strategic priority despite slow payoff.** A $200M endowment produces $10M annual sustainable income — replaces most federal funding without donor cultivation pressure. Most public broadcasters underinvest in endowment growth because the payoff is slow.
+
+## Recommendation skeleton
+
+**Recommendation:** **Five-year sustainability plan.** Track 1: major donor + endowment campaign — raise $100M for endowment within 5 years ($20M/year sustainable income at 5% draw eventually). Track 2: digital expansion — podcasts, streaming, sponsorship target $10M digital revenue by year 5. Track 3: cost consolidation — combine back-office across 12 stations, save $8-10M annually. Track 4: content licensing + asset monetization (real estate, archives). Replace at-risk federal funding ($14M) by year 5.
+
+**Three supports:**
+
+1. Endowment building creates permanent funding base that doesn't depend on annual donor cultivation.
+2. Digital expansion captures new audiences + revenue streams aligned with audience migration.
+3. Cost consolidation provides immediate breathing room while revenue strategies mature.
+
+**One risk:** endowment campaign may not achieve $100M target in tight philanthropic market. Mitigate by board-led major-gift program + planned-giving program (bequests over time).
+
+## What judges look for
+
+- Did you identify **endowment building** as the strategic priority despite slow payoff?
+- Did you size **digital expansion** as audience-migration response?
+- Did you propose **cross-station consolidation** as cost lever?
+- Did you address **donor demographic aging** as a structural concern?

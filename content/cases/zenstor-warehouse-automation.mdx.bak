@@ -1,0 +1,94 @@
+---
+id: c-zenstor-warehouse
+slug: zenstor-warehouse-automation
+title: 'Zenstor Logistics: how much should we automate our 60 warehouses?'
+source:
+  publisher: Case in Point
+  title: 'Case in Point — Complete Case Interview Preparation'
+  authors: ['Cosentino, Marc']
+  year: 2023
+  needsVerification: true
+industry: transport
+category: operations
+difficulty: standard
+frameworks: [profitability, 3c]
+timeEstimate: 35
+tags: [transport, logistics, warehouse, automation, capex]
+problemStatement: 'Zenstor Logistics operates 60 distribution warehouses for retail + e-commerce customers. Labor costs have risen 30% in 5 years; labor availability is constrained in many markets. Automation technology (AMRs, ASRS, sortation) is mature but capex-heavy: full automation of a warehouse costs $50-200M depending on size. The CEO wants a 5-year automation strategy across the network.'
+clarifyingQuestions:
+  - 'What is the warehouse size + throughput distribution — large + high-volume vs small + variable?'
+  - 'Are customer contracts long enough to amortize automation capex?'
+  - 'What is our labor mix — full-time vs seasonal?'
+  - 'Which automation technologies have proven ROI vs which are speculative?'
+commonMistakes:
+  - 'Automating every warehouse uniformly when economics vary enormously by size + throughput.'
+  - 'Underestimating the change-management + downtime cost of automation implementation.'
+  - 'Choosing comprehensive automation when partial automation has better payback.'
+variants:
+  - 'Same situation, but a major customer demands automated facility as condition of contract renewal. Recommend.'
+  - 'Same data, but labor costs are stabilizing. Does that change priority?'
+relatedCases:
+  - foundry-plant-network-optimization
+  - pulse-delivery-network-design
+solved: false
+updatedAt: '2026-05-20'
+---
+
+<Callout tone="note" title="Illustrative case">
+  Zenstor is a stylized example for warehouse automation strategy. Framework from Cosentino + standard logistics methodology; specifics are illustrative.
+</Callout>
+
+## The situation
+
+Warehouse automation economics have improved significantly with maturing technology + rising labor costs. The capex is still substantial — a fully-automated warehouse costs $50-200M — but payback periods have shortened from 7-10 years (historically) to 3-5 years for high-throughput facilities.
+
+The strategic question: which warehouses should be automated, in what order, and to what extent (partial vs full automation)?
+
+## Structuring
+
+Automation strategy framework:<Citation publisher="Case in Point" title="Case in Point — Complete Case Interview Preparation" authors={['Cosentino, Marc']} year={2023} />
+
+<IssueTreeEmbed slug="zenstor-tree" height={400} />
+
+Three branches:
+
+1. **Warehouse-level economics** — throughput, labor cost, contract length, automation payback by site.
+2. **Automation tier** — partial (AMRs + sortation), substantial (ASRS + AMRs), full (goods-to-person, lights-out).
+3. **Implementation sequencing** — which warehouses first, what change-management approach.
+
+## Key analysis
+
+Automation tiers + economics:
+
+| Automation level | Capex per warehouse | Labor reduction | Payback (high throughput) |
+|------------------|---------------------|-----------------|---------------------------|
+| None (manual) | $0 | 0% | n/a |
+| Partial (AMRs + sortation) | $15-30M | 25-40% | 2-3 years |
+| Substantial (+ASRS) | $50-90M | 50-65% | 4-5 years |
+| Full (goods-to-person) | $120-200M | 70-80% | 5-7 years |
+
+The non-obvious finding: **partial automation has the best ROI for most warehouses.** Full automation requires very high throughput + long-term contracts to justify; partial automation works at moderate throughput + standard contracts.
+
+For Zenstor's 60-warehouse network:
+- Top 10 high-throughput sites with long contracts: substantial or full automation ($800M-1.5B total)
+- Middle 30 sites: partial automation ($400-700M total)
+- Bottom 20 small/variable sites: minimal automation or status quo
+
+## Recommendation skeleton
+
+**Recommendation:** **Tiered automation over 5 years.** Top 10 warehouses: substantial automation ($75M average; $750M total) — payback 4-5 years. Middle 30: partial automation ($20M average; $600M total) — payback 2-3 years. Bottom 20: targeted point-solutions (~$2M each; $40M). Total 5-year capex: $1.4B. Expected labor savings + capacity gains: $400-500M annually at maturity.
+
+**Three supports:**
+
+1. Tiered approach matches automation investment to warehouse-specific economics.
+2. Partial automation captures most of the labor savings at much lower capex than full automation.
+3. Phased rollout builds operational capability + change-management muscle progressively.
+
+**One risk:** automation technology may advance faster than expected, making today's investment quickly obsolete. Mitigate by selecting modular systems (incremental upgrades possible) over fully-integrated bespoke systems.
+
+## What judges look for
+
+- Did you **tier warehouses by economics** rather than uniform automation?
+- Did you identify **partial automation as highest ROI** for most sites?
+- Did you propose **phased rollout** with capability building?
+- Did you address **technology obsolescence risk** through modular system selection?

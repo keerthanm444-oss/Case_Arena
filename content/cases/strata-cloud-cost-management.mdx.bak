@@ -1,0 +1,98 @@
+---
+id: c-strata-cloudcost
+slug: strata-cloud-cost-management
+title: 'Strata: how do we monetize cloud cost optimization?'
+source:
+  publisher: McKinsey & Company
+  title: 'McKinsey Quarterly'
+  needsVerification: true
+industry: technology
+category: pricing
+difficulty: standard
+frameworks: [3c, profitability]
+timeEstimate: 30
+tags: [saas, cloud, pricing, finops, value-share]
+problemStatement: 'Strata is a 2-year-old startup building cloud cost optimization software (FinOps). The product identifies waste in AWS / Azure / GCP spend and recommends right-sizing. Pilot customers see 12-25% cost reduction. The CEO is debating pricing: (a) flat SaaS subscription ($30K/year/account), (b) percent of cloud spend under management (1-2% of monitored spend), (c) percent of savings delivered (15-25% of measured savings).'
+clarifyingQuestions:
+  - 'How variable is cloud spend across our target customer base? A $500K-cloud-spend customer is very different from a $50M one.'
+  - 'How verifiable are the savings? Can the customer dispute attribution?'
+  - 'What is the typical sales cycle and procurement process for each pricing model?'
+  - 'Are competitors pricing on one model uniformly?'
+commonMistakes:
+  - 'Defaulting to "percent of savings" because it sounds aligned-incentive — savings attribution is hard and frequently disputed.'
+  - 'Choosing flat SaaS when customer cloud spend varies 100x across the install base.'
+  - 'Ignoring procurement-friction differential; finance teams approve flat SaaS faster than variable-cost contracts.'
+variants:
+  - 'Same product, but the target market is mid-market companies ($1-10M cloud spend) rather than enterprise. Does the pricing change?'
+  - 'Same situation, but a hyperscaler offers to white-label Strata. How does that shift pricing structure?'
+relatedCases:
+  - formare-saas-pricing
+  - vertex-enterprise-expansion
+solved: false
+updatedAt: '2026-05-20'
+---
+
+<Callout tone="note" title="Illustrative case">
+  Strata is a stylized example for B2B SaaS pricing model selection. Frameworks adapted from McKinsey + standard pricing methodology; specifics are illustrative.
+</Callout>
+
+## The situation
+
+Pricing model selection in B2B SaaS is one of the highest-leverage strategic decisions a young company makes. The choice frames customer expectations, sales motion, and unit economics for years.
+
+For a value-creating product like cloud cost optimization, the pricing question is essentially: **how much of the value should the vendor capture?** Too little = leaving money on the table; too much = customer pushback and churn.
+
+## Structuring
+
+3C framework with explicit decomposition of **value share economics**:<Citation publisher="McKinsey & Company" title="McKinsey Quarterly" />
+
+<IssueTreeEmbed slug="strata-tree" height={380} />
+
+Three branches:
+
+1. **Customer dynamics** — variance in cloud spend across target segment, ability to verify savings, procurement friction tolerance.
+2. **Competitive pricing** — what are similar products charging? Are any using each model?
+3. **Strata economics** — what does each pricing model imply for revenue predictability, sales cycle, gross margin?
+
+## Key analysis
+
+Working through each pricing option:
+
+**(a) Flat SaaS at $30K/year:**
+- Predictable revenue, simple sales motion
+- Doesn't scale with customer size — a customer spending $1M on cloud pays the same as one spending $50M
+- Low-friction procurement; finance teams approve flat SaaS easily
+- Risk: under-monetizes large customers, over-charges small ones
+
+**(b) Percent of cloud spend (1-2%):**
+- Revenue scales with customer size
+- Customer doesn't get punished if they reduce spend (alignment is partial)
+- Procurement is harder — finance has to model + approve variable cost
+- Risk: in a downturn, customers cut cloud spend → Strata revenue drops
+
+**(c) Percent of savings (15-25%):**
+- Most aligned-incentive, marketing story is strong
+- Attribution is fraught — was the savings from Strata's recommendation or from the customer's own work?
+- Sales cycle is much longer; finance teams demand savings audit + dispute mechanism
+- Risk: revenue is unpredictable + frequently disputed; customer churn spikes when savings plateau (which they will after year 1-2)
+
+The non-obvious finding: **percent-of-spend is usually the best model** for cloud cost optimization. It scales with customer size, is easier to explain than percent-of-savings, and avoids attribution disputes. The 1-2% range is below typical FinOps savings opportunity (10-20%) so the customer ROI is clearly positive.
+
+## Recommendation skeleton
+
+**Recommendation:** Lead with **1.5% of cloud spend under management**, with a $30K/year minimum (effectively flat SaaS for sub-$2M-cloud customers). Offer a 20% "premium tier" with stronger committed-savings guarantees for customers who want shared upside. Renegotiate pricing every 18 months as the install base matures.
+
+**Three supports:**
+
+1. Percent of spend scales appropriately across customer sizes — the largest customers contribute the most revenue.
+2. Avoids the attribution disputes that wreck percent-of-savings models in years 2-3.
+3. Minimum + premium tier captures both ends of the customer base while keeping pricing comprehensible.
+
+**One risk:** in a cloud-spend downturn, Strata's revenue declines with customer revenue. Mitigate by including 12-month minimum commitments in customer contracts, smoothing short-term volatility.
+
+## What judges look for
+
+- Did you reject **percent-of-savings as the default** despite its narrative appeal?
+- Did you analyze **procurement friction** as a real consideration?
+- Did you propose a **hybrid** (minimum + percent of spend) rather than pure single-model?
+- Did you identify **savings plateau in years 2-3** as the churn risk in percent-of-savings models?

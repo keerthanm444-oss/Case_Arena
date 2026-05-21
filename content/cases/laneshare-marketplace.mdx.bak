@@ -1,0 +1,96 @@
+---
+id: c-laneshare-platform
+slug: laneshare-marketplace
+title: 'Laneshare: how do we break the chicken-and-egg problem in a 2-sided marketplace?'
+source:
+  publisher: Boston Consulting Group
+  title: 'BCG Insights'
+  needsVerification: true
+industry: technology
+category: market-entry
+difficulty: advanced
+frameworks: [market-entry, 3c, porters-five-forces]
+timeEstimate: 45
+tags: [marketplace, platform, two-sided, network-effects, growth]
+problemStatement: 'Laneshare is launching a freight-matching marketplace connecting small trucking carriers (1-5 truck fleets) with shippers. The product is ready, but the team is stuck on the chicken-and-egg problem: shippers won''t join without carrier capacity; carriers won''t join without shipper demand. The CEO has $30M in funding and 18 months of runway. How do we sequence the launch?'
+clarifyingQuestions:
+  - 'In freight, which side has worse alternatives — small carriers or shippers? Whichever it is, that''s the side with weaker bargaining power.'
+  - 'What geographic constraints exist? Are we trying to launch nationally or in a specific lane?'
+  - 'Do we have any existing relationships on either side?'
+  - 'What is the unit economics — what''s our take rate per matched load, and what''s the average load value?'
+commonMistakes:
+  - 'Trying to launch both sides simultaneously with equal investment.'
+  - 'Ignoring geographic concentration — marketplaces typically launch in a single city or lane, not nationally.'
+  - 'Underestimating the cost of "fake" supply (subsidies to artificially seed one side).'
+variants:
+  - 'Same problem, but Laneshare is competing against an established freight broker network. How does the framework change?'
+  - 'Same situation, but the marketplace is for medical equipment rentals instead of freight. Does the playbook transfer?'
+relatedCases:
+  - formare-saas-pricing
+solved: false
+updatedAt: '2026-05-20'
+---
+
+<Callout tone="note" title="Illustrative case">
+  Laneshare is a stylized example for two-sided marketplace launch strategy. The framework draws on standard platform-economics methodology; specifics are illustrative.
+</Callout>
+
+## The situation
+
+The chicken-and-egg problem is the canonical marketplace launch challenge. The standard solutions are well-documented: pick a side to seed, concentrate geographically, subsidize the harder side, build "fake" supply if necessary.
+
+The Laneshare-specific question is **which side to seed first** and **how geographically concentrated** to launch.
+
+## Structuring
+
+Marketplace-specific framework:
+
+<IssueTreeEmbed slug="laneshare-tree" height={400} />
+
+Five sub-questions:
+
+1. **Which side is harder to acquire?** Usually the side with better alternatives (the side with less to gain from your platform). For freight, shippers usually have established broker relationships; small carriers usually take whatever load is available. Carriers are easier to seed; shippers are harder.
+
+2. **What's the minimum viable concentration?** A marketplace works when supply density on the seeded side matches the demand pattern. For freight, this means concentrating in specific *lanes* (e.g., Chicago-to-Atlanta) rather than nationally.
+
+3. **What's the take-rate ceiling?** Pricing in marketplaces is constrained by what the harder-to-acquire side will tolerate. If shippers' default broker takes 15%, Laneshare's take rate sits below that.
+
+4. **What network effects compound?** Same-side (more carriers attract more carriers) is weak in freight. Cross-side (more carriers attract more shippers, vice-versa) is strong. The launch needs to maximize cross-side, not same-side.
+
+5. **How to handle "thin markets"?** Lanes where supply or demand is sparse → matching fails → users churn. Need to either subsidize matching, restrict scope, or accept the dropout.
+
+## Key analysis
+
+The non-obvious move: **launch in one lane (e.g., Chicago-Atlanta), not nationally.**
+
+Two reasons:
+
+1. **Density beats breadth.** A marketplace with 100 carriers + 50 shippers in one lane works; 10,000 carriers + 5,000 shippers spread across the US doesn't, because the probability of finding a match for any single load is too low.
+
+2. **Validates unit economics before scale.** If take rate × match rate × load value doesn't produce viable unit economics in one lane, scaling won't fix it. National launch burns cash on units that don't work.
+
+Pick the lane based on three criteria:
+- Lane volume large enough to matter (top 10 US lanes by volume)
+- Lane fragmentation (lots of small carriers, not consolidated)
+- Lane geography (point-to-point lanes are simpler than networks)
+
+Chicago-Atlanta, LA-Phoenix, Houston-Dallas are typical fits.
+
+## Recommendation skeleton
+
+**Recommendation:** Launch in a single high-volume lane (recommend Chicago-Atlanta) for 6 months. Subsidize carrier-side onboarding aggressively (~$20M of the $30M budget). Target 200 active carriers + 50 active shippers + 80% match rate before expanding to the second lane. Use month 6-12 to add 2 more lanes; reserve final 6 months for measurement + national-expansion decision.
+
+**Three supports:**
+
+1. Single-lane density is required for the marketplace mechanics to work; national launch dilutes the network effect.
+2. Carrier-side is the easier side; subsidizing carriers builds the supply shippers need to find the marketplace useful.
+3. 18 months of runway is enough for 2-3 lanes + a national-decision data point; trying for national in 18 months over-extends.
+
+**One risk:** A competitor (existing broker or another platform) launches in the same lane and out-subsidizes us. Mitigate by moving fast on carrier-side onboarding (week 1-8) and building switching costs (carrier-side data, customer relationships) before competitive response.
+
+## What judges look for
+
+- Did you identify **which side is harder to acquire** (shippers) and **which side to seed** (carriers)?
+- Did you propose **geographic concentration** (single lane) rather than national launch?
+- Did you specify **measurable density targets** (200 carriers, 50 shippers, 80% match rate) rather than vague "validate" language?
+- Did you allocate the $30M budget concretely rather than waving at it?

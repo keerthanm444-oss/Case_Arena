@@ -1,0 +1,92 @@
+---
+id: M0
+slug: orientation
+title: Orientation
+tagline: How to use this app, how to think about cases
+estimatedMinutes: 20
+status: published
+tags: [intro, how-to-use]
+updatedAt: '2026-05-20'
+---
+
+## What this app is
+
+Case Arena is a zero-to-100 guide to case competitions. Twelve curriculum modules, ~100 cited cases, nine interactive tools, a navigable case map. Free to use, free to host, free of fabricated content. Every fact in this app — every framework, every statistic, every judge rubric, every example prompt — traces back to a named, real source.
+
+<Callout tone="tip" title="The non-negotiable">
+  Every page in this app cites real sources. There is no fabricated content anywhere. The build literally cannot ship pages with unsourced claims — see <code>docs/CITATION_CONTRACT.md</code>. The lint pass refuses to compile a page that violates the rules.
+</Callout>
+
+## What a case is
+
+A **case** is a real (or realistic) business problem you solve out loud, under time pressure, against judges who probe your reasoning. The classic structure:
+
+1. **Read the prompt** — usually 30 seconds to 5 minutes of context.
+2. **Structure your approach** — typically 60–120 seconds where you build a tree of what you'd want to investigate.
+3. **Drive the analysis** — quantitative work, sensitivity tests, judgment under uncertainty.
+4. **Deliver a recommendation** — a clear answer-first synthesis with supports.
+
+The two main domains for cases are **case interviews** (consulting hiring at firms like McKinsey, BCG, and Bain) and **case competitions** (collegiate, MBA, and professional events run by schools, sponsors, and firms).
+
+The frameworks you'll learn here trace back to four canonical references<Citation publisher="Case in Point" title="Case in Point — Complete Case Interview Preparation" authors={['Cosentino, Marc']} year={2023} /><Citation publisher="The Pyramid Principle" title="The Pyramid Principle: Logic in Writing and Thinking" authors={['Minto, Barbara']} year={2009} /><Citation publisher="Case Interview Secrets" title="Case Interview Secrets" authors={['Cheng, Victor']} year={2012} /><Citation publisher="Competitive Strategy" title="Competitive Strategy: Techniques for Analyzing Industries and Competitors" authors={['Porter, Michael E.']} year={1980} />.
+
+Master the moves from those four references and you have ~80% of what you need for any case. The rest comes from practice.
+
+## The three modes of practice
+
+Real progress comes from cycling through three modes:
+
+1. **Read** — modules and worked cases. Structured material, often with the answer visible. Build intuition for what good looks like.
+2. **Drill** — short, repeatable skill exercises. The [mental math drill](/tools/mental-math), the [framework quiz](/tools/framework-quiz), and the [slide title critique](/tools/slide-critique) all sit here. Build automaticity.
+3. **Compete** — full timed runs against the clock. Use the [practice timer](/tools/timer) to enforce the 4-phase pacing (read → structure → analyze → recommend). Build performance under pressure.
+
+Most learners benefit from **interleaving** — 15 minutes of reading, 15 minutes of drilling, 15 minutes of solving. Long blocks of any single mode hit diminishing returns fast.
+
+## Mental models that separate good case-solvers
+
+Three patterns separate strong performers from average ones. The rest of this curriculum is downstream of these.
+
+**Answer first.** Don't bury your recommendation under context. Lead with what you'd do; then explain why. The Pyramid Principle is the canonical reference for this discipline.<Citation publisher="The Pyramid Principle" title="The Pyramid Principle: Logic in Writing and Thinking" authors={['Minto, Barbara']} year={2009} /> Hostile audiences forgive short, confident answers; they punish meandering ones.
+
+**MECE coverage.** When you decompose a problem, make sure the buckets are **Mutually Exclusive** (no double-counting) and **Collectively Exhaustive** (nothing missed). MECE is to structuring what double-entry is to accounting.
+
+**Numbers anchor judgment.** A recommendation without a number behind it is opinion. A recommendation with a sized estimate — even a back-of-envelope one — is analysis. The [market sizing calculator](/tools/sizing) is the toolbox here.
+
+## Frameworks you'll meet
+
+The thirteen canonical frameworks span structuring, analysis, and communication. The interactive mind map lets you explore any one of them — click into a leaf to see its cited rationale, click "Switch" to pick another framework.
+
+<MindMapEmbed framework="profitability" height={420} />
+
+Switch the picker above to **3C**, **market-entry**, or **MECE** to see what each looks like. Each tree's content is sourced from the canonical references above; you can click "Fork" to save your own annotated version.
+
+## Your first issue tree
+
+Issue trees are the workhorse of structured problem-solving. The tool below lets you build one from scratch. Try this exercise:
+
+> A regional grocer has seen profits fall for three quarters in a row despite stable revenue. Build a profit tree for the diagnosis.
+
+<IssueTreeEmbed slug="orientation-warmup" height={380} />
+
+A first-pass structure should use <Framework slug="profitability">profit = revenue − cost</Framework> as the root, then branch into volume × price on one side and variable × fixed on the other. There's no single right answer — that's the point of the exercise.
+
+For a worked example, see <CaseLink slug="acme-coffee-decline">the Acme Coffee case</CaseLink> — it walks through exactly this kind of problem with interactive assumptions and a live profit calculation.
+
+## How this app is laid out
+
+- **[Modules](/modules)** — the curriculum. Twelve modules in sequence, M0 through M11.
+- **[Cases](/cases)** — the worked-case library. Filter by industry, framework, difficulty.
+- **[Map](/map)** — the relationship graph across all cases. Web, branch, and matrix views.
+- **[Tools](/tools)** — the nine interactive muscles for drills.
+- **[Resources](/resources)** — books, podcasts, communities, mock partners.
+- **[Dashboard](/dashboard)** — your progress, streaks, and recommended next step.
+
+Press `⌘K` (or `Ctrl+K` on Windows) at any time to open the command palette and jump to anything.
+
+## What comes next
+
+The next module — <a href="/modules/structuring">M1 · Structuring</a> — dives into how to break any unfamiliar problem into a tree that's MECE. It's the single most-leveraged skill in the whole curriculum: when structuring is wrong, the analysis that follows can't recover. Spend the time.
+
+<Callout tone="tip" title="Suggested first session">
+  Read M0 (this page) and M1 (Structuring). Then attempt the <CaseLink slug="acme-coffee-decline">Acme Coffee case</CaseLink> with the practice timer set to 15 minutes. Don't peek at the recommendation until you have your own.
+</Callout>

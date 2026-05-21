@@ -1,0 +1,101 @@
+---
+id: c-praxis-ai
+slug: praxis-ai-gtm-strategy
+title: 'Praxis: how should an AI-coding startup go to market?'
+source:
+  publisher: McKinsey & Company
+  title: 'McKinsey Quarterly'
+  needsVerification: true
+industry: technology
+category: market-entry
+difficulty: standard
+frameworks: [3c, market-entry]
+timeEstimate: 35
+tags: [saas, ai, developer-tools, gtm, plg]
+problemStatement: 'Praxis is an 18-month-old startup building an AI-powered code review tool. Product is in beta with 2,000 free users; early signals are strong (40% WAU/MAU). They have 12 months of runway and need to choose a go-to-market strategy: (a) bottom-up PLG with self-serve paid tier, (b) sales-led enterprise from day 1, (c) developer marketing + community-first.'
+clarifyingQuestions:
+  - 'What is the user profile of the 2,000 beta users — are they individual devs or do they represent companies?'
+  - 'What is the average team size of users? Solo developers vs 50-person engineering teams?'
+  - 'What does competitive pricing look like in this category (GitHub Copilot, Cursor, etc.)?'
+  - 'What is the burn rate, and how does each GTM affect it?'
+commonMistakes:
+  - 'Choosing enterprise-led GTM for a developer-tools product where individual adoption drives team adoption.'
+  - 'Underestimating PLG conversion realities — typical free-to-paid conversion is 2-5%, requiring large top-of-funnel.'
+  - 'Ignoring the 12-month runway constraint; enterprise sales cycle alone is longer than the cash runway.'
+variants:
+  - 'Same product, but Praxis has just been offered a $20M Series A. Does the strategy change with more runway?'
+  - 'Same situation, but a hyperscaler launches a competing free product. How does urgency shift?'
+relatedCases:
+  - vertex-enterprise-expansion
+  - helio-open-source-monetization
+solved: false
+updatedAt: '2026-05-20'
+---
+
+<Callout tone="note" title="Illustrative case">
+  Praxis is a stylized example for early-stage SaaS GTM strategy. Frameworks adapted from cited references; specifics are illustrative.
+</Callout>
+
+## The situation
+
+GTM strategy at 18-month, $0-ARR stage is one of the most consequential decisions for a developer-tools startup. The runway constraint (12 months) forces choices: enterprise sales requires 18-month cycles, PLG requires top-of-funnel scale that takes time to build, community-first requires deep technical content and patience.
+
+The right answer depends entirely on who the user is and how they buy.
+
+## Structuring
+
+GTM-selection framework with explicit runway + segment fit analysis:<Citation publisher="McKinsey & Company" title="McKinsey Quarterly" />
+
+<IssueTreeEmbed slug="praxis-tree" height={400} />
+
+Three branches:
+
+1. **User reality** — solo developer or part of an engineering org? Does the user have purchasing authority?
+2. **GTM economics** — for each path, what's the CAC, time-to-revenue, sales-team build cost?
+3. **Runway compatibility** — does this GTM produce revenue within 12 months? If not, it's not feasible given current funding.
+
+## Key analysis
+
+Walking each option:
+
+**(a) PLG with self-serve paid tier:**
+- Pricing: $20-50/user/month for individual, $50-100/user/month for team plans
+- Conversion: 2-5% of free users to paid (industry benchmark)
+- Time to revenue: immediate (self-serve)
+- CAC: ~$20-50 per user via content + community marketing
+- Need ~50K free users to generate $1M ARR — achievable from current 2K base in 6-9 months at growth rates this kind of product can support
+- Risk: PLG hits a ceiling at ~$50-100M ARR; enterprise expansion needed eventually anyway
+
+**(b) Sales-led enterprise:**
+- Pricing: $50-200K ACV
+- Sales cycle: 6-12 months
+- Time to first revenue: 8-12 months at best — close to or beyond runway
+- CAC: $50-150K per closed deal
+- Risk: runway might not allow first deals to close; capital-intensive
+
+**(c) Developer marketing + community-first:**
+- Build technical content, conferences, free tier
+- Time to revenue: 12-18 months indirect (via PLG conversion)
+- CAC: low per user but slow ramp
+- Risk: too slow for current runway
+
+The PLG path is the only one compatible with the 12-month runway constraint. The strategic question becomes how to enable enterprise expansion later, not whether to start enterprise-first.
+
+## Recommendation skeleton
+
+**Recommendation:** **PLG with self-serve paid tier**, launched within 60 days. Pricing: $30/user/month individual, $25/user/month for teams (5+ seats). Focus on team-plan conversion as the primary growth lever. At month 9, evaluate whether team-plan customers are graduating to enterprise needs (SSO, billing consolidation) — if yes, hire first 2 enterprise AEs to upsell.
+
+**Three supports:**
+
+1. PLG is the only GTM compatible with 12-month runway — sales-led can't close first deals fast enough.
+2. Team-plan pricing creates a natural pull toward larger account expansion (the path to enterprise).
+3. Enterprise hire timing is gated to demand signal, not speculation.
+
+**One risk:** developer-tools PLG is increasingly competitive; differentiation against GitHub Copilot + Cursor requires sharp positioning. Mitigate by leading with the specific use case (AI code review) rather than the general "AI for developers" category.
+
+## What judges look for
+
+- Did you tie GTM choice to **the runway constraint** explicitly?
+- Did you size **PLG conversion math** (free user count × conversion rate) rather than waving at growth?
+- Did you reject **enterprise-first** for runway reasons, even though it's tempting for the ACV?
+- Did you propose **enterprise expansion gated to demand signal**, not committed up front?

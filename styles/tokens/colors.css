@@ -1,0 +1,136 @@
+/* ============================================================
+ * colors.css — three themes, three distinct moods.
+ *
+ * Each theme defines the same semantic token set so any component
+ * written against `--bg`, `--fg`, `--accent`, etc. works in all three.
+ *
+ * Themes are bound to a root [data-theme="..."] attribute in themes.css.
+ * ============================================================ */
+
+/* ---------- TERMINAL — near-black, amber/green, mono numerics ---------- */
+[data-theme='terminal'] {
+  /* surfaces — true near-black with cool undertone */
+  --bg:            #07080A;
+  --bg-elevated:   #0E1014;
+  --bg-sunken:     #04050A;
+  --bg-panel:      #0A0C10;
+  --bg-overlay:    rgba(7, 8, 10, 0.88);
+
+  /* foreground */
+  --fg:            #E8ECEF;
+  --fg-muted:      #8B95A2;
+  --fg-subtle:     #4F5763;
+  --fg-inverse:    #07080A;
+
+  /* lines */
+  --line:         rgba(232, 236, 239, 0.08);
+  --line-strong:  rgba(232, 236, 239, 0.18);
+
+  /* accents — amber primary, green secondary, magenta alert */
+  --accent:       #F5A524;        /* amber */
+  --accent-fg:    #07080A;
+  --accent-soft:  rgba(245, 165, 36, 0.14);
+
+  --success:      #4ADE80;        /* terminal green */
+  --warning:      #F5A524;
+  --danger:       #FB7185;        /* coral red, easier on dark than pure red */
+  --info:         #60A5FA;
+
+  /* data viz palette — sequential, distinguishable on black */
+  --viz-1: #F5A524;  --viz-2: #4ADE80;  --viz-3: #60A5FA;
+  --viz-4: #C084FC;  --viz-5: #FB7185;  --viz-6: #2DD4BF;
+  --viz-7: #FACC15;  --viz-8: #F472B6;
+
+  /* selection */
+  --selection-bg: rgba(245, 165, 36, 0.28);
+  --selection-fg: #FFF;
+
+  /* focus ring — amber on dark */
+  --ring: #F5A524;
+  --ring-offset: #07080A;
+
+  /* scanline texture (subtle, applied via mix-blend on .terminal-grid) */
+  --scanline-opacity: 0.04;
+
+  color-scheme: dark;
+}
+
+/* ---------- BOARDROOM — deep navy, ivory, brass, serif-led editorial ---------- */
+[data-theme='boardroom'] {
+  --bg:            #0B1929;
+  --bg-elevated:   #102134;
+  --bg-sunken:     #07111D;
+  --bg-panel:      #0E1C2E;
+  --bg-overlay:    rgba(11, 25, 41, 0.92);
+
+  --fg:            #F5F1E8;        /* ivory */
+  --fg-muted:      #B8B0A0;
+  --fg-subtle:     #6A6354;
+  --fg-inverse:    #0B1929;
+
+  --line:         rgba(245, 241, 232, 0.10);
+  --line-strong:  rgba(245, 241, 232, 0.22);
+
+  --accent:       #B8923D;          /* brass */
+  --accent-fg:    #0B1929;
+  --accent-soft:  rgba(184, 146, 61, 0.16);
+
+  --success:      #87B36E;          /* olive-leaning */
+  --warning:      #D4A04A;
+  --danger:       #C75A5A;
+  --info:         #6E9CC4;
+
+  --viz-1: #B8923D;  --viz-2: #87B36E;  --viz-3: #6E9CC4;
+  --viz-4: #A4799B;  --viz-5: #C75A5A;  --viz-6: #5C9A91;
+  --viz-7: #D4A04A;  --viz-8: #B58FA8;
+
+  --selection-bg: rgba(184, 146, 61, 0.30);
+  --selection-fg: #F5F1E8;
+
+  --ring: #B8923D;
+  --ring-offset: #0B1929;
+
+  --scanline-opacity: 0;             /* no scanline in boardroom */
+
+  color-scheme: dark;
+}
+
+/* ---------- DAYLIGHT — warm off-white, charcoal, single accent ---------- */
+[data-theme='daylight'] {
+  --bg:            #F7F3EC;          /* warm off-white */
+  --bg-elevated:   #FCF9F3;
+  --bg-sunken:     #EFEAE1;
+  --bg-panel:      #FCF9F3;
+  --bg-overlay:    rgba(247, 243, 236, 0.92);
+
+  --fg:            #1A1814;          /* near-black warm */
+  --fg-muted:      #6B665B;
+  --fg-subtle:     #A5A094;
+  --fg-inverse:    #F7F3EC;
+
+  --line:         rgba(26, 24, 20, 0.10);
+  --line-strong:  rgba(26, 24, 20, 0.22);
+
+  --accent:       #B8410A;           /* deep terracotta, single distinctive accent */
+  --accent-fg:    #FCF9F3;
+  --accent-soft:  rgba(184, 65, 10, 0.10);
+
+  --success:      #4A7C3A;
+  --warning:      #B8741A;
+  --danger:       #A82F2F;
+  --info:         #2C5E8E;
+
+  --viz-1: #B8410A;  --viz-2: #4A7C3A;  --viz-3: #2C5E8E;
+  --viz-4: #7A4A8C;  --viz-5: #A82F2F;  --viz-6: #1F7E73;
+  --viz-7: #B8741A;  --viz-8: #8A4F76;
+
+  --selection-bg: rgba(184, 65, 10, 0.22);
+  --selection-fg: #1A1814;
+
+  --ring: #B8410A;
+  --ring-offset: #F7F3EC;
+
+  --scanline-opacity: 0;
+
+  color-scheme: light;
+}

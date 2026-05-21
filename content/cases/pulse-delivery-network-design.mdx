@@ -1,0 +1,93 @@
+---
+id: c-pulse-delivery
+slug: pulse-delivery-network-design
+title: 'Pulse Delivery: how do we win in dense-city last-mile?'
+source:
+  publisher: McKinsey & Company
+  title: 'McKinsey Quarterly'
+  needsVerification: true
+industry: transport
+category: operations
+difficulty: standard
+frameworks: [3c, profitability]
+timeEstimate: 35
+tags: [transport, last-mile, e-commerce, delivery, network]
+problemStatement: 'Pulse Delivery operates last-mile delivery for e-commerce retailers in 15 metro markets. Margins are thin (3-5% operating). Competitors include Amazon (in-house), UPS/FedEx (legacy networks), gig-economy services. Pulse''s differentiation has been same-day delivery in dense urban cores. Should Pulse expand to suburban + tier-2 cities, deepen the urban core, or pivot to specialty (refrigerated, large items)?'
+clarifyingQuestions:
+  - 'What is the cost-per-delivery split (driver, fuel, vehicle, packaging, last-yard)?'
+  - 'Which retailer customers are most concentrated in our routes — are we losing volume?'
+  - 'Have we tested electric vans + bike couriers in dense cores?'
+  - 'What is competitor pricing per delivery in our target geographies?'
+commonMistakes:
+  - 'Expanding to suburban areas without recognizing the cost structure is fundamentally different (longer routes, lower density).'
+  - 'Treating urban + suburban as same business model when last-mile economics vary 3-5x by density.'
+  - 'Underestimating gig-economy competition; ad-hoc drivers can undercut on price.'
+commonMistakes:
+  - 'Expanding to suburban areas without recognizing the cost structure is fundamentally different.'
+  - 'Treating urban + suburban as same business model when economics vary by density.'
+  - 'Underestimating gig-economy competition.'
+variants:
+  - 'Same situation, but Pulse is offered partnership with a national retailer for exclusive last-mile. Recommend.'
+  - 'Same data, but autonomous delivery vehicles are reaching commercial scale. How does that change strategy?'
+relatedCases:
+  - skyport-airline-network
+  - laneshare-marketplace
+solved: false
+updatedAt: '2026-05-20'
+---
+
+<Callout tone="note" title="Illustrative case">
+  Pulse is a stylized example for last-mile delivery strategy. Framework from McKinsey + standard logistics methodology; specifics are illustrative.
+</Callout>
+
+## The situation
+
+Last-mile delivery is the highest-cost segment of e-commerce logistics — typically 40-60% of total fulfillment cost. The economics vary dramatically by population density: dense urban delivery can be 50-70% cheaper per package than suburban or rural. Specialist last-mile companies have historically thrived in dense cores; they struggle when expanding to lower-density geographies.
+
+The strategic question is whether expansion is the right growth path or whether deepening urban dominance produces better economics.
+
+## Structuring
+
+Last-mile strategy framework:<Citation publisher="McKinsey & Company" title="McKinsey Quarterly" />
+
+<IssueTreeEmbed slug="pulse-tree" height={400} />
+
+Three branches:
+
+1. **Geographic options** — urban core deepening (incremental capacity), suburban expansion (new geography), tier-2 city entry (parallel to existing cores).
+2. **Service options** — same-day premium, scheduled delivery, refrigerated/specialty, large items, returns.
+3. **Asset model** — own fleet, gig-economy contractors, hybrid.
+
+## Key analysis
+
+Density economics:
+
+| Density | Stops per route per hour | Cost per delivery |
+|---------|---------------------------|-------------------|
+| Dense urban core | 8-12 | $3-5 |
+| Standard urban | 5-7 | $7-10 |
+| Suburban | 2-3 | $12-18 |
+| Rural | 1-2 | $20-30+ |
+
+The non-obvious finding: **suburban expansion typically destroys margins.** A 3x cost-per-delivery for suburban vs urban makes price-competitive operations difficult against incumbents (UPS, FedEx) who already have suburban networks built out.
+
+For Pulse specifically: deepening urban dominance + adding specialty services (refrigerated, large items where competitors have weak offerings) preserves the structural cost advantage. Suburban expansion is a value-destroyer unless tied to clear customer commitments.
+
+## Recommendation skeleton
+
+**Recommendation:** **Deepen urban + add specialty services.** Phase 1: invest in micro-fulfillment + bike couriers in existing 15 metros, lifting stops-per-route 15-20% (margin improvement of 2-3 percentage points). Phase 2: launch refrigerated + large-item premium services where competitors are weak. Phase 3: selective tier-2 city entry only when anchor customer commits to volume. Defer suburban expansion.
+
+**Three supports:**
+
+1. Urban density is structural cost advantage; deepening compounds the moat.
+2. Specialty services capture higher-margin premium without sacrificing density economics.
+3. Suburban expansion would erode the cost advantage that makes Pulse competitive.
+
+**One risk:** competitors may saturate urban cores faster than Pulse can deepen position. Mitigate by exclusive merchant partnerships in dense cores + customer-experience differentiation (1-hour windows, returns convenience).
+
+## What judges look for
+
+- Did you reject **suburban expansion** despite intuitive appeal?
+- Did you size **density-driven cost differences** as the strategic constraint?
+- Did you propose **specialty services** to expand revenue per delivery?
+- Did you address **competitive saturation risk** in urban cores?

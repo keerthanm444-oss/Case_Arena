@@ -1,0 +1,88 @@
+---
+id: c-arclight-pivot
+slug: arclight-hardware-software-pivot
+title: 'Arclight: should we pivot from networking hardware to software?'
+source:
+  publisher: Boston Consulting Group
+  title: 'BCG Insights'
+  needsVerification: true
+industry: technology
+category: business-model
+difficulty: advanced
+frameworks: [3c, porters-five-forces]
+timeEstimate: 45
+tags: [hardware, software, pivot, business-model, networking]
+problemStatement: 'Arclight is a $2.3B revenue networking hardware company. Gross margins have compressed from 55% to 38% over five years as commoditization accelerates. The CEO sees a software-led future — selling network management + analytics software at 75-80% gross margin, ideally as recurring subscription. The board wants to know: pivot fully, run a dual-business, or stay focused on hardware?'
+clarifyingQuestions:
+  - 'What share of current customers already buy our embedded software, and is that share growing?'
+  - 'What are our software development capabilities — do we ship enterprise software today?'
+  - 'Who are the software competitors, and how entrenched are they?'
+  - 'What is the typical customer software-spend per dollar of hardware spend?'
+commonMistakes:
+  - 'Treating "pivot to software" as a marketing-and-pricing change rather than a fundamental business-model rebuild.'
+  - 'Underestimating the channel conflict; hardware partners have very different economics than software direct.'
+  - 'Forgetting that software customers expect different SLAs, integration depth, and roadmap predictability than hardware customers.'
+variants:
+  - 'Same situation, but Arclight just acquired a small networking-software company. Does that accelerate the path?'
+  - 'Same data, but a hyperscaler is sourcing 30% of our hardware revenue. How does customer concentration shift the strategy?'
+relatedCases:
+  - vertex-enterprise-expansion
+  - formare-saas-pricing
+solved: false
+updatedAt: '2026-05-20'
+---
+
+<Callout tone="note" title="Illustrative case">
+  Arclight is a stylized example for hardware-to-software business model transformation. Frameworks from cited references; specifics are illustrative.
+</Callout>
+
+## The situation
+
+The hardware-to-software pivot is one of the most-attempted transformations in tech and one of the most often unsuccessful. The strategic logic is compelling (recurring revenue, higher margins, valuation re-rating) but the execution is brutal — different talent, different sales motion, different customer expectations, channel conflict.
+
+The honest framing: most hardware companies that "pivot to software" end up running a dual business, with software as a high-margin attach to hardware rather than a standalone replacement.
+
+## Structuring
+
+3C with explicit business-model decomposition,<Citation publisher="Boston Consulting Group" title="BCG Insights" /> backed by Five Forces analysis of both the hardware and software competitive landscapes:<Citation publisher="Competitive Strategy" title="Competitive Strategy: Techniques for Analyzing Industries and Competitors" authors={['Porter, Michael E.']} year={1980} />
+
+<IssueTreeEmbed slug="arclight-tree" height={400} />
+
+Three branches:
+
+1. **Customer reality** — do customers want to buy software from a hardware company? Most enterprise customers prefer specialist software providers; bundled hardware+software is a hard sell.
+2. **Competitive position** — what's the software competitive landscape? Network management software has entrenched specialists (e.g., established APM players) with substantial product depth.
+3. **Internal capability** — does Arclight have software-shipping discipline? Hardware companies typically ship 12-18 month cycles; software requires monthly+ cadence.
+
+## Key analysis
+
+The diagnostic test: **what's our software attach rate today, and how is it changing?**
+
+Three patterns:
+
+- **Strong attach (>40% of hardware customers buy our software)** — software pivot is realistic; build on existing motion.
+- **Weak attach (10-30%)** — software pivot is uphill; need a forcing function (e.g., hardware bundled with software, software-only purchase option).
+- **Minimal attach (<10%)** — software pivot likely fails; better to optimize hardware.
+
+For a typical hardware company with this revenue profile, attach is usually 20-35% — middle bucket. The pivot is possible but requires distinct investment + multi-year commitment.
+
+The non-obvious move: **monetize the install base before pivoting the new-business motion.** Existing hardware customers generate predictable software revenue at high margin; new customers are much harder. Phasing the strategy across the install base first is lower risk than pivoting the GTM.
+
+## Recommendation skeleton
+
+**Recommendation:** **Dual-business strategy, install-base first.** Year 1-2: drive software attach to 50%+ across existing hardware install base (~$200M ARR opportunity at current pricing). Year 3-4: invest in software-only product capability + GTM. Year 5: software becomes the primary new-customer acquisition motion if metrics support.
+
+**Three supports:**
+
+1. The install base is the lowest-risk software revenue available — these customers already trust Arclight, integration costs are minimal.
+2. Build software-shipping discipline + customer success motion on the install base before scaling to net-new customers.
+3. Phased commitment limits all-in risk; hardware revenue remains the cash engine through years 1-3.
+
+**One risk:** the install-base attach motion may not produce enough learning to inform the net-new strategy. Mitigate by parallel-running 3-5 net-new software-led account experiments in year 2 to test direct GTM.
+
+## What judges look for
+
+- Did you reject the "pivot fully" framing? Hardware-to-software pivots usually need to be dual-motion.
+- Did you size **software attach rate** as the diagnostic metric?
+- Did you propose **install-base monetization first** before net-new software GTM?
+- Did you recognize that **software shipping discipline** is a binding capability constraint?

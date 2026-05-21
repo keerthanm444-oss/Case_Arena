@@ -1,0 +1,98 @@
+---
+id: c-corvus-paper
+slug: corvus-paper-mill-closure
+title: 'Corvus Paper: which of our 14 mills should we close?'
+source:
+  publisher: Case in Point
+  title: 'Case in Point — Complete Case Interview Preparation'
+  authors: ['Cosentino, Marc']
+  year: 2023
+  needsVerification: true
+industry: manufacturing
+category: operations
+difficulty: standard
+frameworks: [profitability, 3c]
+timeEstimate: 35
+tags: [manufacturing, paper, pulp, closure, network]
+problemStatement: 'Corvus Paper operates 14 pulp + paper mills across North America. Demand for graphic paper (newsprint, magazine) has been declining 5-8% YoY for a decade; demand for packaging paper (corrugated, kraft) is growing 3-5%. Overall capacity utilization is 68%. The board wants to know which mills to close, which to convert to packaging, and which to keep producing graphic paper.'
+clarifyingQuestions:
+  - 'For each mill, what is the product mix and conversion feasibility (graphic → packaging)?'
+  - 'What is the per-mill cash cost position vs the industry cost curve?'
+  - 'Are any mills tied to long-term customer or fiber-supply contracts?'
+  - 'What is the typical conversion capex per mill (graphic → packaging)?'
+commonMistakes:
+  - 'Closing the lowest-utilization mills regardless of cost position — sometimes high-utilization mills have terrible economics.'
+  - 'Treating mill conversion as universally feasible; not every graphic-paper mill can convert to packaging.'
+  - 'Ignoring the regional supply-chain implications of closures (customer transport costs, fiber supply).'
+variants:
+  - 'Same situation, but a major customer (a corrugated box maker) offers to underwrite a conversion. Recommend.'
+  - 'Same data, but the board is debating selling the entire graphic-paper business. Compare to closure + conversion strategy.'
+relatedCases:
+  - foundry-plant-network-optimization
+  - westfield-department-transformation
+solved: false
+updatedAt: '2026-05-20'
+---
+
+<Callout tone="note" title="Illustrative case">
+  Corvus is a stylized example for paper-industry restructuring. Framework from Cosentino; specifics are illustrative.
+</Callout>
+
+## The situation
+
+Paper-industry restructuring is one of the most-studied managed-decline cases of the past 20 years. Graphic paper demand is in structural decline (electronic substitution); packaging demand is growing (e-commerce, sustainable packaging). The strategic question is which assets to close, convert, or run for cash.
+
+Different mills face very different futures depending on cost position, conversion potential, and regional context.
+
+## Structuring
+
+Operations-restructuring framework with mill-by-mill classification:<Citation publisher="Case in Point" title="Case in Point — Complete Case Interview Preparation" authors={['Cosentino, Marc']} year={2023} />
+
+<IssueTreeEmbed slug="corvus-tree" height={400} />
+
+Three dimensions for each mill:
+
+1. **Cost position** — where on the industry cost curve does this mill sit? Bottom-quartile cost mills should run regardless of product mix; top-quartile (worst cost) mills should close.
+2. **Conversion feasibility** — can this mill convert graphic → packaging? Depends on machine configuration, fiber supply, regional packaging demand. Conversion capex is typically $200-500M per mill.
+3. **Strategic role** — does this mill serve specific customers / regions that can't be served from elsewhere?
+
+## Key analysis
+
+A typical breakdown across 14 mills:
+
+| Classification | Count | Action |
+|---------------|-------|--------|
+| Low-cost, packaging-capable | 3-4 | Keep + grow |
+| Low-cost, graphic-only | 2-3 | Run for cash; close when demand falls below break-even |
+| Mid-cost, conversion-feasible | 3-4 | **Convert to packaging** |
+| Mid-cost, no conversion | 2-3 | Run for cash; close in 3-5 years |
+| High-cost, any product | 2-3 | **Close immediately** |
+
+The non-obvious finding: **mid-cost mills with conversion feasibility are the most valuable strategic assets.** Converting them captures the growing packaging market with existing infrastructure (saving 40-60% vs greenfield packaging capacity).
+
+Conversion economics:
+
+- Capex: $200-500M per mill
+- Time to operation: 18-30 months
+- Resulting cost position: typically improves by 10-20% vs pre-conversion (modern machinery, focused product mix)
+
+The payback math: a $300M conversion that improves operating margin by $80M annually has a 3.75-year payback — strong if the underlying market growth holds.
+
+## Recommendation skeleton
+
+**Recommendation:** **Three-track strategy over 5 years.** Close 3 high-cost mills immediately (saves $120M annual operating loss). Convert 4 mid-cost graphic mills to packaging over 24-36 months ($1.4B capex). Run remaining 4 low-cost graphic mills for cash, closing one per year as graphic demand declines. Net portfolio in year 5: 7 mills (3 original packaging + 4 converted), all profitable.
+
+**Three supports:**
+
+1. Closure of high-cost mills stops the bleeding immediately without conversion risk.
+2. Conversion of mid-cost mills captures packaging growth with strong payback economics.
+3. Run-for-cash strategy on low-cost graphic mills monetizes remaining demand before final closure.
+
+**One risk:** conversion projects often experience 30-50% capex overruns and 6-12 month delays. Mitigate by sequencing conversions (start with the simplest mill, build experience) and locking in major contractor relationships before kicking off.
+
+## What judges look for
+
+- Did you classify mills along **multiple dimensions** (cost, conversion, strategic role)?
+- Did you identify **mid-cost convertible mills** as the most strategically valuable asset?
+- Did you propose **simultaneous tracks** (close, convert, harvest) rather than treating uniformly?
+- Did you size **conversion capex + payback economics** explicitly?

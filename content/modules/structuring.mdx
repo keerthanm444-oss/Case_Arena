@@ -1,0 +1,135 @@
+---
+id: M1
+slug: structuring
+title: Structuring
+tagline: Building issue trees that are MECE, hypothesis-driven, and pressure-proof
+estimatedMinutes: 75
+status: published
+tags: [fundamentals, mece, issue-tree, frameworks]
+updatedAt: '2026-05-20'
+---
+
+## Why structuring is the single most leveraged skill
+
+When candidates fail a case, it's almost never the math. It's almost always the **structure**. If your tree misses a major branch, no amount of clever analysis in the branches you did pick can recover. A wrong structure caps your ceiling.
+
+> A good structure is a contract with the listener. It says: here is what we'll investigate, and here is why those are the right things to investigate. Everything that follows is grounded in it.
+
+The good news: structuring is mostly mechanics. The four moves below — done in this order — produce a defensible tree for >80% of problems you'll see.<Citation publisher="Case in Point" title="Case in Point — Complete Case Interview Preparation" authors={['Cosentino, Marc']} year={2023} />
+
+## The four moves
+
+1. **Restate the problem in one sentence.** Force yourself to compress the prompt into a verb-plus-object: "We want to *decide whether to* acquire X" or "We want to *find the cause of* margin compression". The verb is decisive — it controls everything that follows.
+
+2. **Identify the root question.** What is the *single question* the recommendation must answer? "Should we acquire X?" is different from "How much should we pay for X?" Different question → different tree.
+
+3. **Decompose the root into 2–4 branches** that are MECE. Mutually Exclusive: a fact lives in at most one branch. Collectively Exhaustive: every relevant fact lives in some branch.
+
+4. **Hypothesize at the leaves.** Each leaf should state a falsifiable hypothesis ("variable cost grew 30% YoY") rather than a vague topic ("costs"). Topics describe; hypotheses commit.
+
+That's it. Apply these four in order, and you have a tree you can defend.
+
+## MECE in practice
+
+**MECE** is Mutually Exclusive, Collectively Exhaustive.<Citation publisher="The Pyramid Principle" title="The Pyramid Principle: Logic in Writing and Thinking" authors={['Minto, Barbara']} year={2009} /> It's the test you run on any decomposition. The Minto reference is the canonical treatment.
+
+A MECE failure usually looks like one of these:
+
+- **Overlap (not Mutually Exclusive)** — branches double-count. "Revenue is falling. Branch 1: price decreased. Branch 2: customer mix shifted toward lower-priced products." Both of these reduce average price; you'll triple-count if you treat them independently.
+- **Gap (not Collectively Exhaustive)** — a major driver is missing. "Profit is falling. Branch 1: revenue. Branch 2: variable cost." Where's fixed cost? Where's mix? You haven't covered the space.
+
+The two clean tests:
+- For ME: pick any fact. Does it belong in exactly one branch? If two branches both claim it, you have overlap.
+- For CE: imagine the answer turns out to live in a branch you haven't drawn. Can you name that branch? If yes, add it.
+
+<Callout tone="warning" title="MECE is a target, not a prison">
+  Real-world problems often resist perfect MECE. When you have to choose between rigid MECE and a tree that captures the real drivers, choose the latter and flag the overlap explicitly. Judges value transparency about your own structure's weaknesses.
+</Callout>
+
+## Top-down vs hypothesis-driven structures
+
+Two ways to build a tree:
+
+**Top-down** — start from the root and decompose mechanically. Profit = Revenue − Cost. Revenue = Volume × Price. Cost = Variable + Fixed. The tree falls out of accounting identities.
+
+**Hypothesis-driven** — start from your best guess about the answer and structure around it. "I think the issue is variable cost inflation. To confirm or refute that, I need to check (a) the trend in per-unit material cost, (b) whether contracts have been re-bid recently, and (c) whether labor cost per unit has changed."
+
+Both have a place:
+- **Top-down** wins when you genuinely don't know what's going on. It guarantees coverage.
+- **Hypothesis-driven** wins when you have signal already. It saves time by skipping uninformative branches.
+
+Cheng's <em>Case Interview Secrets</em> emphasizes hypothesis-driven as the more sophisticated approach;<Citation publisher="Case Interview Secrets" title="Case Interview Secrets" authors={['Cheng, Victor']} year={2012} /> Cosentino's <em>Case in Point</em> teaches top-down as the safer default for beginners. Use both; switch based on context.
+
+## The canonical structures you'll re-use
+
+A small set of problem shapes recurs constantly. Learn these four cold; you'll re-derive everything else.
+
+### Profitability
+
+When profit changes, the question is always one of four things: revenue went one way and cost went another. The tree:
+
+<MindMapEmbed framework="profitability" height={420} />
+
+Use it whenever a prompt mentions falling margins, declining profit, or rising costs. The case <CaseLink slug="acme-coffee-decline">Acme Coffee</CaseLink> is the canonical worked example.
+
+### Market entry
+
+When the question is "should we enter market X?", three sub-questions decompose it cleanly:
+
+<MindMapEmbed framework="market-entry" height={420} />
+
+(1) Is the market attractive? — size, growth, profitability, competition. (2) Can we win in it? — fit between our capabilities and what's needed. (3) How do we enter? — build, buy, partner.
+
+### M&A
+
+For an acquisition, the canonical triad:
+
+1. **Strategic fit** — does buying this make our overall business stronger?
+2. **Valuation** — is the price defensible (DCF, comps, precedent transactions)?
+3. **Integration risk** — can we actually capture the synergies we model?
+
+The deal makes sense only when all three are yes.<Citation publisher="Case in Point" title="Case in Point — Complete Case Interview Preparation" authors={['Cosentino, Marc']} year={2023} />
+
+### Market sizing
+
+A bottom-up size: pick a unit, multiply through population × adoption × frequency × price. The <a href="/tools/sizing">market sizing calculator</a> walks through a sample.
+
+## Practice: build a structure live
+
+Try this prompt:
+
+> A mid-tier US airline is considering launching a no-frills sub-brand to compete with the budget carriers that have eroded its leisure-traveler market share. The CEO asks: should we do this?
+
+Build the tree before reading on.
+
+<IssueTreeEmbed slug="m1-airline-subbrand" height={380} />
+
+A strong structure here uses **market entry** as the spine: (1) is the budget segment still attractive? (2) Can we credibly win in it with a sub-brand? (3) What's the right entry mode (new brand vs. JV vs. acquire an existing carrier)? Each leaf becomes a falsifiable hypothesis ("budget segment grew 12% CAGR over the last five years"), not just a topic ("market growth").
+
+## Common failure modes
+
+After watching enough candidates, the same five mistakes recur:
+
+1. **Skipping restatement.** Diving into a tree without confirming the question. Spending 8 minutes on the wrong problem is unrecoverable.
+
+2. **Branches without hypotheses.** A tree of topics ("costs", "revenue", "customers") is just a vocabulary list. A tree of hypotheses ("variable cost rose >15% YoY"; "customer churn is concentrated in tier 3") is a research agenda.
+
+3. **Premature depth.** Spending 4 minutes drilling into branch 1 before completing the structure. Always finish the top level first, then drill into the most promising branch.
+
+4. **Refusing to abandon a branch.** When evidence kills a hypothesis, kill the branch. Continuing to investigate dead branches signals to the judge that you're not following the data.
+
+5. **Burying the recommendation.** When you finally do recommend, lead with the answer, then the supports. See M3 for the Pyramid Principle treatment.<Citation publisher="The Pyramid Principle" title="The Pyramid Principle: Logic in Writing and Thinking" authors={['Minto, Barbara']} year={2009} />
+
+## Self-test
+
+Can you, in two minutes, structure the following without looking back at the chapter? Restate the problem, identify the root question, and propose 3 MECE branches.
+
+> A specialty coffee retailer wants to enter the ready-to-drink iced coffee market (cans + bottles in grocery stores). Currently they only sell hot coffee in their own stores. Should they?
+
+This is a **market-entry** problem (note: it's *not* primarily about profitability of the existing business). The three branches should be (1) is RTD iced coffee attractive, (2) can they win in it given their current capabilities, (3) what's the entry mode. If you got that without re-reading, you've internalized the move.
+
+## What comes next
+
+<a href="/modules/analysis">M2 · Analysis</a> takes the tree you've built and turns each leaf into actual evidence — quantitative work, sensitivity testing, judgment under partial information.
+
+If your structuring still feels uncertain, run the <a href="/tools/framework-quiz">framework quiz</a> to practice picking the right structure for unseen prompts.

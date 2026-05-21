@@ -1,0 +1,163 @@
+---
+id: M2
+slug: analysis
+title: Analysis
+tagline: Turning issue-tree leaves into evidence — sizing, sensitivity, and sense-checking under time pressure
+estimatedMinutes: 80
+status: published
+tags: [fundamentals, analysis, sizing, sensitivity, math]
+updatedAt: '2026-05-20'
+---
+
+## The handoff from structure to analysis
+
+You've built a tree (M1). Each leaf is a falsifiable hypothesis. Now the analysis task: for each leaf, find evidence that confirms or refutes it. Then walk back up the tree.
+
+The job of analysis is **not** to prove what you already believe. It's to produce a number, comparison, or piece of evidence that would change your recommendation if it turned out the other way.
+
+> If your analysis can't change your answer, it's not analysis. It's decoration.
+
+The good news: most case analysis is one of three moves done well — sizing, sensitivity, or sense-checking. Master those three and you can drive any analysis section.
+
+## Move 1 — Sizing
+
+Sizing is bottom-up multiplication chains. You pick a unit (people, transactions, units sold), then multiply through adoption × frequency × price.
+
+The canonical structure:<Citation publisher="Case in Point" title="Case in Point — Complete Case Interview Preparation" authors={['Cosentino, Marc']} year={2023} />
+
+$$
+\text{Market} = \text{Population} \times \text{Adoption} \times \text{Frequency} \times \text{Price}
+$$
+
+Each factor is itself often a chain. "US population" is OK; "US adults" is better; "urban US adults in HHI bracket above $75k" is best — narrow enough to make the next assumptions cleaner.
+
+The market sizing calculator walks through a worked example with all the moves visible:
+
+<a href="/tools/sizing">→ Open the market sizing calculator</a>
+
+### Three principles for sizing under time pressure
+
+**Round aggressively.** US population is 330 million → call it 300 million if it makes the next step's math clean. Judges punish bad math far more than they punish a 10% rounding adjustment, and rounding is where time savings live.
+
+**Anchor to a number you'd trust.** If you can't defend 60% smartphone penetration as a starting point, you don't have an estimate — you have a guess. Pick anchors from public facts (population, GDP per capita, recognizable industry sizes).
+
+**Build the chain visibly, in writing.** Don't carry numbers in your head past the second step. The bottom-up multiplication chain is the standard format judges expect; it makes your reasoning auditable.
+
+<Callout tone="tip" title="Top-down vs bottom-up">
+  When sizing, default to bottom-up (population × % × frequency × price). Top-down (industry size × our share) is fine as a cross-check, but lone top-down is fragile — you usually can't defend the industry-size starting number, and the conversation stalls.
+</Callout>
+
+## Move 2 — Sensitivity
+
+Sensitivity asks: "if this input were 20% off, how much does the answer change?" It's the second-most useful move after sizing itself.
+
+The output is a **tornado** — inputs sorted by impact magnitude. The biggest bars are the assumptions judges will challenge; the bottom bars are the ones you don't need to defend.
+
+Try it on the sizing calculator: change each slider and watch the tornado update. The top 2 bars are nearly always the assumptions worth defending in a presentation.
+
+### The 80/20 rule of sensitivity
+
+Of every list of assumptions in a sizing model, ~2 usually drive 80% of the variance. The rest could be off by 50% without changing the recommendation. Spend defense time accordingly.
+
+Cheng's <em>Case Interview Secrets</em><Citation publisher="Case Interview Secrets" title="Case Interview Secrets" authors={['Cheng, Victor']} year={2012} /> calls this "knowing where you can be wrong". You don't need to defend every number — you need to defend the 2 that matter and acknowledge that the other 5 don't move the needle.
+
+### When to run a sensitivity
+
+- Always for a sizing problem with more than 4 multiplicative factors.
+- Always when the recommendation depends on a hurdle (IRR above 15%, payback under 24 months).
+- Whenever a judge says "and how sure are you?" — sensitivity is the answer.
+
+## Move 3 — Sense-checking
+
+Sense-checking is the discipline of asking, after producing a number: **does this magnitude make sense?**
+
+A US coffee market of $50 billion is in the right ballpark; one of $500 billion is not; one of $500 million is not. You should be able to tell which of those three is in the right zone *without* looking it up — because you know roughly the size of US GDP (~$27 trillion), of consumer spending (~70% of GDP), and of food + beverage spending (~10% of consumer).
+
+### The three sense-check anchors worth memorizing
+
+These three anchors will catch 90% of sizing math errors:
+
+1. **US population** ≈ 330M. US households ≈ 130M (average HH size 2.5).
+2. **US GDP** ≈ $27T. Consumer spending ≈ $19T (~70% of GDP).
+3. **Global population** ≈ 8B. Global GDP ≈ $100T.
+
+If you produced a number that implies a consumer-products market larger than $1T, you almost certainly made a math error. The largest US consumer categories (food, transport, healthcare) are each in the $1–4T range; anything you've heard of is far smaller.
+
+### Sense-check by magnitude, not precision
+
+You'll often hear "is this $4B or $40B?" That's the right framing. A 10× error means you have a bug; a 30% error is normal estimation noise.
+
+<Callout tone="warning" title="The math-error tell">
+  When your final number is suspiciously round (exactly $1B, exactly $50M), you probably have a missing or doubled factor. Real-world sizes are almost never round. If your answer looks too clean, redo the multiplication.
+</Callout>
+
+## Putting the three moves together — a worked sequence
+
+The classic case flow:
+
+1. Build the tree (M1).
+2. **Size** the relevant branches — what is the total addressable opportunity?
+3. **Sensitivity** — which 2 inputs matter? Are they defensible?
+4. **Sense-check** — does the order of magnitude match what you know about the world?
+5. Recommendation (M3 — Synthesis).
+
+The case <CaseLink slug="acme-coffee-decline">Acme Coffee</CaseLink> walks through this loop with sliders you can move; the case <CaseLink slug="veridian-india-entry">Veridian Telehealth</CaseLink> shows the same loop applied to a market-entry decision.
+
+## Mental math under pressure
+
+The above moves all assume you can do the arithmetic on the fly. Most cases don't allow calculators in the structuring + drive phases. So mental math is the foundation everything else sits on.
+
+The math you actually need in cases:
+
+- 2-digit × 2-digit multiplication (12 × 18, 25 × 36)
+- Percentages of round numbers (15% of 200k, 8% of 5M)
+- Division with clean answers (1,200 ÷ 8, 75M ÷ 12)
+- Compound growth (5% for 7 years ≈ ?)
+
+The <a href="/tools/mental-math">mental math drill</a> generates problems at four difficulty levels with per-operation accuracy tracking. 15 minutes a day for two weeks closes the gap from "slow with errors" to "fast and accurate" for most learners.
+
+### The growth-rate shortcuts every case-solver knows
+
+**Rule of 72.** Money doubles in years ≈ 72 ÷ rate%. 8% → ~9 years; 12% → ~6 years; 6% → ~12 years.
+
+**Quick compound.** For small rates over short horizons, compound ≈ simple × 1.05 to 1.1. So 5% for 5 years ≈ 25%, real answer 27.6%.
+
+**Per-day from annual.** 250 working days a year, so $1M ARR ≈ $4K/day, $1B ≈ $4M/day. Useful for "the deal is closing 3 months late — what's that cost us?" type questions.
+
+## Judgment under partial information
+
+The honest analysis caveat: most case data is missing, contested, or approximate. Strong performers handle this by:
+
+- Making the assumption **explicit** — "I'm assuming 10% market growth based on the GDP rate".
+- Stating the assumption's **role** — "this assumption drives the size by 2× either way".
+- Naming the **falsification path** — "if growth turned out to be flat instead, I'd recommend X instead of Y".
+
+That structure tells the judge: I know what I don't know, I know where it matters, and I've thought about how to update. Those three signals are most of what separates "competent" from "strong" in the analysis phase.
+
+## Common failure modes
+
+After watching enough analysis sessions, the same five mistakes recur:
+
+1. **Sizing without sense-checking.** A clean-looking multiplication chain that arrives at $200B for a market that's really $5B. Always cross-check against an anchor.
+
+2. **No sensitivity awareness.** Defending every assumption equally, instead of identifying the 2 that drive the answer.
+
+3. **Pseudo-precision.** Reporting a sizing result as "$2,847M" when the assumptions have ±30% uncertainty. The right framing is "roughly $3B, range $2-4B depending on adoption rate".
+
+4. **Calculator dependence.** Reaching for the mental math when you're under 10× faster doing it by hand-of-rounded-numbers. In a structuring round, the math you do in your head is often more impressive than the math you'd do precisely.
+
+5. **Analysis without commitment.** Producing a number but not stating its implication. "Market is $5B" is data; "market is $5B which is too small to justify our $50M build cost" is analysis.
+
+## Self-test
+
+Try this prompt, with a 6-minute clock:
+
+> Size the annual US market for premium electric toothbrushes (the $100+ kind), assuming the user replaces their device every 3 years. Run a sensitivity on the two inputs you think matter most. Sense-check your answer against the broader oral-care market.
+
+Use the <a href="/tools/sizing">sizing calculator</a> if you'd like to track the slider impacts; otherwise just do it on paper. If you got to a defensible 6-figure-to-low-billions answer with two named sensitivities and an anchor against oral-care market size, you've internalized M2.
+
+## What comes next
+
+<a href="/modules/synthesis">M3 · Synthesis</a> takes the analysis you've produced and turns it into a recommendation a judge will buy. The Pyramid Principle in detail, answer-first writing, communicating uncertainty without hedging — the move that takes "I have a defensible answer" to "they remember the answer two weeks later".
+
+If your mental math still feels slow, run the <a href="/tools/mental-math">drill</a> at "medium" for a few days before tackling M3. The synthesis phase is much easier when arithmetic doesn't eat your working memory.

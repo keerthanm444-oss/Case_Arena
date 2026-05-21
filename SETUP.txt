@@ -1,0 +1,59 @@
+# SETUP – GitHub → Cloudflare Pages Deployment (Windows)
+
+## Prerequisites
+- **Node.js** (v20 LTS recommended) – install from https://nodejs.org/
+- **npm** (comes with Node)
+- **Git** – install from https://git-scm.com/download/win (you said Git is missing, reinstall it to follow this flow)
+- A **GitHub account** (free) and a **Cloudflare account** (free tier works for Pages)
+
+## 1. Clone the project (or initialize a fresh repo)
+```powershell
+# Open PowerShell in the project folder
+cd "C:\Users\Keer10\Downloads\personal project"
+# If you already have a local copy, initialise a new Git repo
+git init
+# Add all files and commit
+git add .
+git commit -m \"Initial commit – case arena project\"
+```
+
+## 2. Create a GitHub repository
+1. Go to https://github.com/new
+2. Choose a name (e.g. `case-arena`), keep it **public** (or private if you prefer) and **do NOT** initialize with a README – we will push our existing code.
+3. Click **Create repository**.
+
+## 3. Add the remote and push
+```powershell
+# Replace <USERNAME> with your GitHub username and <REPO> with the repo name you chose
+git remote add origin https://github.com/<USERNAME>/<REPO>.git
+# Push the main branch (creates it on GitHub)
+git branch -M main
+git push -u origin main
+```
+If you are prompted for credentials, use a **personal access token** (PAT) with `repo` scope – you can create one in GitHub Settings → Developer settings.
+
+## 4. Configure Cloudflare Pages to pull from GitHub
+1. Log in to https://dash.cloudflare.com/ and select **Pages** from the sidebar.
+2. Click **Create a project** → **Connect to Git** → **GitHub**.
+3. Authorise Cloudflare to access your repository (choose the repo you just pushed).
+4. **Project Settings**
+   - **Production branch**: `main`
+   - **Build command**: `npm install && npm run build`
+   - **Build output directory**: `out`
+   - **Node version** (environment variable): add `NODE_VERSION=20`
+5. Click **Save and Deploy**.
+
+Cloudflare will now clone the repo, run the build, and publish the output at a URL like `https://<project>.pages.dev`.
+
+## 5. Subsequent updates
+When you make changes locally:
+```powershell
+# After editing files
+git add .
+git commit -m "Your commit message"
+git push
+```
+Cloudflare Pages will automatically rebuild and redeploy the site.
+
+---
+**Note** – This file now contains **only** the GitHub‑to‑Cloudflare Pages workflow, as you requested.

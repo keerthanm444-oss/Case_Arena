@@ -1,0 +1,107 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+/* Design tokens — single import chains colors / typography / spacing / motion */
+@import '../styles/tokens/themes.css';
+
+/* Base reset additions on top of Tailwind's preflight */
+@layer base {
+  html, body { height: 100%; }
+  body {
+    min-height: 100dvh;
+    background: var(--bg);
+    color: var(--fg);
+    overflow-x: hidden;
+  }
+
+  /* Reset link defaults — themed underline in components */
+  a { color: inherit; text-decoration: none; }
+
+  /* Buttons inherit fonts — necessary because Tailwind preflight strips them */
+  button, input, select, textarea {
+    font-family: inherit;
+    color: inherit;
+  }
+
+  /* Disable iOS rubber-band so the workspace shell feels app-like */
+  html { overscroll-behavior: none; }
+}
+
+@layer components {
+  /* Shared empty-state shell used while content/components are not yet built.
+     Replaced by real renderers in System 7. */
+  .skeleton-page {
+    display: grid;
+    grid-template-rows: auto 1fr;
+    min-height: 100dvh;
+  }
+
+  .skeleton-topbar {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: var(--space-4);
+    height: var(--topbar-h);
+    padding: 0 var(--gutter-page);
+    border-bottom: 1px solid var(--line);
+    background: var(--bg-elevated);
+    font-family: var(--font-mono-stack);
+    font-size: var(--text-2xs);
+    letter-spacing: var(--tracking-widest);
+    text-transform: uppercase;
+    color: var(--fg-muted);
+  }
+
+  .skeleton-content {
+    padding: var(--space-16) var(--gutter-page);
+    max-width: 1280px;
+    width: 100%;
+    margin: 0 auto;
+  }
+
+  /* A label / value KPI tile used on the landing for build progress */
+  .kpi {
+    display: grid;
+    gap: var(--space-1);
+    padding: var(--space-4) var(--space-5);
+    border: 1px solid var(--line);
+    background: var(--bg-elevated);
+    border-radius: var(--radius-md);
+  }
+  .kpi-label {
+    font-family: var(--font-mono-stack);
+    font-size: var(--text-2xs);
+    letter-spacing: var(--tracking-widest);
+    text-transform: uppercase;
+    color: var(--fg-muted);
+  }
+  .kpi-value {
+    font-family: var(--numeric-font);
+    font-size: var(--text-2xl);
+    font-feature-settings: var(--feature-numeric);
+    color: var(--fg);
+    letter-spacing: var(--tracking-tight);
+  }
+
+  /* A status pill — used heavily across the app from System 4 onward */
+  .pill {
+    display: inline-flex;
+    align-items: center;
+    gap: var(--space-1);
+    padding: var(--space-0-5) var(--space-2);
+    border: 1px solid var(--line);
+    border-radius: var(--radius-pill);
+    font-family: var(--font-mono-stack);
+    font-size: var(--text-2xs);
+    letter-spacing: var(--tracking-wider);
+    text-transform: uppercase;
+    color: var(--fg-muted);
+    background: var(--bg-panel);
+  }
+  .pill[data-tone='accent'] { color: var(--accent); border-color: var(--accent-soft); background: var(--accent-soft); }
+  .pill[data-tone='success'] { color: var(--success); border-color: var(--line); }
+  .pill[data-tone='warning'] { color: var(--warning); border-color: var(--line); }
+  .pill[data-tone='danger']  { color: var(--danger);  border-color: var(--line); }
+  .pill[data-tone='info']    { color: var(--info);    border-color: var(--line); }
+}

@@ -1,0 +1,97 @@
+---
+id: c-axiomed-rd
+slug: axiomed-rd-portfolio
+title: 'Axiomed: which 3 of our 8 R&D programs should we kill?'
+source:
+  publisher: Bain & Company
+  title: 'Bain Insights'
+  needsVerification: true
+industry: healthcare
+category: portfolio
+difficulty: advanced
+frameworks: [profitability, 3c]
+timeEstimate: 50
+tags: [healthcare, biotech, R&D, portfolio, prioritization]
+problemStatement: 'Axiomed is a mid-cap biotech with 8 R&D programs across 3 therapeutic areas (oncology, neurology, rare diseases). Cash burn is high; the board has mandated R&D spend reduction of 30%. Effectively this requires killing 3 of the 8 programs. The CEO has asked for a recommendation on which 3, with rationale.'
+clarifyingQuestions:
+  - 'What clinical phase is each program in (preclinical, Phase 1, 2, 3)?'
+  - 'What is the probability of technical and regulatory success (PTRS) at each phase?'
+  - 'What is the projected peak sales for each program if approved?'
+  - 'Are any programs partnered, and what are the termination economics?'
+commonMistakes:
+  - 'Killing the earliest-phase programs because they look easiest to cut — they''re often the highest expected NPV per dollar.'
+  - 'Ignoring the probability-of-success weighting; a 30% peak sales drop on a Phase 3 candidate is much more material than the same drop on a Phase 1.'
+  - 'Not separating "kill" from "pause" or "outlicense" — the optionality differs by drug.'
+variants:
+  - 'Same situation, but Axiomed has a strategic acquirer interested. Does the kill decision change if the acquirer would take certain assets?'
+  - 'Same problem, but the 30% reduction is permanent vs the original assumption of bridge financing arriving in 18 months. How does the timeline shift the answer?'
+relatedCases:
+  - meridian-apparel-portfolio
+solved: false
+updatedAt: '2026-05-20'
+---
+
+<Callout tone="note" title="Illustrative case">
+  Axiomed is a stylized example for biotech R&D portfolio prioritization. Frameworks adapted from standard pharma portfolio methodology; specifics are illustrative.
+</Callout>
+
+## The situation
+
+Biotech R&D portfolio decisions are among the highest-stakes capital allocation problems in any industry. Wrong cuts can kill the company; wrong holds bankrupt it. The discipline is **risk-adjusted NPV per dollar invested**, with explicit recognition that early-stage programs have higher upside variance but lower current capital absorption.
+
+The 30% mandate is forcing prioritization that's been overdue.
+
+## Structuring
+
+R&D portfolio framework with explicit phase + probability decomposition:<Citation publisher="Bain & Company" title="Bain Insights" />
+
+<IssueTreeEmbed slug="axiomed-tree" height={420} />
+
+For each of the 8 programs, calculate:
+
+1. **Risk-adjusted NPV (rNPV)** = peak sales × PTRS at current phase − projected R&D cost to approval
+2. **Capital efficiency** = rNPV ÷ R&D dollars required to next major milestone
+3. **Strategic option value** = ability to outlicense or partner if kept alive
+4. **Termination cost** = severance, write-offs, partnership wind-down
+
+The 3 to kill aren't necessarily the lowest-rNPV programs — they're the lowest **rNPV per dollar of remaining R&D**.
+
+## Key analysis
+
+A typical pattern across 8 biotech R&D programs:
+
+| Program | Phase | PTRS | Peak sales ($B) | rNPV ($B) | Capital to next milestone ($M) |
+|---------|-------|------|-----------------|-----------|-------------------------------|
+| A | III | 65% | 2.5 | 1.0 | 80 |
+| B | III | 50% | 1.8 | 0.5 | 100 |
+| C | II | 30% | 3.0 | 0.4 | 60 |
+| D | II | 25% | 1.0 | 0.05 | 70 |
+| E | I | 15% | 4.0 | 0.3 | 30 |
+| F | I | 15% | 2.0 | 0.1 | 25 |
+| G | Preclinical | 8% | 5.0 | 0.15 | 15 |
+| H | Preclinical | 8% | 1.0 | -0.05 | 20 |
+
+The naive cut: kill the 3 lowest rNPV (D, H, F).
+
+The right cut considers capital efficiency: D (low rNPV, high capital), H (negative rNPV, low capital), and probably B (Phase III but high remaining cost relative to upside).
+
+Killing B is counterintuitive — it's already in Phase III. But if it costs $100M to complete and only adds $500M risk-adjusted, the capital efficiency is worse than letting cheaper Phase I/II programs continue. The "save the late-stage programs" instinct often misallocates capital.
+
+## Recommendation skeleton
+
+**Recommendation:** Kill D and H (low rNPV per dollar). Out-license B to a larger pharma partner — its Phase III data is valuable to someone with deeper pockets even if it's not the right investment for us. Use the freed capital to accelerate A (highest rNPV) + maintain C and E (high upside variance). F and G continue at low burn but with explicit milestone-based gates.
+
+**Three supports:**
+
+1. Capital efficiency, not absolute rNPV, drives the right cut decisions — late-stage programs can be expensive winners that don't pay back.
+2. Out-licensing B preserves option value while removing the cash burn.
+3. The freed capital lets us accelerate the highest-rNPV program (A) rather than just save cash.
+
+**One risk:** out-licensing in current biotech-market conditions may not yield a deal at acceptable economics. Mitigate by setting a 6-month timeline for the out-license process; if no deal closes, B continues internally but with a stop-loss budget.
+
+## What judges look for
+
+- Did you compute **rNPV per dollar of remaining R&D**, not absolute rNPV?
+- Did you consider **out-licensing as an alternative to killing**? Most candidates only see kill/keep.
+- Did you recognize that **the late-stage program can be the wrong investment** even if it's closer to approval?
+- Did you propose **explicit gates** (out-license deadline, milestone-based budgets) rather than vague commitments?

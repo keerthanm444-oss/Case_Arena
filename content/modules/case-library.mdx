@@ -1,0 +1,157 @@
+---
+id: M9
+slug: case-library
+title: Case Library
+tagline: How to navigate the library, pick the right case, and learn from worked solutions
+estimatedMinutes: 35
+status: published
+tags: [fundamentals, library, cases, navigation, study]
+updatedAt: '2026-05-20'
+---
+
+## What the case library is
+
+The case library is the worked-case collection — every published case in this app, in one filterable index at <a href="/cases">/cases</a>. Each case follows the same structure: paraphrased problem statement, clarifying questions, an embedded interactive issue tree, reactive assumption chips, a recommendation skeleton, common mistakes, variants, and a "related cases" rail driven by the map graph.
+
+The library is where the curriculum (M0–M8, M10) becomes concrete. Modules teach the moves; cases let you see those moves applied to a real problem.
+
+> A case you've read passively is a case you don't yet know how to solve. The library is most useful when you treat each case as a problem to attempt before reading the solution — not a worked example to absorb passively.
+
+## Three ways to find a case
+
+The library can be filtered and explored three ways, optimized for different intents.
+
+### 1. The index (`/cases`)
+
+A filterable list. Multi-select by **industry**, **category**, **difficulty**, **framework**, **source**, and **solved/unsolved**. Free-text search across title + problem statement. The right tool when you have a specific shape in mind — e.g. "show me all retail profitability cases at standard difficulty" — and want a flat list to scan.
+
+### 2. The case map (`/map`)
+
+Three view modes over the same data:
+
+- **Web view** — force-directed graph. Each case is a node; edges are weighted by shared frameworks, shared industry, and explicit `relatedCases` declarations from frontmatter. Use when you want to **discover related cases you didn't know about**.
+- **Branch view** — hierarchical, grouped by industry → category. Use when you want to **see coverage** ("which industries have the most cases? where are the gaps?").
+- **Matrix view** — framework × industry heatmap with cell counts. Use when you want to **find the intersection** ("which cases cover both market-entry and healthcare?").
+
+All three views share the same filter state and a **Compare Tray** that holds up to 4 pinned cases for side-by-side comparison (industry, category, difficulty, frameworks, time, solved status).
+
+### 3. From inside a case (`relatedCases` rail)
+
+Every open case has a "Related cases" rail in the right sidebar, populated by the map graph's weighted neighbors (related-case=3 / shared-framework=2 / shared-industry=1). The simplest discovery path is often: read one case, then follow the strongest related edge to the next.
+
+## How to read a worked case effectively
+
+There's a wrong way and a right way. The wrong way:
+
+1. Open the case
+2. Read top-to-bottom including the recommendation
+3. Nod thoughtfully
+4. Close the case
+5. Believe you've "studied" it
+
+The right way:
+
+1. Open the case
+2. Read the problem statement + clarifying questions only
+3. **Close the page** or paste the prompt into the <a href="/tools/issue-tree">issue tree tool</a>
+4. Spend 10 minutes structuring + analyzing on your own
+5. Return to the case page, compare your structure to the embedded issue tree
+6. Read the recommendation
+7. Note the gap between your version and the worked version
+8. Pick one specific move from the worked version to try next time
+
+The gap between "passively read 30 cases" and "actively worked 10 cases" is enormous. Cosentino emphasizes this distinction explicitly<Citation publisher="Case in Point" title="Case in Point — Complete Case Interview Preparation" authors={['Cosentino, Marc']} year={2023} /> and it shows up in nearly every observed prep cycle: active workers progress 3-5× faster than passive readers per case opened.
+
+<Callout tone="tip" title="The 10-minute discipline">
+  If you only have 10 minutes for a case, spend it structuring + recommending in your head. Don't read the solution. The structuring is what compounds; reading solutions without trying first feels productive but barely is.
+</Callout>
+
+## A "first 5 cases" path
+
+If you've finished the modules and want a starter set, here's a sequence that aligns with the curriculum:
+
+### Case 1 — pair with M1 (Structuring)
+
+Pick any **introductory profitability case** (filter: difficulty=intro, category=profitability). The first case is about getting comfortable with the structuring move, not about getting the right answer. <CaseLink slug="acme-coffee-decline">Acme Coffee</CaseLink> is the default starter — pure profitability, retail context, ~35 min.
+
+**Focus:** can you build a defensible profit tree in under 4 minutes, before reading the solution?
+
+### Case 2 — pair with M2 (Analysis)
+
+Pick a case with a **sizing or quant-heavy** component (filter: tags=sizing OR frameworks=market-sizing). The goal is to drive the actual numbers with the assumption chips, not just nod at them.
+
+**Focus:** which two assumptions drive the answer most? Run them through the <a href="/tools/sizing">sizing calculator</a> with sensitivity on.
+
+### Case 3 — pair with M3 (Synthesis)
+
+Pick a case with a clear recommendation section (any case in the library; difficulty=standard or above). The goal isn't to redo the analysis — it's to **write your own synthesis** before reading the case's version.
+
+**Focus:** can you produce a recommendation + 3 supports + 1 risk in under 90 seconds of writing, then compare to the case's recommendation?
+
+### Case 4 — pair with M4 (Communication)
+
+Pick any standard-difficulty case. Deliver the synthesis from Case 3 **out loud** with the <a href="/tools/timer">practice timer</a> set to 8 minutes (the canonical presentation pace from M4).
+
+**Focus:** does your verbal delivery match the answer-first discipline of the worked case's recommendation? Record yourself; identify your specific delivery tells.
+
+### Case 5 — pair with M7 (Competitions)
+
+Pick a final-round difficulty case — explicitly the hardest tier. Run it under realistic competition conditions: 60 minutes prep, 8 minutes presentation, 6 minutes Q&A from a partner who's read the case ahead of time.
+
+**Focus:** can you sustain the M0–M4 disciplines under sustained pressure? This case is a stress test for whether the curriculum has compounded into real skill.
+
+By case 5, you've exercised the full M0–M7 stack at least once each in a structured way. Repeat with new cases to build pattern recognition; the marginal value of each subsequent case grows once the moves are familiar.
+
+## Studying solved vs unsolved cases
+
+Each case has a `solved` flag in its frontmatter. Solved cases have a worked recommendation; unsolved cases have the structure (problem, clarifying questions, framework) but leave the recommendation as an exercise.
+
+When to read **solved** cases:
+- Early in prep, when you don't yet know what good looks like
+- After attempting a similar problem to compare
+- When studying a specific move (e.g. "how does a strong M&A recommendation read?")
+
+When to attempt **unsolved** cases:
+- Mid-prep, when you have the moves but need pattern fluency
+- In timed practice (no worked answer to bias toward)
+- With a mock partner — they can see your work without a built-in answer to compare against
+
+A mature prep cycle uses both: maybe 60% solved (for studying patterns), 40% unsolved (for practicing without anchors).
+
+## Coverage gaps
+
+The library doesn't have full uniform coverage. Some industries (retail, healthcare) are over-represented relative to others (energy, public sector) because the source material has more retail + healthcare cases. The <a href="/map">matrix view</a> shows the gaps visually.
+
+If you have a specific industry interest and the library is thin there, the right move is usually:
+
+1. **Find a real published case from that industry** in one of the canonical sources (HBS, Ivey, McKinsey, etc.).
+2. **Practice with it as if it were in the library** — read the prompt, close the source, structure on your own.
+3. **Map the structure to one of the canonical frameworks** even if the source's framework is different — most cases reduce to profitability, market-entry, M&A, or sizing.
+
+The library exists to provide variety + interactive practice. Real published sources are the deeper material; the library is the curated entry point.
+
+## How cases get added
+
+Each case in this library is a `.mdx` file in `content/cases/`. The frontmatter includes the source citation (paraphrased prompts, never verbatim — see <a href="/modules/orientation">M0</a> on the citation contract). The build linter blocks production deploys that contain unverified citations.
+
+If you're contributing a case: see [`docs/AUTHORING.md`](https://github.com/case-arena/case-arena/blob/main/docs/AUTHORING.md) for the full schema and citation rules. The contract is identical for first-party and contributor content — no fabrication, every prompt paraphrased, every quote ≤ 15 words.
+
+## Common library-use failure modes
+
+Five patterns that recur in observed library usage:
+
+1. **Reading without attempting.** Cases read passively don't compound. Always attempt the structure before reading the solution.
+
+2. **Skipping the clarifying questions.** The clarifying-questions section is where strong candidates train their probing instincts. Don't skip it.
+
+3. **Ignoring the related-cases rail.** The graph is built to make discovery cheap. Use it.
+
+4. **Cherry-picking only the easy cases.** Difficulty progression matters. After 5 cases at intro level, force yourself to attempt one at standard. Discomfort is the signal of growth.
+
+5. **Not tracking what you've worked.** The dashboard records visited pages; review them weekly to see whether you're varying by industry + framework or grooving the same shape.
+
+## What comes next
+
+<a href="/modules/resources">M11 · Resources</a> covers the books, podcasts, channels, and communities worth investing in beyond this app. The curriculum (M0–M10) gives you the skills; the library (M9) gives you practice; M11 gives you the longer-tail material that deepens specific areas.
+
+If you've worked through M0–M10 and at least 5 cases from the library, you have a complete prep stack. The remaining work is repetition and pattern fluency — not new knowledge.

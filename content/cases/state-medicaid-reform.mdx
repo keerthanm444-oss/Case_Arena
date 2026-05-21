@@ -1,0 +1,89 @@
+---
+id: c-state-medicaid
+slug: state-medicaid-reform
+title: 'State Medicaid: how do we control costs without cutting coverage?'
+source:
+  publisher: McKinsey & Company
+  title: 'McKinsey Quarterly'
+  needsVerification: true
+industry: public-sector
+category: operations
+difficulty: advanced
+frameworks: [3c, profitability]
+timeEstimate: 45
+tags: [public-sector, healthcare, medicaid, cost-control, value-based-care]
+problemStatement: 'A state Medicaid program covers 3M beneficiaries at $18B annual cost. Costs have grown 7% YoY for 5 years vs general inflation 3%. The Governor mandates cost growth reduction to 4% while maintaining coverage levels. Options: (a) managed care expansion, (b) value-based care contracting, (c) eligibility verification + program integrity, (d) provider rate negotiation.'
+clarifyingQuestions:
+  - 'What is the cost distribution — what percentage of beneficiaries drives what percentage of costs?'
+  - 'What share of program is currently in managed care vs fee-for-service?'
+  - 'Have we benchmarked our rates against neighboring states?'
+  - 'What is the fraud/abuse exposure across the program?'
+commonMistakes:
+  - 'Treating Medicaid cost growth as uniformly distributed when 5% of beneficiaries drive 50%+ of costs.'
+  - 'Underestimating MCO transition costs; converting fee-for-service to managed care has 18-36 month transition + savings ramp.'
+  - 'Ignoring federal match implications — some cost savings reduce federal matching dollars.'
+variants:
+  - 'Same situation, but federal CMS has approved a 1115 waiver allowing innovative payment models. Recommend.'
+  - 'Same data, but state revenue is declining requiring deeper cuts. How does priority order change?'
+relatedCases:
+  - meridiem-medicare-advantage
+  - cascade-hospital-operations
+solved: false
+updatedAt: '2026-05-20'
+---
+
+<Callout tone="note" title="Illustrative case">
+  State Medicaid is a stylized example for government healthcare cost management. Framework from McKinsey + standard Medicaid methodology; specifics are illustrative.
+</Callout>
+
+## The situation
+
+State Medicaid cost growth is one of the largest budget pressures facing US states. The drivers — healthcare cost inflation, eligibility expansion, aging demographics, chronic disease prevalence — are largely structural. State control levers are limited: rates (limited by access concerns), eligibility (limited by federal rules + political constraints), benefits (limited by federal mandates), program design (managed care, value-based contracting).
+
+The realistic playbook combines multiple levers; no single lever produces 3+ percentage points of growth reduction.
+
+## Structuring
+
+Medicaid cost-management framework:<Citation publisher="McKinsey & Company" title="McKinsey Quarterly" />
+
+<IssueTreeEmbed slug="state-medicaid-tree" height={420} />
+
+Three branches:
+
+1. **High-cost beneficiary management** — top 5% drive 50%+ of costs; care management + chronic disease programs target this segment.
+2. **Program design** — managed care expansion, value-based contracting with MCOs, capitation models.
+3. **Operations** — eligibility verification, program integrity (fraud + abuse), provider rate negotiation, prior authorization.
+
+## Key analysis
+
+Typical Medicaid cost decomposition:
+
+| Beneficiary group | % beneficiaries | % cost |
+|-------------------|-----------------|--------|
+| Healthy adults + children | 70% | 25% |
+| Chronic disease (1-3 conditions) | 20% | 35% |
+| Complex chronic (4+ conditions) | 7% | 25% |
+| End-of-life / catastrophic | 3% | 15% |
+
+The non-obvious move: **target the 7% complex chronic segment with intensive care management.** This segment is large enough to matter (25% of cost), drives most of the cost growth, and responds well to care coordination (medication reconciliation, social determinants intervention, transitional care).
+
+For the state specifically: $18B × 25% = $4.5B in complex-chronic spend. Even 10% reduction in this segment via intensive care management = $450M annual savings (2.5 percentage points of cost growth reduction). Combined with other levers, achieving the 3-percentage-point reduction target becomes realistic.
+
+## Recommendation skeleton
+
+**Recommendation:** **Multi-track Medicaid reform over 3 years.** Track 1: launch intensive care management for top 7% complex-chronic beneficiaries ($300-500M annual savings at maturity). Track 2: expand managed care from 50% to 75% of beneficiaries (~$200-400M savings, longer ramp). Track 3: shift MCO contracts to value-based payment for top conditions (diabetes, heart failure, COPD). Track 4: enhanced program integrity ($100-200M savings). Total: 3-3.5 percentage points cost growth reduction by year 3.
+
+**Three supports:**
+
+1. Care management targeting high-cost beneficiaries has highest savings ROI.
+2. Managed care expansion captures predictable cost growth reduction over time.
+3. Value-based contracting aligns MCO incentives with cost control.
+
+**One risk:** care management programs may not achieve expected savings if implementation is rushed or population engagement is low. Mitigate by piloting in 2-3 regions before statewide rollout; explicit savings measurement protocol.
+
+## What judges look for
+
+- Did you identify **high-cost beneficiary concentration** as the priority lever?
+- Did you propose **multi-track** rather than betting on single lever?
+- Did you size **value-based contracting** as a structural improvement?
+- Did you address **federal match implications** of cost reduction?

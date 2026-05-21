@@ -1,0 +1,28 @@
+---
+id: lint-test-fail
+slug: lint-test-fail
+title: Linter — should FAIL
+industry: retail
+category: profitability
+difficulty: intro
+timeEstimate: 30
+solved: false
+frameworks: ['profitability']
+tags: ['test']
+source:
+  id: nonexistent-publisher
+  type: academic
+  publisher: Random Blog That Is Not Approved
+  title: Test
+  year: 2024
+citations: []
+relatedCases: []
+strictCitations: true
+---
+
+This page has $99M of unsourced revenue and 47% margin — both numeric claims
+that should fail the linter under strictCitations.
+
+<Citation id="does-not-exist">
+This citation reference points to an id that isn't declared in frontmatter.
+</Citation>

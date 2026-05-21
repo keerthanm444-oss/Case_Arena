@@ -1,0 +1,103 @@
+---
+id: c-helio-opensource
+slug: helio-open-source-monetization
+title: 'Helio: 50K GitHub stars, $0 ARR — how do we monetize?'
+source:
+  publisher: Boston Consulting Group
+  title: 'BCG Insights'
+  needsVerification: true
+industry: technology
+category: business-model
+difficulty: standard
+frameworks: [3c, profitability]
+timeEstimate: 35
+tags: [saas, open-source, monetization, developer-tools, oss]
+problemStatement: 'Helio is an open-source data orchestration tool with 50,000 GitHub stars and ~300,000 monthly active users. The team is 12 engineers, no revenue, $8M raised. The board is pressuring for a monetization strategy: (a) hosted SaaS (Helio Cloud), (b) commercial features in an "enterprise edition" (open-core), (c) consulting + support contracts. Recommend an approach.'
+clarifyingQuestions:
+  - 'Who is the current OSS user — individual developers experimenting, or production deployments in companies?'
+  - 'Are there known commercial use cases we can identify in the community (Slack, Discord, GitHub issues)?'
+  - 'What is the existing commercial competition (Snowflake, Databricks, etc.) and how do they price?'
+  - 'How protective is the community of "selling out" the open-source project?'
+commonMistakes:
+  - 'Choosing the "open core" path because it sounds easy — the discipline of separating commercial vs open features is harder than expected.'
+  - 'Underestimating the time-to-revenue of hosted SaaS; building enterprise-grade hosting is 18-24 months.'
+  - 'Ignoring community dynamics; the wrong monetization path can fork the project.'
+variants:
+  - 'Same situation, but Helio''s commercial competitor has just raised $200M. How does urgency shift the strategy?'
+  - 'Same data, but Helio''s license is restrictive (e.g., AGPL or BSL). Does that change which models are viable?'
+relatedCases:
+  - strata-cloud-cost-management
+  - arclight-hardware-software-pivot
+solved: false
+updatedAt: '2026-05-20'
+---
+
+<Callout tone="note" title="Illustrative case">
+  Helio is a stylized example for open-source commercialization strategy. The framework draws on standard open-source-business methodology; specifics are illustrative.
+</Callout>
+
+## The situation
+
+Open-source monetization is one of the most strategically loaded decisions a developer-tools company makes. The wrong choice can fork the project, alienate the community, or under-monetize indefinitely. The right choice (when it exists) creates a category-defining business with a permanent moat from the community itself.
+
+The patterns are well-documented from the last 15 years of open-source commercialization: Confluent (Kafka), MongoDB, Elastic, GitLab, HashiCorp, Snowflake. Each made different model choices for different reasons.
+
+## Structuring
+
+Standard 3C with open-source-specific considerations:<Citation publisher="Boston Consulting Group" title="BCG Insights" />
+
+<IssueTreeEmbed slug="helio-tree" height={400} />
+
+Three branches:
+
+1. **User base reality** — share of users who are individual hobbyists vs production-deployment companies, and what each segment values + would pay for.
+2. **Competitive context** — are commercial cloud providers offering "managed Helio" already? If yes, Helio Inc. is competing against AWS/GCP for its own users.
+3. **Model fit** — for each monetization path, which user segment pays, what's the gross margin profile, how does it interact with community dynamics.
+
+## Key analysis
+
+Walking the three options:
+
+**(a) Hosted SaaS (Helio Cloud):**
+- Captures the "I don't want to operate this myself" segment, typically 30-50% of production users
+- Gross margin 65-75% at scale (cloud infrastructure + ops cost)
+- Time to revenue: 12-18 months (build the hosting product)
+- Competes directly with hyperscaler-managed offerings if AWS/GCP build their own
+- Community-friendly — no commercial features locked away
+
+**(b) Open-core (commercial features in enterprise edition):**
+- Captures the largest production users who need specific features (SSO, RBAC, audit, premium connectors)
+- Gross margin 80-85% (software-only)
+- Time to revenue: 6-9 months (lighter build)
+- Tricky to maintain — the line between "what's open" and "what's commercial" must be defended, requires discipline
+- Community sometimes hostile if "we want feature X but it's locked behind enterprise"
+
+**(c) Support + consulting:**
+- Captures companies that want OSS but need help operating it
+- Gross margin: 30-50% (services business, headcount-bound)
+- Time to revenue: 3-6 months (lighter build)
+- Doesn't scale beyond ~$30M ARR for most projects; eventually replaced by SaaS
+- Community-friendly
+
+The non-obvious finding: **hosted SaaS is usually the highest-LTV path** but takes the longest to build. Open-core is fastest to revenue but creates ongoing community friction. Support + consulting is the lowest-ceiling option but useful as a bridge while building either of the others.
+
+Most successful open-source companies do **a combination** — Helio Cloud as the long-term ARR engine, open-core for specific enterprise-only features that don't make sense as a service, support contracts as a bridge for years 1-2.
+
+## Recommendation skeleton
+
+**Recommendation:** Three-track strategy with explicit phasing. Year 1: launch enterprise support + consulting (~$5M ARR achievable; bridge funding). Year 1-2: build Helio Cloud (~$10M investment); GA at month 18. Year 2-3: add open-core enterprise features (SSO, RBAC) for self-hosters who won't move to Cloud. Year 3: Helio Cloud should be 70%+ of ARR.
+
+**Three supports:**
+
+1. Multi-track addresses different segments without forcing all users into one monetization path.
+2. Phased timing reduces capital risk; support revenue funds part of the Cloud build.
+3. Community-friendly sequencing — open-core comes last and is constrained to enterprise-only features that wouldn't be community priorities.
+
+**One risk:** AWS or GCP launches a managed Helio service before Helio Cloud is GA. Mitigate by accelerating Cloud timeline, building strong integrations with hyperscaler services, and positioning Cloud as the "deepest expertise" rather than the only managed option.
+
+## What judges look for
+
+- Did you analyze **community dynamics** as a real consideration, not an afterthought?
+- Did you propose a **multi-track strategy** rather than choosing one model?
+- Did you identify the **hyperscaler-clone risk** for hosted SaaS?
+- Did you sequence the tracks with **realistic time-to-revenue**?

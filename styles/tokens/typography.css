@@ -1,0 +1,86 @@
+/* ============================================================
+ * typography.css — fonts wired via next/font/local in app/layout.tsx
+ * which emits CSS variables --font-display, --font-body, --font-mono.
+ *
+ *   Display: Fraunces (variable, optical sizing, characterful)
+ *   Body:    Geist (modern, distinctive, free)
+ *   Mono:    JetBrains Mono
+ *
+ * Inter is BANNED. system-ui is BANNED.
+ * ============================================================ */
+
+:root {
+  /* Font stacks reference variables next/font sets in the layout */
+  --font-display-stack: var(--font-display), 'Fraunces', 'Tiempos Headline',
+    'Cormorant Garamond', Georgia, serif;
+  --font-body-stack: var(--font-body), 'Geist', 'IBM Plex Sans', 'Söhne',
+    -apple-system, BlinkMacSystemFont, sans-serif;
+  --font-mono-stack: var(--font-mono), 'JetBrains Mono', 'Geist Mono',
+    'IBM Plex Mono', ui-monospace, monospace;
+
+  /* Type scale — perfect fourth (1.333) with modifications */
+  --text-2xs:   0.6875rem;   /* 11px — caption */
+  --text-xs:    0.75rem;     /* 12px — labels */
+  --text-sm:    0.8125rem;   /* 13px — secondary body */
+  --text-base:  0.9375rem;   /* 15px — body */
+  --text-md:    1.0625rem;   /* 17px — reading body */
+  --text-lg:    1.25rem;     /* 20px — h5 / lead */
+  --text-xl:    1.5rem;      /* 24px — h4 */
+  --text-2xl:   1.875rem;    /* 30px — h3 */
+  --text-3xl:   2.375rem;    /* 38px — h2 */
+  --text-4xl:   3rem;        /* 48px — h1 */
+  --text-5xl:   3.75rem;     /* 60px — hero */
+  --text-6xl:   5rem;        /* 80px — display */
+
+  /* Line heights */
+  --leading-tight:  1.1;     /* display */
+  --leading-snug:   1.25;    /* headings */
+  --leading-normal: 1.5;     /* body */
+  --leading-relaxed: 1.65;   /* long-form reading */
+  --leading-loose:  1.85;    /* poetry / quotes */
+
+  /* Letter spacing */
+  --tracking-tightest: -0.04em;
+  --tracking-tighter:  -0.02em;
+  --tracking-tight:    -0.01em;
+  --tracking-normal:   0;
+  --tracking-wide:     0.02em;
+  --tracking-wider:    0.05em;
+  --tracking-widest:   0.12em;
+
+  /* Weights — Fraunces variable supports 100..900 */
+  --weight-thin:    200;
+  --weight-light:   300;
+  --weight-regular: 400;
+  --weight-medium:  500;
+  --weight-semibold:600;
+  --weight-bold:    700;
+  --weight-black:   900;
+
+  /* Fraunces optical sizing — bigger size, more contrast in strokes */
+  --display-opsz: 144;
+  --heading-opsz: 72;
+  --body-opsz:    14;
+
+  /* Fraunces "SOFT" axis for editorial warmth (0..100) */
+  --display-soft: 100;       /* fully soft = elegant */
+  --heading-soft: 60;
+
+  /* Numerics — tabular figures for data tables */
+  --feature-numeric: 'tnum' 1, 'cv11' 1, 'ss01' 1;
+}
+
+/* Theme-conditional typography behavior */
+[data-theme='terminal'] {
+  /* Mono numerics — terminal feel */
+  --numeric-font: var(--font-mono-stack);
+  --display-soft-override: 30;     /* less soft, more technical */
+}
+[data-theme='boardroom'] {
+  --numeric-font: var(--font-display-stack);   /* serif lining figures */
+  --display-soft-override: 100;
+}
+[data-theme='daylight'] {
+  --numeric-font: var(--font-body-stack);
+  --display-soft-override: 80;
+}

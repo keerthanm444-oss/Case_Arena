@@ -1,0 +1,90 @@
+---
+id: c-tessera-payments
+slug: tessera-payments-competitive-response
+title: 'Tessera Payments: a new entrant is undercutting us — respond?'
+source:
+  publisher: Case in Point
+  title: 'Case in Point — Complete Case Interview Preparation'
+  authors: ['Cosentino, Marc']
+  year: 2023
+  needsVerification: true
+industry: financial-services
+category: pricing
+difficulty: standard
+frameworks: [3c, porters-five-forces]
+timeEstimate: 30
+tags: [financial-services, payments, pricing, competition, response]
+problemStatement: 'Tessera Payments is a payment processor for SMB merchants ($1B revenue, 8% net margin). A well-funded new entrant has launched at 30-40% lower processing fees, targeting our small-merchant base. They''ve taken ~5% of our SMB customers in 12 months. The CEO is debating: (a) match prices to defend share, (b) bundle additional services (POS hardware, capital advances) to justify our pricing, (c) accelerate move upmarket toward larger merchants.'
+clarifyingQuestions:
+  - 'What is the competitor''s funding runway — can they sustain low pricing long-term?'
+  - 'Are the customers churning to the new entrant the most price-sensitive segment?'
+  - 'What is the LTV-to-CAC ratio at our current pricing vs proposed lower pricing?'
+  - 'Do we have differentiated services (capital advances, software) that justify a premium?'
+commonMistakes:
+  - 'Matching prices uniformly when customer segments have different elasticity.'
+  - 'Underestimating the price war dynamics; if we match, the entrant cuts further to maintain differential.'
+  - 'Ignoring the LTV impact of customers who would have churned anyway vs price-sensitive defectors.'
+variants:
+  - 'Same situation, but the new entrant is owned by a hyperscaler with infinite runway. Does that change the response?'
+  - 'Same data, but Tessera has a dominant share (>50%) in the SMB segment. Does scale advantage change the answer?'
+relatedCases:
+  - conduit-api-platform-pricing
+  - cobblestone-footwear-pricing
+solved: false
+updatedAt: '2026-05-20'
+---
+
+<Callout tone="note" title="Illustrative case">
+  Tessera is a stylized example for competitive-response strategy. Framework from Cosentino + Porter; specifics are illustrative.
+</Callout>
+
+## The situation
+
+Price-driven competitive attacks are one of the most studied response problems in business strategy. The wrong response — matching prices reflexively — usually leads to industry margin destruction without restoring share. The right response depends on the attacker's structural position, the customer segments at risk, and the defender's differentiation capability.
+
+## Structuring
+
+Competitive-response framework with explicit decomposition by customer + attacker analysis:<Citation publisher="Case in Point" title="Case in Point — Complete Case Interview Preparation" authors={['Cosentino, Marc']} year={2023} /><Citation publisher="Competitive Strategy" title="Competitive Strategy: Techniques for Analyzing Industries and Competitors" authors={['Porter, Michael E.']} year={1980} />
+
+<IssueTreeEmbed slug="tessera-tree" height={400} />
+
+Three branches:
+
+1. **Attacker viability** — can the competitor sustain the lower pricing? If their unit economics don't support it, the price war is short-lived and matching is unnecessary.
+2. **Customer segmentation** — which customers are actually price-shopping? SMB merchants vary in price sensitivity by size, transaction volume, ancillary needs.
+3. **Differentiation options** — what value-added services do we have (capital advances, software, fraud protection) that justify a price premium?
+
+## Key analysis
+
+The diagnostic test: **disaggregate the 5% churn by customer profile.**
+
+Three typical patterns:
+
+- **Pure-price defectors** (mostly micro-merchants, single product type, sub-$100K processing volume): high elasticity. These customers are also the lowest-LTV in our base. Losing them is acceptable.
+- **Bundled-value defectors** (mid-size merchants who use Tessera capital advances or software): churning these is more expensive — they're high-LTV.
+- **Trial-then-back churners** (try the new entrant, find service quality lacking, return within 6 months): manageable noise.
+
+If 70%+ of the churn is in the first category, the strategic damage is limited. The defection economics actually improve Tessera's average customer profile.
+
+The non-obvious move: **selective price defense + bundled-value emphasis**, not blanket match. Match prices on a "loyalty pricing" tier for customers using 3+ Tessera services; let pure-price-shopper micro-merchants go.
+
+This achieves two things: keeps high-LTV customers, and signals to the competitor that we're not in a price war — which removes their incentive to cut further.
+
+## Recommendation skeleton
+
+**Recommendation:** **Selective defense + bundle acceleration.** Action 1: introduce a "loyalty pricing" tier (10-15% discount for customers using 3+ services); deploy proactively to top 30% of SMB base. Action 2: accelerate bundle product roadmap (capital advances expansion, integrated POS) to deepen non-price differentiation. Action 3: walk away from pure-price competition for micro-merchants — let the bottom 10% of accounts go if they price-shop. Reduce SMB sales-team focus on these segments.
+
+**Three supports:**
+
+1. Loyalty tier protects high-LTV customers without triggering broader price war.
+2. Bundle differentiation moves Tessera toward a value position that's harder to attack on price alone.
+3. Letting micro-merchants go improves portfolio quality and avoids destroying industry margin.
+
+**One risk:** if the new entrant achieves scale (10-15% share), their unit economics may strengthen enough to attack the bundled customer base. Mitigate by monitoring their growth + funding closely; be prepared to escalate response if attacker shows signs of cost-curve improvement.
+
+## What judges look for
+
+- Did you reject **reflexive price-matching** in favor of segmented analysis?
+- Did you identify **customer-LTV by segment** to identify which churn is acceptable vs damaging?
+- Did you propose a **loyalty-pricing mechanism** that defends without blanket discounting?
+- Did you address the **competitor's viability** as a strategic input?

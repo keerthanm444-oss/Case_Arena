@@ -1,0 +1,229 @@
+---
+id: M5
+slug: math
+title: Math
+tagline: Mental arithmetic fluency — the drills, shortcuts, and patterns that make case math unconscious
+estimatedMinutes: 60
+status: published
+tags: [fundamentals, math, mental-math, fluency, drill]
+updatedAt: '2026-05-20'
+---
+
+## Why math fluency is a separate skill
+
+The math in case interviews is mostly elementary — multiplication, percentages, basic compound growth. A high schooler can do all of it on paper. What makes case math hard is doing it **in your head, while talking, under time pressure, without a calculator**.
+
+That's not a math problem. It's a fluency problem.
+
+> A candidate who's slow at math doesn't fail because the arithmetic is wrong. They fail because the math eats their working memory, leaving nothing for structure, storytelling, or follow-up questions.
+
+M5 is about closing the fluency gap. The goal: arithmetic that's so automatic it doesn't compete for cognitive resources with the more important work of case structuring + synthesis.
+
+## What case math actually looks like
+
+A typical case requires these moves, in roughly this frequency:
+
+| Move | Frequency | Example |
+|------|-----------|---------|
+| Percentage of round number | every case | "15% of $4M" |
+| 2-digit × 2-digit multiply | most cases | "23 × 18" |
+| Division to clean answer | most cases | "$1.2M ÷ 8 stores" |
+| % change between two numbers | most cases | "From $80 to $96, what's the growth?" |
+| Compound growth | most market-entry cases | "5% for 7 years" |
+| Weighted average | M&A + pricing cases | "Mix shift effect on average price" |
+| Order-of-magnitude check | every case | "Does this answer make sense?" |
+
+That's the whole list. Master those seven patterns and you've handled 95% of case math you'll see.
+
+## Foundation 1 — multiplication
+
+The single highest-leverage skill is **2-digit × 2-digit multiplication**. Most candidates can't do 23 × 18 in their head in under 6 seconds. After two weeks of practice, they can.
+
+### The "decompose and combine" method
+
+For 2-digit × 2-digit, decompose one number and multiply piece by piece:
+
+> 23 × 18 = 23 × 20 − 23 × 2 = 460 − 46 = **414**
+
+The trick: turn one of the factors into a round number, then correct. 23 × 18 becomes 23 × 20 minus 23 × 2. Same answer, much easier mental arithmetic.
+
+Other decompositions worth memorizing:
+
+- × 5 = × 10 ÷ 2 (so 16 × 5 = 80, since 16 × 10 = 160 ÷ 2)
+- × 15 = × 10 + × 5 (so 16 × 15 = 160 + 80 = 240)
+- × 25 = × 100 ÷ 4 (so 32 × 25 = 3200 ÷ 4 = 800)
+- × 12 = × 10 + × 2
+- × 11 = × 10 + ×  (so 23 × 11 = 230 + 23 = 253)
+
+Internalize 5 of these and you'll route most multiplications through them without thinking.
+
+### Drill protocol
+
+The <a href="/tools/mental-math">mental math drill</a> generates 2-digit × 2-digit problems at four levels. Recommended protocol:
+
+- **Week 1:** Level "easy" (11–19 range), 10 problems daily. Goal: under 8 seconds per problem with >90% accuracy.
+- **Week 2:** Level "medium" (12–99 range), 10 problems daily. Goal: under 15 seconds with >85% accuracy.
+- **Week 3+:** Level "hard" (25–99), interleaved with division, growth, percentages.
+
+Two weeks of 10 minutes daily closes the multiplication gap for most learners.<Citation publisher="Case Interview Secrets" title="Case Interview Secrets" authors={['Cheng, Victor']} year={2012} />
+
+## Foundation 2 — percentages
+
+Percentages dominate case math because they're the language of business: margins, growth rates, market share, conversion rates. Three shortcuts handle ~90% of the patterns you'll see.
+
+### The "find 10%, then multiply" pattern
+
+Almost every percentage problem reduces to finding 10% first.
+
+> 15% of $4,200 = 10% + 5% = $420 + $210 = **$630**
+
+> 23% of $800 = 20% + 3% = $160 + $24 = **$184**
+
+10% is trivial (move the decimal). Once you have it, every other percentage is a small multiple or fraction of it. Internalize the move and percentage problems become decomposition problems.
+
+### The "fraction equivalents" cheat-sheet
+
+A few fractions appear constantly. Memorize them and skip the calculation:
+
+| Percentage | Fraction | Use case |
+|------------|----------|----------|
+| 50% | 1/2 | obvious |
+| 25% | 1/4 | quarterly thinking |
+| 20% | 1/5 | very common in margins |
+| 12.5% | 1/8 | recurring in pricing |
+| 33% | 1/3 | very common |
+| 67% | 2/3 | the inverse |
+| 75% | 3/4 | almost-full |
+
+If a problem says "20% margin on $850 revenue," the move is "1/5 of $850 = $170." Faster than multiplying 0.20 × 850.
+
+### Percent change
+
+% change between two numbers is `(new − old) / old × 100`. The mechanical move:
+
+> From $80 to $96: (96 − 80) / 80 = 16 / 80 = 20%
+
+The trick most candidates miss: **the denominator is always the old value**. From 80 to 96 is +20%; from 96 to 80 is −16.7%. Asymmetric. Drilling this asymmetry catches a class of mistakes.
+
+## Foundation 3 — growth rates
+
+Compound growth is the most-cited "advanced" case math, but in practice it reduces to two patterns.
+
+### The Rule of 72
+
+Money doubles in `72 ÷ rate%` years. Useful for ballpark questions:
+
+- 8% growth → doubles in ~9 years
+- 12% growth → doubles in ~6 years
+- 6% growth → doubles in ~12 years
+
+The Rule of 72 is approximate but typically within ±3% of the exact answer for rates between 4% and 15%, which covers most of what you'll see.
+
+### Quick compound for small rates over short horizons
+
+For rates under ~15% over horizons under ~10 years, the approximation:
+
+> Compound ≈ simple × ~1.05 to ~1.10
+
+So 5% over 5 years ≈ 25% × 1.10 = 27.5% (real answer: 27.6%).
+
+10% over 5 years ≈ 50% × 1.15 = 57.5% (real answer: 61%).
+
+The approximation breaks for higher rates or longer horizons — for those, you'll need to compound year-by-year or use the actual formula. But for case math under pressure, the approximation is fast and close enough.
+
+### When you need the exact answer
+
+A few cases will demand exact compound growth. The mechanical move:
+
+> $100 × 1.05⁵ = $100 × 1.05 × 1.05 × 1.05 × 1.05 × 1.05
+
+Multiply by 1.05 once for each year. After 3 multiplications, look at the cumulative factor. After 5, you have your answer.
+
+This is rarely worth doing in your head for more than 3 years. For longer horizons, use the approximation and flag that you've approximated.<Citation publisher="Case in Point" title="Case in Point — Complete Case Interview Preparation" authors={['Cosentino, Marc']} year={2023} />
+
+## Foundation 4 — reading numbers
+
+A subtle but high-impact skill: **reading numbers in context**.
+
+When a prompt says "$43.2M revenue," strong candidates instantly hear:
+
+- "About $43M — call it $40M if I need clean arithmetic"
+- "Probably ~$3.6M/month"
+- "If we're at 15% growth, that's ~$50M next year"
+- "Per-employee revenue is roughly $43M ÷ 200 employees = $215K/year" (if employee count was given)
+
+A weaker candidate hears the number as a number. They lose the immediate context that makes the rest of the case fast.
+
+### The three context-reads worth practicing
+
+For any revenue / cost / market-size number a case introduces:
+
+1. **What's the per-month or per-day version?** $43M annual → $3.6M/month → $120K/day. These conversions let you spot when a daily/monthly fact looks wrong without redoing the annual math.
+
+2. **What growth rate gets us to the next round number?** $43M → $50M is +16%. If the case says "growing at 15%/year" you instantly know "next year crosses $50M."
+
+3. **What per-unit version makes this concrete?** If revenue is $43M and we have 200 employees, that's $215K per employee. Per-unit numbers are where you sense-check.
+
+These reads take 5 seconds each and they shape every subsequent conversation. Cosentino recommends drilling them as separate exercises<Citation publisher="Case in Point" title="Case in Point — Complete Case Interview Preparation" authors={['Cosentino, Marc']} year={2023} /> until the context reads happen automatically.
+
+## Foundation 5 — sense-checking magnitude
+
+M2 introduced the three anchors (US population, GDP, global). M5 adds three more that matter for unit-economics cases:
+
+1. **US median household income** ≈ $75K. So "average consumer can spend $100/year on X" implies X is ~0.13% of HHI, which is plausible for a recurring service.
+
+2. **US workforce** ≈ 160M. So "5% of US workers" is 8M; "1% of high-wage US workers" is roughly 500K. Useful for B2B SaaS sizing.
+
+3. **S&P 500 average revenue** ≈ $20B. So a "Fortune 500 company doing $200M" is a small one; a "Fortune 100" is doing >$30B.
+
+If your math arrives at a number that violates these anchors (e.g. a B2C product with $50B revenue but 5M users implies $10K per user — implausible), the bug is in your multiplication chain.
+
+## Putting it together — the in-case math protocol
+
+When a case demands a calculation:
+
+1. **Pause for 2 seconds.** Look at the inputs. Are they round-able? Round.
+2. **Pick a decomposition.** What multiplication shortcut applies?
+3. **Compute aloud.** "23 × 18 is 23 × 20 minus 23 × 2, which is 460 minus 46, so 414."
+4. **Sense-check the answer.** Is the order of magnitude right?
+5. **State the implication.** "$414K per quarter, which means roughly $1.6M annually."
+
+Doing this aloud is critical. It shows the judge you're not guessing; it lets them catch an error before it propagates; and it gives you natural pauses to think.
+
+<Callout tone="tip" title="The 'I'll come back to that' move">
+  If a calculation is going to take more than ~30 seconds, defer it: "Let me come back to the exact number — order of magnitude is around X, which is enough to make the next decision." Then proceed. Coming back to confirm with precision later signals discipline; trying to do it all in your head signals overconfidence.
+</Callout>
+
+## Common failure modes
+
+Five recurring math failures across case prep:
+
+1. **Calculator dependency.** Reaching for a calculator out of habit even when the mental math would take 5 seconds. Builds a tell judges notice. Drill until calculator is the fallback, not the default.
+
+2. **Not stating the math aloud.** Computing internally and announcing only the answer. If the answer is wrong, the judge can't help you locate the error — and you look careless.
+
+3. **Pseudo-precision.** Reporting "$2,847,360" when the inputs were rounded. Use the precision of your weakest input as the cap.
+
+4. **Skipping the sense-check.** A clean-looking number that's off by a factor of 10. Always check magnitude against an anchor.
+
+5. **Math anxiety.** Tightening up when a calculation is requested, taking longer than needed. The cure is drill volume — fluency removes the anxiety. The <a href="/tools/mental-math">drill tool</a> exists for exactly this.
+
+## Self-test
+
+Do these five problems in your head, with a stopwatch. Target: under 30 seconds total.
+
+1. 28 × 17 = ?
+2. 18% of $4,500 = ?
+3. From $640 to $784, what's the % growth?
+4. $1.2M annually — what's that per working day (250 days)?
+5. 8% growth over 6 years — roughly what factor?
+
+(Answers: 476, $810, 22.5%, $4,800, ~1.59×)
+
+If you got 4 of 5 right in under 30 seconds, M5 is internalized. If not, run the <a href="/tools/mental-math">drill</a> daily for 15 minutes for two weeks and retest.
+
+## What comes next
+
+<a href="/modules/psychology">M6 · Psychology</a> shifts from technique to performance — what's happening in the judge's head, how to read the room, how to recover when a case isn't going well. It assumes the M0–M5 mechanical foundation is solid; if any of the earlier modules still feel uncertain, return to those first.
+
+If math fluency is your biggest gap, the <a href="/tools/mental-math">drill tool</a> with 15 minutes daily for two weeks is the single highest-leverage investment in your prep.

@@ -1,0 +1,95 @@
+---
+id: c-circuit-ev
+slug: circuit-ev-charging-economics
+title: 'Circuit Charging: how do we make our EV network profitable?'
+source:
+  publisher: McKinsey & Company
+  title: 'McKinsey Quarterly'
+  needsVerification: true
+industry: energy
+category: profitability
+difficulty: standard
+frameworks: [profitability, 3c]
+timeEstimate: 30
+tags: [energy, ev-charging, infrastructure, utilization, fleet]
+problemStatement: 'Circuit Charging operates a network of 2,000 DC fast-charging stations across the US. Utilization averages 12-15% (industry average); the network is losing money. The CEO is debating: (a) keep building new stations to capture growing EV demand, (b) consolidate to highest-utilization sites + close underperformers, (c) shift focus from public charging to fleet/destination charging.'
+clarifyingQuestions:
+  - 'How does utilization vary by location type (highway, urban, suburban)?'
+  - 'What is our cost structure — site lease, electricity, maintenance, depreciation?'
+  - 'What is the typical breakeven utilization for our station design?'
+  - 'Are we benefiting from federal IRA / NEVI subsidies?'
+commonMistakes:
+  - 'Continuing to build new stations when existing network isn''t profitable — utilization economics get worse before they improve.'
+  - 'Treating all locations identically when utilization varies 5-10x by location.'
+  - 'Ignoring fleet customer economics; B2B fleet charging is much more predictable than retail.'
+variants:
+  - 'Same situation, but a major auto OEM offers exclusive partnership in exchange for branded chargers. Recommend.'
+  - 'Same data, but EV adoption accelerates faster than expected. Does that change strategy?'
+relatedCases:
+  - quickstop-fuel-margin
+  - laneshare-marketplace
+solved: false
+updatedAt: '2026-05-20'
+---
+
+<Callout tone="note" title="Illustrative case">
+  Circuit is a stylized example for EV charging network strategy. Framework from McKinsey + standard methodology; specifics are illustrative.
+</Callout>
+
+## The situation
+
+EV charging network economics have been one of the most-discussed infrastructure investment categories of the past 5 years. The thesis is straightforward: EVs need charging, install before demand. The reality is harder: utilization ramps slowly, fixed costs are high, and many networks lose money even as EV adoption accelerates.
+
+The break-even math: a 6-stall DC fast-charging station costs ~$1.5-3M to build, has $100-300K annual fixed costs, requires 20-25% utilization to break even on operations + cover depreciation.
+
+## Structuring
+
+Infrastructure profitability framework:<Citation publisher="McKinsey & Company" title="McKinsey Quarterly" />
+
+<IssueTreeEmbed slug="circuit-tree" height={400} />
+
+Three branches:
+
+1. **Site-by-site economics** — utilization variance by location type, breakeven analysis per site.
+2. **Customer segment** — public retail charging vs fleet (commercial, delivery, rideshare) vs destination (hotel, retail).
+3. **Network strategy** — build-out pace, consolidation around winners, exit underperformers.
+
+## Key analysis
+
+A typical utilization distribution across a 2,000-station network:
+
+| Utilization tier | Station count | Annual P&L |
+|------------------|---------------|------------|
+| 25%+ (highway, dense urban) | 200-300 | Profitable |
+| 15-25% (mid-tier urban) | 600-800 | Break-even to slight loss |
+| <15% (suburban, low-traffic) | 900-1,100 | Loss-making |
+
+The non-obvious finding: **building more stations makes the network problem worse, not better.** Average utilization across the network falls as low-utilization sites are added.
+
+For Circuit specifically:
+- The 200-300 high-utilization sites cover their share of corporate overhead + generate cash
+- The middle tier breaks even, contributes some overhead absorption
+- The bottom 900-1,100 sites destroy value — they lose money on operations AND tie up capital
+
+The strategic answer is **selective consolidation** — close 200-400 worst-performing sites, redirect capital to fleet customer acquisition (predictable utilization), and grow new stations only in proven high-utilization geographies.
+
+Fleet customer dynamics: a delivery fleet charging 50 vehicles daily generates 60-80% utilization at dedicated stations. Fleet customers also pay subscription fees, smoothing revenue.
+
+## Recommendation skeleton
+
+**Recommendation:** **Network consolidation + fleet pivot.** Close 250-300 lowest-utilization stations over 24 months (saves $40-60M annual loss). Invest $80M in fleet customer acquisition + dedicated fleet charging hubs. Pause new public retail station construction except in proven high-utilization geographies. Target: network-wide profitability by year 3.
+
+**Three supports:**
+
+1. Closing loss-making sites recovers capital + stops the bleeding while preserving the profitable core.
+2. Fleet customers offer higher + more predictable utilization than retail public charging.
+3. Pausing speculative expansion focuses capital on validated economics.
+
+**One risk:** competitors continue aggressive build-out, locking up future high-traffic sites. Mitigate by maintaining site-acquisition pipeline (options, leases) without immediate buildout — be ready to construct when utilization projections justify.
+
+## What judges look for
+
+- Did you reject **"build more" as automatic solution** to utilization problem?
+- Did you analyze **utilization tier distribution** rather than average?
+- Did you propose **fleet pivot** as a higher-utilization customer segment?
+- Did you accept that **selective closures** are required despite the optics?

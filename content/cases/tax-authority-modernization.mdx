@@ -1,0 +1,95 @@
+---
+id: c-tax-authority
+slug: tax-authority-modernization
+title: 'State Tax Authority: how do we recover $2B in uncollected revenue?'
+source:
+  publisher: Bain & Company
+  title: 'Bain Insights'
+  needsVerification: true
+industry: public-sector
+category: operations
+difficulty: standard
+frameworks: [3c, profitability]
+timeEstimate: 35
+tags: [public-sector, tax, revenue, modernization, compliance]
+problemStatement: 'A state department of revenue collects $30B annually in income, sales, and excise taxes. The estimated "tax gap" (taxes owed but not collected) is ~$2-3B annually. The legacy collection system is 25+ years old; auditing is largely manual. The new Commissioner wants to recover at least $500M of the gap within 3 years. Recommend.'
+clarifyingQuestions:
+  - 'What is the tax-gap decomposition by tax type (income, sales, excise) and taxpayer segment (individual, small business, large corp)?'
+  - 'What is current audit coverage rate and effectiveness?'
+  - 'Do we have data-matching capabilities with federal IRS or third-party data?'
+  - 'What is the technology budget and procurement timeline?'
+commonMistakes:
+  - 'Treating tax gap as uniformly distributed — most gap is concentrated in specific segments (small business cash transactions, unreported sales tax).'
+  - 'Investing in audits without analytics — manual audits are too slow to make meaningful gap impact.'
+  - 'Underestimating change-management; legacy auditors may resist data-driven approaches.'
+variants:
+  - 'Same situation, but a major federal data-sharing initiative becomes available. Does that change priorities?'
+  - 'Same data, but the legislature has just expanded sales tax to digital services. How does that interact?'
+relatedCases:
+  - federal-agency-procurement-reform
+  - meridian-city-digital-services
+solved: false
+updatedAt: '2026-05-20'
+---
+
+<Callout tone="note" title="Illustrative case">
+  State Tax Authority is a stylized example for revenue agency modernization. Framework from Bain + standard public-sector methodology; specifics are illustrative.
+</Callout>
+
+## The situation
+
+State revenue agencies face common challenges: legacy IT systems, manual auditing, limited data integration, increasing tax gap from underreported income + sales tax evasion. Modernization investments typically pay back 5-10x via increased collection — but require multi-year transformation programs.
+
+The $500M target over 3 years is roughly 20% of the estimated tax gap — aggressive but achievable through analytics + automation.
+
+## Structuring
+
+Tax modernization framework:<Citation publisher="Bain & Company" title="Bain Insights" />
+
+<IssueTreeEmbed slug="tax-tree" height={400} />
+
+Three branches:
+
+1. **Tax gap diagnosis** — by tax type, taxpayer segment, evasion mechanism (underreporting, non-filing, fraud).
+2. **Capability gaps** — data analytics, audit selection, automated matching, fraud detection.
+3. **Investment priorities** — technology, audit workforce, taxpayer experience.
+
+## Key analysis
+
+Typical tax-gap composition:
+
+| Source | Share of gap | Detection difficulty |
+|--------|--------------|----------------------|
+| Underreported business income (small biz, cash) | 40-50% | High — needs analytics + audit |
+| Sales tax under-remittance | 15-25% | Medium — needs data matching |
+| Non-filing (failed to file at all) | 10-20% | Low — data matching identifies |
+| Misclassification (employees as 1099) | 5-15% | Medium |
+| Other (fraud, errors) | 5-10% | Variable |
+
+The non-obvious finding: **non-filing recovery is the highest-ROI starting point.** Identifying taxpayers who should have filed but didn't is straightforward via data matching with IRS, employer reports, banking data. Recovery rates approach 60-70%. No need for complex audit.
+
+For the state specifically:
+- Non-filing: $200-400M gap, 60% recoverable in 18 months via data matching
+- Underreported business income: $1-1.5B gap, 15-20% recoverable via analytics-driven audit
+- Sales tax: $300-600M, 30-40% recoverable via marketplace + payment data
+
+Combined potential: $500-700M over 3 years — achievable.
+
+## Recommendation skeleton
+
+**Recommendation:** **Three-track modernization over 3 years.** Track 1: deploy non-filing data matching system within 12 months ($150M one-time + $20M annual; $200M annual recovery). Track 2: implement analytics-driven audit selection — replace random sampling with risk-based ($80M investment; $200-300M annual recovery). Track 3: marketplace data integration for sales tax ($60M; $100-150M annual recovery). Total investment $290M; recovery $500-650M annually by year 3.
+
+**Three supports:**
+
+1. Non-filing track has highest ROI + fastest payback — start there to fund subsequent investments.
+2. Analytics-driven audit captures the largest gap category (business income underreporting).
+3. Marketplace integration addresses the structural sales tax gap from digital commerce.
+
+**One risk:** legacy auditor resistance to analytics-driven workflows may slow execution. Mitigate by training-first approach + retaining manual override authority while building analytics confidence.
+
+## What judges look for
+
+- Did you **decompose tax gap** by source rather than treating it monolithically?
+- Did you identify **non-filing detection** as highest-ROI starting point?
+- Did you propose **analytics-driven audit** rather than just more auditors?
+- Did you size **investment per track** with realistic payback economics?

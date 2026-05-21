@@ -1,0 +1,100 @@
+---
+id: c-foundry-network
+slug: foundry-plant-network-optimization
+title: 'Foundry Industrial: do we have too many plants?'
+source:
+  publisher: Case in Point
+  title: 'Case in Point — Complete Case Interview Preparation'
+  authors: ['Cosentino, Marc']
+  year: 2023
+  needsVerification: true
+industry: manufacturing
+category: operations
+difficulty: standard
+frameworks: [profitability, 3c]
+timeEstimate: 40
+tags: [manufacturing, operations, plant-network, footprint, optimization]
+problemStatement: 'Foundry Industrial manufactures industrial components across 28 plants in 12 countries. Capacity utilization averages 64% (industry benchmark 80%); operating margin is 7% (peers 11-13%). The CEO suspects the network has too many plants but can''t close them without addressing customer service levels, labor contracts, and political optics. Recommend a network strategy.'
+clarifyingQuestions:
+  - 'What is the utilization range across plants — is the 64% average from uniformly low or some at 80%+ and some at 30%?'
+  - 'What does the customer-base geography look like? Are we close to customers or shipping long distances?'
+  - 'Which plants are unionized vs not, and what are typical closure costs by geography?'
+  - 'Are there strategic customer commitments (long-term contracts) tied to specific plant locations?'
+commonMistakes:
+  - 'Recommending uniform closures by utilization without considering customer-proximity value.'
+  - 'Ignoring product-mix overlap — some plants are unique-capability (specific product lines) while others are generic.'
+  - 'Underestimating closure costs; in some EU jurisdictions, plant closures cost 2-3x annual operating cost in severance + obligations.'
+variants:
+  - 'Same situation, but Foundry has a hostile bidder offering 1.5x book value if the network is rationalized first. Does that shift the timeline?'
+  - 'Same data, but the CEO wants to expand capacity in low-cost regions (Mexico, Vietnam). How does the network strategy integrate with green-field investment?'
+relatedCases:
+  - silvercrest-nursing-turnaround
+  - westfield-department-transformation
+solved: false
+updatedAt: '2026-05-20'
+---
+
+<Callout tone="note" title="Illustrative case">
+  Foundry is a stylized example for manufacturing-network optimization. The framework is standard operations strategy; specifics are illustrative.
+</Callout>
+
+## The situation
+
+Manufacturing-network optimization is one of the most common strategic projects for diversified industrial companies. The math usually shows substantial savings (10-20% of operating cost) from consolidation, but execution is constrained by customer-proximity requirements, labor agreements, regulatory obligations, and strategic flexibility considerations.
+
+The "close the low-utilization plants" instinct is usually wrong without further decomposition.
+
+## Structuring
+
+Network-optimization framework:<Citation publisher="Case in Point" title="Case in Point — Complete Case Interview Preparation" authors={['Cosentino, Marc']} year={2023} />
+
+<IssueTreeEmbed slug="foundry-tree" height={400} />
+
+Three branches:
+
+1. **Demand side** — where are customers geographically? What does the shipping-cost-to-revenue ratio look like by region?
+2. **Supply side (plants)** — for each of the 28 plants, what's the utilization, cost position, product capability, and closure cost?
+3. **Network design** — given customer locations + plant capabilities, what's the optimal network? Usually requires linear-programming style optimization, but the qualitative inputs (which plants are unique-capability) dominate.
+
+## Key analysis
+
+The diagnostic question: **classify the 28 plants on capability + cost position + location.**
+
+A typical breakdown:
+
+| Plant type | Count | Action |
+|------------|-------|--------|
+| Unique-capability, low-cost, customer-proximate | 4-6 | Keep + invest |
+| Multi-purpose, mid-cost, customer-proximate | 8-10 | Keep, but optimize utilization |
+| Multi-purpose, high-cost, customer-distant | 6-8 | **Candidates for closure** |
+| Unique-capability, high-cost, customer-distant | 2-4 | Migrate capability to better-positioned plant before closure |
+| Strategic-flexibility (excess capacity buffer) | 2-3 | Keep |
+
+The non-obvious finding: closing the "candidates for closure" bucket alone (~30% of plants) can lift consolidated utilization from 64% to 80%+ without losing customer service, because demand transfers to retained plants in the same regions.
+
+Closure economics:
+
+- US/Mexico: $20-50M per plant (severance + facility costs)
+- Western Europe: $60-150M per plant (regulated severance, often 1-3 years of process)
+- Asia: $10-30M per plant (varies by country)
+
+The net present value of closing 6-8 plants typically runs $400-800M positive over 5 years, despite the upfront closure costs.
+
+## Recommendation skeleton
+
+**Recommendation:** Close 6 plants over 36 months in two waves. Wave 1 (year 1): 3 US/Mexico plants where utilization <50% and customers can be served from nearby plants. Wave 2 (year 3): 3 EU plants requiring the longer regulated closure process. Invest savings in capacity expansion at 4 retained low-cost plants. Target: consolidated utilization 80%, operating margin 11% by year 4.
+
+**Three supports:**
+
+1. Two-wave sequencing matches the operational reality of closures — fast where feasible, longer timelines where regulated.
+2. Capacity reinvestment in retained plants prevents capacity shortfall as demand transfers.
+3. Specific plant selection criteria (utilization + customer proximity + closure cost) generates a defensible target list rather than a gut call.
+
+**One risk:** customer commitments tied to specific plants may not transfer cleanly; some customers may require renegotiation. Mitigate by engaging top 10 customers on the transition plan in year 1, before any closure announcement.
+
+## What judges look for
+
+- Did you **classify plants into multiple sub-types** rather than closing on utilization alone?
+- Did you size **closure costs by geography** as a material constraint?
+- Did you propose **wave-based execution** matching the legal/regulatory realities?
+- Did you address **customer impact** explicitly with a transition plan?

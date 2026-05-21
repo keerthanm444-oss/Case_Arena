@@ -1,0 +1,107 @@
+/* ============================================================
+ * themes.css — the single import point for tokens.
+ * Applied at the root of the app in app/layout.tsx.
+ * ============================================================ */
+
+@import './colors.css';
+@import './typography.css';
+@import './spacing.css';
+@import './motion.css';
+
+/* ---------- Defaults applied to all themes ---------- */
+
+html {
+  background: var(--bg);
+  color: var(--fg);
+  font-family: var(--font-body-stack);
+  font-size: var(--text-base);
+  line-height: var(--leading-normal);
+  font-feature-settings: 'kern', 'liga';
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  text-rendering: optimizeLegibility;
+  scrollbar-width: thin;
+  scrollbar-color: var(--line-strong) transparent;
+}
+
+/* Numeric font swaps in tables, KPIs, stats */
+.numeric, .kpi-value, td.numeric, .data-num {
+  font-family: var(--numeric-font);
+  font-feature-settings: var(--feature-numeric);
+  font-variant-numeric: tabular-nums lining-nums;
+  letter-spacing: var(--tracking-tight);
+}
+
+/* Display headings — Fraunces variable axes */
+.display, .h1, h1, .hero {
+  font-family: var(--font-display-stack);
+  font-variation-settings:
+    'opsz' var(--display-opsz),
+    'SOFT' var(--display-soft-override, var(--display-soft));
+  letter-spacing: var(--tracking-tightest);
+  line-height: var(--leading-tight);
+}
+
+h2, .h2 {
+  font-family: var(--font-display-stack);
+  font-variation-settings:
+    'opsz' var(--heading-opsz),
+    'SOFT' var(--heading-soft);
+  letter-spacing: var(--tracking-tighter);
+  line-height: var(--leading-snug);
+}
+
+/* Selection — themed */
+::selection { background: var(--selection-bg); color: var(--selection-fg); }
+
+/* Focus rings — always visible, theme-aware */
+:focus-visible {
+  outline: 2px solid var(--ring);
+  outline-offset: 2px;
+  border-radius: var(--radius-sm);
+}
+
+/* Scrollbars */
+::-webkit-scrollbar { width: 10px; height: 10px; }
+::-webkit-scrollbar-track { background: transparent; }
+::-webkit-scrollbar-thumb {
+  background: var(--line-strong);
+  border-radius: var(--radius-pill);
+  border: 2px solid var(--bg);
+}
+::-webkit-scrollbar-thumb:hover { background: var(--fg-subtle); }
+
+/* Theme-specific atmosphere — Terminal scanline overlay */
+[data-theme='terminal'] body::before {
+  content: '';
+  position: fixed;
+  inset: 0;
+  pointer-events: none;
+  background-image: repeating-linear-gradient(
+    0deg,
+    transparent 0,
+    transparent 2px,
+    currentColor 2px,
+    currentColor 3px
+  );
+  color: var(--fg);
+  opacity: var(--scanline-opacity);
+  mix-blend-mode: overlay;
+  z-index: var(--z-overlay);
+}
+
+/* Boardroom — subtle paper-grain texture */
+[data-theme='boardroom'] body::before {
+  content: '';
+  position: fixed;
+  inset: 0;
+  pointer-events: none;
+  background:
+    radial-gradient(1px 1px at 20% 30%, rgba(245, 241, 232, 0.03) 50%, transparent 50%),
+    radial-gradient(1px 1px at 70% 60%, rgba(245, 241, 232, 0.025) 50%, transparent 50%),
+    radial-gradient(1px 1px at 40% 80%, rgba(245, 241, 232, 0.02) 50%, transparent 50%);
+  background-size: 200px 200px;
+  z-index: var(--z-overlay);
+}
+
+/* Daylight — clean, no overlay */

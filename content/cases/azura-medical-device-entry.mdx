@@ -1,0 +1,113 @@
+---
+id: c-azura-device
+slug: azura-medical-device-entry
+title: 'Azura MedTech: should we launch our heart monitor in Europe?'
+source:
+  publisher: Case in Point
+  title: 'Case in Point — Complete Case Interview Preparation'
+  authors: ['Cosentino, Marc']
+  year: 2023
+  needsVerification: true
+industry: healthcare
+category: market-entry
+difficulty: standard
+frameworks: [market-entry, porters-five-forces]
+timeEstimate: 40
+tags: [healthcare, medical-device, market-entry, regulatory, europe]
+problemStatement: 'Azura MedTech is a US medical-device company with a successful continuous heart-rhythm monitor approved by the FDA in 2022. Annual US revenue is $180M growing at 35%. The CEO is considering a Europe launch — submitting for CE marking, building European sales infrastructure, partnering with EU hospital systems. The board wants a recommendation on whether to enter and how.'
+clarifyingQuestions:
+  - 'What is the competitive landscape in Europe for continuous heart-rhythm monitors?'
+  - 'What are the reimbursement pathways — does each EU member state set its own?'
+  - 'Do we have any existing European clinical relationships from the FDA-trial sites?'
+  - 'What is the regulatory timeline + cost for CE marking under the new EU MDR?'
+commonMistakes:
+  - 'Treating "Europe" as a single market — reimbursement, distribution, and competition vary by country.'
+  - 'Underestimating the EU MDR (Medical Device Regulation) timeline; significantly stricter than the prior MDD and longer than FDA equivalents.'
+  - 'Forgetting that medical-device pricing in Europe is often 30-50% below US, even for identical products.'
+variants:
+  - 'Same product, but a partnership offer from a European distributor with existing hospital relationships. Compare licensing vs direct entry.'
+  - 'Same situation, but Azura also has a competing prescription-app version. How do the entry calculations interact?'
+relatedCases:
+  - veridian-india-entry
+solved: false
+updatedAt: '2026-05-20'
+---
+
+<Callout tone="note" title="Illustrative case">
+  Azura is a stylized example for medical-device market entry. Frameworks (market entry, 5 Forces) from cited references; specifics are illustrative.
+</Callout>
+
+## The situation
+
+Medical-device market entry into Europe combines three real complexities: regulatory (CE marking under MDR is meaningfully stricter than the prior MDD), reimbursement (decided country-by-country), and distribution (hospital sales is relationship-driven and country-specific).
+
+The CEO's instinct to enter is reasonable — Europe is the second-largest medical-device market globally — but the entry mode and timing matter enormously.
+
+**Scenario inputs:**
+
+<AssumptionChip name="us_arpu" base={2400} label="US ARPU" unit="$" decimals={0} />
+<AssumptionChip name="eu_arpu_discount" base={0.4} alt={0.25} label="EU price discount" decimals={2} />
+<AssumptionChip name="eu_addressable" base={1.2} alt={2.5} label="EU TAM" unit="M units" decimals={1} />
+<AssumptionChip name="y5_penetration" base={0.005} alt={0.015} label="Y5 penetration" decimals={3} />
+
+Effective EU ARPU:
+
+<LiveNumber compute="us_arpu * (1 - eu_arpu_discount)" prefix="$" suffix="" decimals={0} label="EU ARPU" />
+
+Year-5 EU revenue estimate:
+
+<LiveNumber compute="us_arpu * (1 - eu_arpu_discount) * eu_addressable * 1000000 * y5_penetration / 1000000" prefix="$" suffix="M" decimals={1} tone="accent" large label="Y5 EU revenue estimate" />
+
+The variance in this estimate — from base to bullish, the year-5 number changes by ~6x — captures most of why the entry decision is hard.
+
+## Structuring
+
+Market-entry framework with explicit decomposition of **the EU as multiple markets**:<Citation publisher="Case in Point" title="Case in Point — Complete Case Interview Preparation" authors={['Cosentino, Marc']} year={2023} />
+
+<IssueTreeEmbed slug="azura-tree" height={400} />
+
+Three branches:
+
+1. **Is the market attractive?** — TAM by country (Germany, France, UK, Italy, Spain account for most); reimbursement maturity; regulatory pathway.
+2. **Can we win?** — competitive landscape (local incumbents typically have hospital-system trust; new entrants compete on clinical evidence + price).
+3. **How to enter?** — direct (highest control, longest ramp), distributor (fastest, lowest control), JV (middle ground).
+
+Five Forces gives the competitive backdrop:<Citation publisher="Competitive Strategy" title="Competitive Strategy: Techniques for Analyzing Industries and Competitors" authors={['Porter, Michael E.']} year={1980} /> in continuous monitoring, the buyer (hospital procurement + reimbursement bodies) has strong bargaining power; switching costs are moderate; the threat of substitutes (in-hospital monitoring) is high in some clinical settings.
+
+## Key analysis
+
+The non-obvious move: **EU entry should be sequenced by country, not done as a single launch.**
+
+Country prioritization in most medical-device EU entries follows roughly this order:
+
+1. **Germany** — largest market, fastest reimbursement (via DRG system), most receptive to clinical evidence
+2. **UK** — English-speaking, NHS centralized procurement (slow but high-volume)
+3. **France, Italy, Spain, Netherlands** — country-by-country, in roughly that priority order
+
+Skipping the country-by-country sequencing and trying "EU launch" simultaneously usually fails: the reimbursement processes are different, the clinical-evidence requirements differ, and a partner that's effective in Germany may have no France presence.
+
+Two timing considerations:
+
+- **CE marking under MDR** typically takes 18-30 months from submission; significantly longer than US FDA 510(k) pathway. Budget at least 24 months from kickoff to first EU revenue.
+- **Reimbursement decisions** add another 6-18 months per country after CE.
+
+So the realistic horizon from "decide to enter" to "first meaningful EU revenue" is 30-48 months. The CEO needs to know this before committing.
+
+## Recommendation skeleton
+
+**Recommendation:** Enter Europe via a phased, country-sequenced approach starting with Germany. Submit for CE marking in Q1 2026. Build a 6-person Germany-focused team (medical affairs + sales). Re-evaluate at month 24 (CE issued?) and month 36 (Germany revenue trajectory) before committing to subsequent countries.
+
+**Three supports:**
+
+1. Country-sequenced entry limits capital at risk while building EU regulatory + commercial experience.
+2. Germany-first maximizes the probability of a clean launch — best market structure + reimbursement clarity.
+3. Phasing tied to specific milestones (CE, German DRG inclusion, year-1 revenue) creates explicit decision points rather than vague "review."
+
+**One risk:** EU MDR regulatory timeline slippage delays revenue 12+ months. Mitigate by parallel-tracking the country-specific commercial work during the CE process so launch is ready when approval comes.
+
+## What judges look for
+
+- Did you reject "EU launch" as a single decision and sequence by country?
+- Did you size the **regulatory timeline** (24+ months for CE under MDR) as a critical constraint?
+- Did you specify **Germany-first** with a real rationale, not just "biggest market"?
+- Did you propose **phased commitment** tied to specific milestones rather than a binary enter/don't-enter?

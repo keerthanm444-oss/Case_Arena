@@ -6,7 +6,7 @@
   "license": "MIT",
   "scripts": {
     "dev": "next dev",
-    "build": "npm run lint:citations && next build && npm run pagefind",
+    "build": "npm run lint:citations && next build && next export && npm run pagefind",
     "start": "next start",
     "lint": "next lint",
     "lint:citations": "tsx scripts/verify-citations.ts",

@@ -13,7 +13,7 @@ import type {
   CaseDifficulty,
   FrameworkCategory,
 } from '@/types';
-import { readMDXCollection } from './loaders/mdx-loader';
+
 
 function toSummary(fm: Record<string, unknown>, slug: string): CaseSummary | null {
   if (typeof fm.title !== 'string') return null;
@@ -46,7 +46,39 @@ function toSummary(fm: Record<string, unknown>, slug: string): CaseSummary | nul
   };
 }
 
-export function getAllCases(): CaseSummary[] {
+export async function getAllCases(): Promise<CaseSummary[]> {
+  let authored = new Map<string, Record<string, unknown>>();
+  if (typeof window === 'undefined') {
+    try {
+      const { readMDXCollection } = await import('./loaders/mdx-loader');
+      for (const doc of readMDXCollection('cases')) {
+        authored.set(doc.slug, doc.frontmatter);
+      }
+    } catch (e) {
+      // ignore during client builds
+    }
+  }
+  const map = authored;
+  return CASE_SPINE.map((c) => {
+    const fm = map.get(c.slug);
+    const status = (fm?.status as CaseSummary['status']) ?? ('draft' as const);
+    const timeEstimate = typeof fm?.timeEstimate === 'number' ? (fm.timeEstimate as number) : c.timeEstimate;
+    return {
+      id: c.id,
+      slug: c.slug,
+      title: (fm?.title as string) ?? c.title,
+      industry: (fm?.industry as CaseIndustry) ?? c.industry,
+      category: (fm?.category as CaseCategory) ?? c.category,
+      difficulty: (fm?.difficulty as CaseDifficulty) ?? c.difficulty,
+      frameworks: Array.isArray(fm?.frameworks) ? (fm.frameworks as FrameworkCategory[]) : [],
+      timeEstimate,
+      sourcePublisher: c.sourcePublisher,
+      solved: Boolean(fm?.solved),
+      tags: Array.isArray(fm?.tags) ? (fm.tags as string[]) : [],
+      status,
+    };
+  });
+}
   try {
     return readMDXCollection('cases')
       .map((d) => toSummary(d.frontmatter, d.slug))

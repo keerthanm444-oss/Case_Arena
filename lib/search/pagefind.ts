@@ -59,11 +59,10 @@ export async function loadPagefind(): Promise<PagefindState> {
     return { kind: 'missing' };
 
   try {
-    // Dynamic import from the public path. In dev (no Pagefind build), this
-    // fetch will 404; we surface a graceful "missing" state.
+    // Dynamic import with webpackIgnore to avoid build-time resolution errors.
     // eslint-disable-next-line @typescript-eslint/ban-ts-comment
-    // @ts-ignore — vite-style dynamic import not type-resolvable here
-    const mod = await import(/* @vite-ignore */ '/_pagefind/pagefind.js');
+    // @ts-ignore
+    const mod = await import(/* webpackIgnore: true */ '/_pagefind/pagefind.js');
     const api: PagefindAPI = mod.default ?? mod;
     if (api.options) {
       await api.options({ baseUrl: '/' });

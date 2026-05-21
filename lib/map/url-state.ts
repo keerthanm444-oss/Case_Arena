@@ -9,7 +9,7 @@ import type { MapViewMode, MapSavedView } from '@/types';
  * resulting URLs are shareable + bookmarkable.
  */
 
-export interface MapFiltersState extends MapSavedView['filters'] {}
+export type MapFiltersState = MapSavedView['filters'];
 
 export interface MapUrlState {
   view: MapViewMode;

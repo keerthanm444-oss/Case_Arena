@@ -10,7 +10,7 @@
  */
 
 import type { ModuleSummary } from '@/types';
-import { readMDXCollection } from './loaders/mdx-loader';
+// Note: readMDXCollection is server‑only; it will be dynamically imported inside getAllModules to avoid bundling node built‑ins into the client bundle.
 
 /** Curriculum spine — the canonical order. Drives module nav even before
  *  any content is authored, so empty shells render in the correct sequence. */
@@ -122,17 +122,23 @@ export const MODULE_SPINE: ReadonlyArray<{
 
 /** All module summaries in canonical order. Authored MDX overrides spine
  *  defaults for `status` and `estimatedMinutes`. */
-export function getAllModules(): ModuleSummary[] {
-  const authored = new Map<string, Record<string, unknown>>();
-  try {
-    for (const doc of readMDXCollection('modules')) {
-      authored.set(doc.slug, doc.frontmatter);
+export async function getAllModules(): Promise<ModuleSummary[]> {
+  // Dynamically import the loader only on the server side.
+  let authored = new Map<string, Record<string, unknown>>();
+  if (typeof window === 'undefined') {
+    try {
+      const { readMDXCollection } = await import('./loaders/mdx-loader');
+      for (const doc of readMDXCollection('modules')) {
+        authored.set(doc.slug, doc.frontmatter);
+      }
+    } catch (e) {
+      // ignore during client builds
     }
-  } catch {
-    // Build-time only. On client, the spine is the source.
   }
-  return MODULE_SPINE.map((m) => {
-    const fm = authored.get(m.slug);
+  const map = authored;
+  // Rest of function unchanged
+  const result = MODULE_SPINE.map((m) => {
+    const fm = map.get(m.slug);
     const status =
       (fm?.status as ModuleSummary['status']) ?? ('draft' as const);
     const estimatedMinutes =
@@ -149,6 +155,7 @@ export function getAllModules(): ModuleSummary[] {
       status,
     };
   });
+  return result;
 }
 
 /** Look up a module by slug. Merges spine + MDX frontmatter. */
